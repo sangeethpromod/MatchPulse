@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body{
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    max-height: 95vh;
+    overflow: hidden;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+.loginCard {
+    width: 354px;
+    height: 431px;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 42px;
+    box-shadow: 0px 10px 4px 7px rgba(0, 0, 0, 0.286);
+    margin: 50px auto;
+    border-radius: 42px;
+    background: #000;
+    margin-top: 98px;
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.username {
+    padding-top: 40px;
+    width: 352px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #DA1C29;
+        text-align: left;
+        font-family: Poppins;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.95px;
+}
+
+.enterusername {
+        width: 310px;
+        height: 35px;
+        flex-shrink: 0;
+        border-radius: 42px;
+        background: rgb(194, 194, 194);
+        border: 0px;
+        outline: 0px;
+}
+.enterEmail:hover {
+    background-color: white;
+}
+.logpassword {
+    padding: 25px;
+    width: 352px;
+        height: 17px;
+        flex-shrink: 0;
+        color: #DA1C29;
+        text-align: left;
+        font-family: Poppins;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.95px;
+}
+.logenterpassword {
+            width: 310px;
+            height: 35px;
+            flex-shrink: 0;
+            border-radius: 42px;
+            background: rgb(194, 194, 194);
+            border: 0px;
+            outline: 0px;
+}
+
+.logenterpassword:hover{
+    background-color: white;
+}
+.signinButton{
+
+            width: 130px;
+            height: 44px;
+            flex-shrink: 0;
+            border-radius: 42px;
+            background: #DA1C29;
+            margin-top: 42px;
+            font-size: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+            border: 0px;
+            outline: 0px;
+            transition: all 0.2s;
+}
+
+.signinButton:hover {
+    background-color: #ffffff;
+     width: 170px;
+        height: 54px;
+        font-size: 22px;
+}
+
+
+.forgotpassButton {
+
+    width: 330px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: #DA1C29;
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 0px;
+    outline: 0px;
+    transition: all 0.2s;
+}
+
+.forgotpassButton:hover {
+    background-color: #ffffff;
+    width: 370px;
+    height: 54px;
+    font-size: 22px;
+}

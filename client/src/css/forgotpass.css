@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body {
+    overflow: hidden;
+}
+
+.forg-container {
+    width: 100%;
+    max-height: 95vh;
+    overflow: hidden;
+}
+
+.forgetimg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Center everything inside the form and make the form centered on the screen */
+.forgotCard {
+    width: 354px;
+    height: 207px;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 42px;
+    align-items: center;
+    box-shadow: 0px 10px 4px 7px rgba(0, 0, 0, 0.286);
+    margin: 50px auto;
+    margin-top: 210px;
+    border-radius: 42px;
+    background: #000;
+    margin-top: 98px;
+    z-index: 1;
+    display: flex;
+    /* Center horizontally */
+    flex-direction: column;
+    /* Center vertically */
+    justify-content: center;
+    /* Center vertically */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passhead {
+    padding-top: 10px;
+    width: 352px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #DA1C29;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+    letter-spacing: 1.95px;
+}
+
+.forgenteremail {
+    width: 310px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: rgb(194, 194, 194);
+    border: 0px;
+    outline: 0px;
+}
+
+.forgenteremail:hover {
+    background-color: white;
+}
+
+.forget-button {
+    width: 230px;
+    height: 44px;
+    flex-shrink: 0;
+    position: relative;
+    left: 38px;
+    align-items: center;
+    border-radius: 42px;
+    background: #DA1C29;
+    margin-top: 42px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 0px;
+    outline: 0px;
+    transition: all 0.2s;
+}
+
+.forget-button:hover {
+    background-color: #ffffff;
+}

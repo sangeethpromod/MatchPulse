@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Poppins";
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the entire webpage */
+.Home-container {
+    background-color: #161616;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+
+}
+
+/* Style the black navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.video {
+    width: 100%;
+    height: 1000px;
+    /* top: -77px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.Secondary-container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.photo-row1 {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.player-photo{
+    position: relative;
+    right: 34px;
+    top:-100px;
+    width: 30%;
+    box-shadow: rgba(22, 22, 22, 0.7);
+}
+
+
+.select-button1 {
+    background-color: #DA1C29;
+    position: relative;
+    width: 920px;
+    top: 301px;
+    height: 103px;
+    right: -51px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 42px;
+    cursor: pointer;
+    font-size: 44px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+/* Style the button on hover */
+.select-button1:hover {
+    background-color: #484848;
+    /* Change background color on hover */
+}
+
+.Players-Text {
+    color:white;
+    position: relative;
+    top:-129px;
+    right: 535px;
+    font-size: 92px;
+    font-weight:bolder;
+}
+
+.photo-row2 {
+    display: flex;
+    position: relative;
+    /* padding-left: 300px; */
+    width: auto;
+    padding-top: 60px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.team-photo {
+    position: relative;
+    left: 894px;
+    top: -100px;
+    width: 37%;
+    box-shadow: rgba(22, 22, 22, 0.7);
+}
+
+.select-button2 {
+    background-color: #DA1C29;
+    position: relative;
+    
+    width: 920px!important;
+    top: 422px;
+    height: 103px;
+    right: 215px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 42px;
+    cursor: pointer;
+    font-size: 44px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+/* Style the button on hover */
+.select-button2:hover {
+    background-color: #484848;
+    /* Change background color on hover */
+}
+
+
+.Team-Text {
+    text-align: right;
+    color: white;
+    position: relative;
+    top: -129px;
+    right: 544px;
+    font-size: 92px;
+    font-weight: bolder;
+}
+
+
+.Fixture-row {
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.Fixture-Foto{
+    position: relative;
+    left: -6px;
+    top: -100px;
+    width: 104%;
+    box-shadow: rgba(22, 22, 22, 0.7);
+}
+
+.fixture-Text {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -129px;
+
+    font-size: 92px;
+    font-weight: bolder;
+}
+
+
+.select-button3 {
+    background-color: #DA1C29;
+    position: relative;
+
+    width: 920px !important;
+    top: -134px;
+    height: 103px;
+    right: -227px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 42px;
+    cursor: pointer;
+    font-size: 44px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+/* Style the button on hover */
+.select-button2:hover {
+    background-color: #484848;
+    /* Change background color on hover */
+}
+
+
+/* For Scrolling the page */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c70000;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #444;
+}
+
+
+/* Example CSS for styling the button */
+

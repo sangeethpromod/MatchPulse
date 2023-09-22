@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    font-family: "Poppins";
+}
+body {
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    max-height: 95vh;
+    overflow: hidden;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-image img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.signUpCard {
+    width: 354px;
+    height: 543px;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 42px;
+    box-shadow: 0px 10px 4px 7px rgba(0, 0, 0, 0.286);
+    margin: 50px auto;
+    border-radius: 42px;
+    background: #000;
+    margin-top: 98px;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.username {
+    padding-top: 15px;
+    width: 352px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #DA1C29;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.95px;
+}
+
+.enterusername {
+    width: 310px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: rgb(194, 194, 194);
+    border: 0px;
+    outline: 0px;
+}
+
+.enterusername:hover {
+    background-color: white;
+}
+.reg-name {
+    padding-top: 26px;
+    width: 352px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #DA1C29;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.95px;
+}
+
+.enterregname{
+    width: 310px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: rgb(194, 194, 194);
+    border: 0px;
+    outline: 0px;
+}
+
+.enterregname:hover {
+    background-color: white;
+}
+
+.reg-email {
+    padding-top: 24px;
+    width: 352px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #DA1C29;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.95px;
+}
+
+.enterregemail {
+    width: 310px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: rgb(194, 194, 194);
+    border: 0px;
+    outline: 0px;
+}
+.enterregemail:hover {
+    background-color: white;
+}
+
+.regpassword {
+    padding: 25px;
+    width: 352px;
+    height: 17px;
+    flex-shrink: 0;
+    color: #DA1C29;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.95px;
+}
+
+.enterregpassword {
+    width: 310px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: rgb(194, 194, 194);
+    border: 0px;
+    outline: 0px;
+}
+
+.enterregpassword:hover {
+    background-color: white;
+}
+
+.signupButton {
+
+    width: 130px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 42px;
+    background: #DA1C29;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 0px;
+    outline: 0px;
+}
+
+.signinButton:hover {
+    background-color: white;
+}
+
+
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    grid-template-columns: minmax(0, 100%);
+    width: 22em;
+    max-width: 100%;
+    padding: 0 0 1.25em;
+    border: 10px;
+    border-radius: 42px;
+    background: #000000;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1em;
+}
+
+div:where(.swal2-icon).swal2-error {
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {
+    background-color: #ff0000;
+}
