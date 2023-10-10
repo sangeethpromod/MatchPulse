@@ -1,102 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-* {
-    margin: 0;
-    font-family: "Poppins";
-}
-
-* Styling for the home page */ .home-container {
+/* League.css */
+.league-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #131313;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
-    background-color: #f0f0f0;
 }
 
-.bgImage {
-    position: fixed;
-    top: 0;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* Place the video behind other content */
-}
-
-.background-video {
-    object-fit: cover;
-    width: 100%;
-}
-
-/* Navigation Bar */
-.navbar {
-    height: 40px;
-    flex-shrink: 0;
+.leaugenavbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+    padding-right:25px;
 }
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* .quote {
-    font-size: 30px;
+.leaugenavbar-content {
+    font-size: 25px;
     font-weight: bolder;
-    margin-left: 200px;
-    color: #DA1C29
-} */
+    padding-left: 30px;
+}
 
-.signinButton1 {
-    width: 265px;
-    height: 69px;
-    flex-shrink: 0;
-    border-radius: 42px;
-    background: #ffffff;
+.leaugenavbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Adjust the gap between links as needed */
+}
+
+.leaugenavbar-links li a {
+    text-decoration: none;
+    color: white;
+    /* Set your desired link text color */
+}
+
+.leaugenavbar-links li a:hover {
+    color: #c60000;
+    /* Add underline on hover if desired */
+}
+
+
+
+
+.leaguecontainer-1 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.leaguecontainer-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
     margin-top: 40px;
-    margin-left: 60px;
-    font-size: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    border: 0px;
-    outline: 0px;
-    transition: all 0.2s;
+    transition: background-color 0.9s, transform 0.5s;
 }
 
-.signinButton1:hover {
-    background-color: #DA1C29;
-    width: 285px;
-    height: 79px;
-    font-size: 22px;
+.card:hover{
+        transform: scale(1.05);
 }
 
-.signinButton2 {
-    width: 265px;
-    height: 69px;
-    flex-shrink: 0;
-    border-radius: 42px;
-    background: #ffffff;
-    margin-top: 560px;
-    margin-left: 60px;
-    font-size: 20px;
+.card-1 {
+    background-color: rgba(48, 48, 48, 0.847);
+}
+
+.card1img {
+    width: 90%;
+    max-height: 100%;
+    position: relative;
+
+}
+
+.card1button {
+    background-color: #c60000;
+    color: white;
+    width: 90%;
+    position: relative;
+    top:45px;
+    border-radius: 40px;
+    height: 44px;
+    border: none;
+    margin-top: 10px;
     cursor: pointer;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-    border: 0px;
-    outline: 0px;
-    transition: all 0.2s;
 }
 
-.signinButton2:hover {
-    background-color: #DA1C29;
-    width: 285px;
-    height: 79px;
-    font-size: 22px;
+.card1button:hover {
+    background-color: #000000;
 }
+/* card 2................................................. */
+
+.card-2 {
+    background-color: rgba(48, 48, 48, 0.847);
+}
+
+.card2img {
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+
+}
+
+.card2button {
+    background-color: #3D195B;
+    color: white;
+    width: 90%;
+    position: relative;
+    top: 42px;
+    border-radius: 40px;
+    height: 44px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card2button:hover {
+    background-color: #000000;
+}
+
+/* card 3................................................. */
+
+.card-3 {
+    background-color: rgba(48, 48, 48, 0.847);
+}
+
+.card3img {
+    width: 70%;
+    max-height: 100%;
+    position: relative;
+    bottom:-6px;
+
+}
+
+.card3button {
+    background-color: #008fd7;
+    color: white;
+    width: 90%;
+    position: relative;
+    top: 34px;
+    border-radius: 40px;
+    height: 44px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card3button:hover {
+    background-color: #000000;
+}
+
+/* card 4................................................. */
+
+.card-4 {
+    background-color: rgba(48, 48, 48, 0.847);
+}
+
+.card4img {
+    width: 70%;
+    max-height: 100%;
+    position: relative;
+    bottom: -6px;
+
+}
+
+.card4button {
+    background-color: #c60000;
+    color: white;
+    width: 90%;
+    position: relative;
+    top: 34px;
+    border-radius: 40px;
+    height: 44px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card4button:hover {
+    background-color: #000000;
+}
+/* card 5................................................. */
+
+.card-5 {
+    background-color: rgba(48, 48, 48, 0.847);
+}
+
+.card5img {
+    width: 50%;
+    max-height: 100%;
+    position: relative;
+    bottom: -6px;
+
+}
+
+.card5button {
+    background-color: #12233f;
+    color: white;
+    width: 90%;
+    position: relative;
+    top: 34px;
+    border-radius: 40px;
+    height: 44px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card5button:hover {
+    background-color: #000000;
+}
+
+/* .card:hover {
+    background-color: #e0e0e0;
+}
+
+.focused {
+    background-color: #007bff;
+    color: white;
+} */

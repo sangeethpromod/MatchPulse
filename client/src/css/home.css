@@ -1,219 +1,553 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../fonts/DAGGERSQUARE.otf') format('opentype');
+    /* Add more src lines for additional font formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
 
-* {
-    margin: 0;
-    font-family: "Poppins";
+body {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+.homepage-container{
+    max-height: 100vh;
+    overflow-y: auto;
+    background-color: rgb(53, 53, 53);
 }
 
-/* Style the entire webpage */
-.Home-container {
-    background-color: #161616;
-    height: 100vh;
-    overflow-y: scroll;
-    width: 100%;
-
-}
-
-/* Style the black navbar */
-.navbar {
+.top-navbar {
     background-color: black;
     color: white;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.video {
     width: 100%;
-    height: 1000px;
-    /* top: -77px; */
-    overflow: hidden;
-    position: relative;
-}
-
-.Secondary-container{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.photo-row1 {
     display: flex;
-    padding-top: 20px;
-    justify-content: center;
-    margin: 20px 0;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    height: 50px;
+    top:0;
+    left:0;
 }
 
-.player-photo{
-    position: relative;
-    right: 34px;
-    top:-100px;
-    width: 30%;
-    box-shadow: rgba(22, 22, 22, 0.7);
+.left-logo {
+    font-size: 24px;
+    padding-left: 20px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
-
-.select-button1 {
-    background-color: #DA1C29;
-    position: relative;
-    width: 920px;
-    top: 301px;
-    height: 103px;
-    right: -51px;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 42px;
-    cursor: pointer;
-    font-size: 44px;
-    font-weight: bolder;
-    margin-top: 10px;
+.righthome-menu {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    gap:20px;
 }
 
-/* Style the button on hover */
-.select-button1:hover {
-    background-color: #484848;
-    /* Change background color on hover */
-}
-
-.Players-Text {
+.top-navbar a{
+    text-decoration: none;
     color:white;
-    position: relative;
-    top:-129px;
-    right: 535px;
-    font-size: 92px;
-    font-weight:bolder;
+    transition: color 0.3s;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
-.photo-row2 {
+.top-navbar a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.right-menu li {
+    margin-right: 20px;
+}
+
+
+.fixed-photo {
+    background-image: url('../images/gift.gif');
+    background-size: cover;
+    height: 500px;
+    position: sticky;
+    top:50px;
+    /* Adjust height as needed */
+}
+
+.hometestcontainer2 {
     display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
     position: relative;
-    /* padding-left: 300px; */
-    width: auto;
-    padding-top: 60px;
-    justify-content: center;
-    margin: 20px 0;
+    background-color: black;
 }
 
-.team-photo {
+.homecard1 {
+    padding: 20px;
+    margin-right: 20px;
+    border:none;
+    width:290px;
+    height: 0px;
+    border-radius: 40px;
+    height: 400px;
+    background-color: #ffffff;
     position: relative;
-    left: 894px;
-    top: -100px;
-    width: 37%;
-    box-shadow: rgba(22, 22, 22, 0.7);
+    bottom:100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    transition: transform 0.3s;
 }
 
-.select-button2 {
-    background-color: #DA1C29;
+.homecard1 p {
+    font-size: 40px;
     position: relative;
-    
-    width: 920px!important;
-    top: 422px;
-    height: 103px;
-    right: 215px;
+    bottom: 396px;
+    z-index: -1;
     color: rgb(0, 0, 0);
+}
+
+.homecard1 p span {
+    position: relative;
+    bottom:30px;
+    display: block;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    /* Each span on a new line */
+}
+
+.homecard1 p .player-text {
+    font-size: 70px;
+    color: red;
+}
+
+.homecard1:hover {
+    transform: scale(1.05);
+}
+
+.playerimageforhome{
+width:330px;
+height:440px;
+border-radius: 40px;
+position: relative;
+right:20px;
+bottom:20px;
+transition: opacity 0.5s;
+}
+
+.homecard1:hover .playerimageforhome {
+    opacity: 0.2;
+    /* Reduce opacity when hovered */
+}
+
+.homecardbutton1{
+    position: relative;
+    left:41px;
+    bottom: 355px;
+    width:200px;
+    height:40px;
+    border-radius: 40px;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 25px;
+    background-color: #bd0000;
+    transition: background-color 0.3s, color 0.3s; 
+    z-index: -1;
+}
+
+.homecardbutton1:hover{
+    background-color: white;
+    color:#bd0000;
+}
+/* card2-------------------------------------------------- */
+.homecard2 {
+    padding: 20px;
+    margin-right: 20px;
     border: none;
-    border-radius: 42px;
-    cursor: pointer;
-    font-size: 44px;
-    font-weight: bolder;
-    margin-top: 10px;
-}
-
-/* Style the button on hover */
-.select-button2:hover {
-    background-color: #484848;
-    /* Change background color on hover */
-}
-
-
-.Team-Text {
-    text-align: right;
-    color: white;
+    width: 290px;
+    height: 0px;
+    border-radius: 40px;
+    height: 400px;
+    background-color: #ffffff;
     position: relative;
-    top: -129px;
-    right: 544px;
-    font-size: 92px;
-    font-weight: bolder;
+    bottom: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    transition: transform 0.3s;
 }
 
-
-.Fixture-row {
-    display: flex;
-    padding-top: 60px;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.Fixture-Foto{
+.homecard2 p {
+    font-size: 40px;
     position: relative;
-    left: -6px;
-    top: -100px;
-    width: 104%;
-    box-shadow: rgba(22, 22, 22, 0.7);
+    bottom: 396px;
+    z-index: -1;
+    color: rgb(0, 0, 0);
 }
 
-.fixture-Text {
+.homecard2 p span {
+    position: relative;
+    bottom: 30px;
+    display: block;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    /* Each span on a new line */
+}
+
+.homecard2 p .player-text {
+    font-size: 70px;
+    color: red;
+}
+
+.homecard2:hover {
+    transform: scale(1.05);
+}
+
+.fixtureimageforhome {
+    width: 330px;
+    height: 440px;
+    border-radius: 40px;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    transition: opacity 0.5s;
+}
+
+.homecard2:hover .fixtureimageforhome {
+    opacity: 0.2;
+    /* Reduce opacity when hovered */
+}
+
+.homecardbutton2 {
+    position: relative;
+    left: 41px;
+    bottom: 355px;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 25px;
+    background-color: #bd0000;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: -1;
+}
+
+.homecardbutton2:hover {
+    background-color: white;
+    color: #bd0000;
+}
+
+
+
+/* container 3=-p-------------------------------------- */
+
+.homecard3 {
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    margin-right: 20px;
+    width: 290px;
+    border: none;
+    border-radius: 40px;
+    height: 400px;
+    position: relative;
+    bottom: 100px;
+    transition: transform 0.3s;
+}
+
+.homecard3:hover{
+    transform: scale(1.05);
+}
+
+.teamimageforhome {
+    width: 122%;
+    border-radius: 40px;
+    position: relative;
+    right: 22px;
+    bottom: 20px;
+}
+
+.homecardbutton3 {
+    position: relative;
+    left: 58px;
+    bottom: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 25px;
+    background-color: #bd0000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.homecardbutton3 :hover {
+    background-color: white;
+    color: #bd0000;
+}
+
+/* card 3--------------------------------------------------- */
+
+.homecard3 {
+    padding: 20px;
+    margin-right: 20px;
+    border: none;
+    width: 290px;
+    height: 0px;
+    border-radius: 40px;
+    height: 400px;
+    background-color: #ffffff;
+    position: relative;
+    bottom: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    transition: transform 0.3s;
+}
+
+.homecard3 p {
+    font-size: 40px;
+    position: relative;
+    bottom: 396px;
+    z-index: -1;
+    color: rgb(0, 0, 0);
+}
+
+.homecard3 p span {
+    position: relative;
+    bottom: 30px;
+    display: block;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    /* Each span on a new line */
+}
+
+.homecard3 p .player-text {
+    font-size: 70px;
+    color: red;
+}
+
+.homecard3:hover {
+    transform: scale(1.05);
+}
+
+.teamimageforhome {
+    width: 330px;
+    height: 440px;
+    border-radius: 40px;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    transition: opacity 0.5s;
+}
+
+.homecard3:hover .teamimageforhome {
+    opacity: 0.2;
+    /* Reduce opacity when hovered */
+}
+
+.homecardbutton3 {
+    position: relative;
+    left: 41px;
+    bottom: 355px;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 25px;
+    background-color: #bd0000;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: -1;
+}
+
+.homecardbutton3:hover {
+    background-color: white;
+    color: #bd0000;
+}
+
+
+
+/* container 3=-p-------------------------------------- */
+
+.hometestcontainer3 {
     text-align: center;
-    color: white;
+    padding: 20px;
     position: relative;
-    top: -129px;
-
-    font-size: 92px;
-    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
 }
 
+.hometestcontainer3 p {
+    font-size: 50px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: radial-gradient(circle, #000000, #bd0000);
+    display: inline-block;
+}
 
-.select-button3 {
-    background-color: #DA1C29;
+.fifFixtureCard {
+    margin: 30px auto;
+    border: 10px;
+    width: 1013px;
+    border-radius: 40px;
+    height: 400px;
+    background-color: #000000;
     position: relative;
-
-    width: 920px !important;
-    top: -134px;
-    height: 103px;
-    right: -227px;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 42px;
-    cursor: pointer;
-    font-size: 44px;
-    font-weight: bolder;
-    margin-top: 10px;
+    transition: transform 0.3s;
 }
 
-/* Style the button on hover */
-.select-button2:hover {
-    background-color: #484848;
-    /* Change background color on hover */
+.worldcupimage{
+    width: 1013px;
+    height: 400px;
+    border-radius: 40px;
+    position: relative;
+    opacity: 0.3;
+}
+
+.argentinalogo{
+    width:10%;
+    position: relative;
+    bottom:323px;
+    right: 285px;
+}
+
+.francelogo {
+    width: 10%;
+    position: relative;
+    bottom: 323px;
+    left:285px;
+}
+
+.scoreclass{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    bottom:40px;
+}
+
+.finalheading{
+    font-size: 35px;
+    position: relative;
+    bottom: 565px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    opacity: 0.5;
+
+}
+
+.arScore{
+    font-size: 65px;
+    position: relative;
+    bottom: 440px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    right:60px
+}
+.vs {
+    font-size: 33px;
+    position: relative;
+    bottom: 423px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+.frScore {
+    font-size: 65px;
+    position: relative;
+    bottom: 440px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    left: 60px
+}
+
+.belowtextforfinal{
+    position: relative;
+    bottom: 473px;
+    
+}
+
+.belowtextforfinal p{
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.belowtextforfinal span{
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+/* container 4=-p-------------------------------------- */
+.hometestcontainer4 {
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.long-Card1 {
+    margin: 30px auto;
+    border: 10px;
+    width: 1013px;
+    border-radius: 40px;
+    height: 400px;
+    background-color: #000000;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.barcalogohome {
+    width: 10%;
+    position: relative;
+    bottom: 323px;
+    right: 285px;
+}
+
+.reallogohome {
+    width: 10%;
+    position: relative;
+    bottom: 323px;
+    left: 285px;
+}
+
+/* this is long card section 2---------------------------------- */
+
+.long-card2 {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Adjust card width */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.long-card3 {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Adjust card width */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 
-/* For Scrolling the page */
+
+
+
+
 ::-webkit-scrollbar {
-    width: 12px;
-    background-color: #1e1e1e;
+    width: 5px;
+    /* Width of the scrollbar */
 }
 
+/* Style the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background-color: #c70000;
+    background: #000000;
+    /* Color of the thumb */
     border-radius: 6px;
+    /* Rounded corners for the thumb */
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #888;
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #bd0000;
+    /* Color of the track */
 }
-
-::-webkit-scrollbar-thumb:active {
-    background-color: #444;
-}
-
-
-/* Example CSS for styling the button */
-

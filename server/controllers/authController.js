@@ -9,13 +9,11 @@ const crypto = require("crypto");
 const transporter = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: "sangeethpromodkainikkara@gmail.com", // Your Gmail email address
-    pass: "ijmfzkwwpznyswdt", // Your Gmail password or an app-specific password if you have 2FA enabled
+    user: "process.env.EMAIL_USER", // Your Gmail email address
+    pass: "process.env.EMAIL_PASS", // Your Gmail password or an app-specific password if you have 2FA enabled
   },
 });
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Register a new user
 exports.register = async (req, res) => {
   try {
@@ -54,8 +52,6 @@ exports.register = async (req, res) => {
   }
 };
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Login user
 exports.login = async (req, res) => {
   try {
@@ -74,7 +70,7 @@ exports.login = async (req, res) => {
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
-    // Generate JWT token
+    // Generate JWT token  {fix the env file and make it process.env.JWT_SECRET }
     const token = jwt.sign({ username: user.username }, process.env.JWT_SECRET);
 
     res.json({
@@ -87,8 +83,6 @@ exports.login = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Forgot Password
 exports.forgotPassword = async (req, res) => {
@@ -114,14 +108,21 @@ exports.forgotPassword = async (req, res) => {
     await user.save();
 
     // Send a reset password email with the reset token
-    const resetLink = `http://localhost:3000/reset-password/${process.env.CLIENT_URL}/reset-password?token=${resetToken}`;
+    const baseUrl ='http://localhost:3000'
+
+    
+    const resetLink = `http://localhost:3001/reset-password?token=${resetToken}`;
+
+    const html = ` <h3>Reset Your Password</h3>
+                   <p>Please click the link below to reset your password:</p>
+                   <a href="${resetLink}">${resetLink}</a>`;
 
     // Send the email using your nodemailer transporter
     const mailOptions = {
       from: "your_email@gmail.com",
       to: email,
       subject: "Password Reset",
-      text: `Click the following link to reset your password: ${resetLink}`,
+      html
     };
 
     await transporter.sendMail(mailOptions);
@@ -133,21 +134,21 @@ exports.forgotPassword = async (req, res) => {
   }
 };
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // RESET PASSWORD
 exports.resetPassword = async (req, res) => {
   try {
     const { token, newPassword } = req.body;
 
-    // Find the user by the reset token and check if it's still valid
-    const user = await User.findOne({
-      resetToken: token,
-      resetTokenExpiration: { $gt: Date.now() },
-    });
+    // Find the user by the reset token
+    const user = await User.findOne({ resetToken: token });
 
+    // Check if the user exists and if the token is still valid
     if (!user) {
-      return res.status(401).json({ message: "Invalid or expired token" });
+      return res.status(401).json({ message: "Invalid token" });
+    }
+
+    if (user.resetTokenExpiration < Date.now()) {
+      return res.status(401).json({ message: "Expired token" });
     }
 
     // Update the user's password with the new password (remember to hash it)
@@ -164,3 +165,4 @@ exports.resetPassword = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
+

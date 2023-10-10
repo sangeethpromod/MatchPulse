@@ -10,7 +10,7 @@ function Frontpage() {
   }, []);
     const navigate = useNavigate();
      function loginPage() {
-       navigate("/login");
+       navigate("/users");
      }
      function registerPage() {
        navigate("/signup");

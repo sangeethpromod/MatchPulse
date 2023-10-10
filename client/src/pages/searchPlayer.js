@@ -1,12 +1,20 @@
-import React, { } from "react";
+import React, { useState } from "react";
 import "../css/searchplayer.css";
-import bgimage from "../images/searchplayer.jpg";
-// import { useNavigate } from "react-router-dom";
 
 function SearchPlayer() {
-//   function Home() {
-//     navigate("/homepage");
-//   }
+  // Define state to manage the input value
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Handle input value changes
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+    const handleButtonClick = () => {
+      // Handle the button click event here
+      alert(`Search for: ${searchQuery}`);
+    };
+
   return (
     <div className="main-container">
       <nav className="navbarSearch">
@@ -19,9 +27,28 @@ function SearchPlayer() {
       </nav>
 
       <div className="bg-image">
-        <img src={bgimage} alt="" />
+        <img
+          srcSet="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e4efc5120213369.60ad4457e1a6d.png 600w,https://mir-s3-cdn-cf.behance.net/project_modules/fs/e4efc5120213369.60ad4457e1a6d.png 1920w,https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e4efc5120213369.60ad4457e1a6d.png 1200w,https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e4efc5120213369.60ad4457e1a6d.png 1400w,"
+          alt=""
+        />
       </div>
-      <div>
+
+      {/* Input field */}
+      <div className="search-input-container">
+        <input
+          type="text"
+          placeholder="ENTER PLAYER NAME"
+          value={searchQuery}
+          onChange={handleInputChange}
+          className="search-input"
+        />
+        <button
+          type="button"
+          className="search-button"
+          onClick={handleButtonClick}
+        >
+          Search
+        </button>
       </div>
     </div>
   );
