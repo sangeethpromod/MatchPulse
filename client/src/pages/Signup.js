@@ -37,7 +37,7 @@ const Signup = () => {
           text: "You have successfully registered.",
         });
 
-        navigate("/login");
+        navigate("/users");
       }
     } catch (error) {
       console.error(error);

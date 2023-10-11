@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../css/Gekomach\ Regular.otf') format('opentype'),
+        url('../css/Gekomach\ Regular.ttf') format('truetype');
+    /* Add more src lines for additional font formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}

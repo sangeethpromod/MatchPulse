@@ -18,7 +18,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       // Send a POST request to your backend login route
-      const response = await axios.post("http://localhost:3000/auth/login", {
+      const response = await axios.post("http://localhost:3000/auth/tokens", {
         username,
         password,
       });
