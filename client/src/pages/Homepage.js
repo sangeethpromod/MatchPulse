@@ -9,18 +9,16 @@ import argentinalogo from "../images/fixtures/argentina logo.png";
 import francelogo from "../images/fixtures/france.png";
 import barcalogo from "../images/fixtures/barcalogo.png";
 import reallogo from "../images/fixtures/realmadrid.png";
+import acMilan from "../images/fixtures/acmilan.png";
+import interMilan from "../images/fixtures/intermilan.png";
+import mancity from "../images/fixtures/mancity.png";
+import manutd from "../images/fixtures/manUtd.png";
+import newsposter from "../images/mnposter.jpg"
+import news1 from "../images/fixtures/hazard.jpg"
 
 const HomePage = () => {
 
-    const [isHovered, setIsHovered] = useState(false);
 
-    const handleMouseEnter = () => {
-      setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-      setIsHovered(false);
-    };
   return (
     <div>
       <div className="homepage-container">
@@ -108,30 +106,83 @@ const HomePage = () => {
         {/*----------------card 2 ------------------------------------------- */}
 
         <div className="hometestcontainer4">
+          <p>JUST AROUND THE CORNER!</p>
+
+          {/*          LONG CARD 1                                   */}
           <div className="long-card1">
-            <img className="barcalogohome" src={barcalogo} />
-            <img className="reallogohome" src={reallogo} />
-            <div className="longscoreclass">
-              <h1 className="barcaScore">3</h1>
-              <h1 className="brvs">V/s</h1>
-              <h1 className="realScore">3</h1>
+            <div className="long-card1-photos">
+              <img className="barcalogohome" src={barcalogo} />
+              <img className="reallogohome" src={reallogo} />
+            </div>
+            <div className="card1center-text">
+              <p>
+                <span className="c1L1">OCTOBER 29, 2023 </span>
+                <br />
+                <span className="c1L2"> SPOTIFY CAMP NOU</span>
+              </p>
             </div>
           </div>
 
-
-
+          {/*          LONG CARD 2                                   */}
           <div className="long-card2">
-            <div className="card-image left">Image Left</div>
-            <div className="card-text">Card Text</div>
-            <div className="card-image right">Image Right</div>
+            <div className="long-car21-photos">
+              <img className="intermilanlogohome" src={interMilan} />
+              <img className="acmilanlogohome" src={acMilan} />
+            </div>
+            <div className="card2center-text">
+              <p>
+                <span className="c2L1">APRIL 21, 2024 </span>
+                <br />
+                <span className="c2L2"> SAN SIRO</span>
+              </p>
+            </div>
           </div>
-          <div className="long-car3">
-            <div className="card-image left">Image Left</div>
-            <div className="card-text">Card Text</div>
-            <div className="card-image right">Image Right</div>
+
+          {/*          LONG CARD 3                                   */}
+          <div className="long-card3">
+            <div className="long-card3-photos">
+              <img className="manutdlogohome" src={manutd} />
+              <img className="mancitylogohome" src={mancity} />
+            </div>
+            <div className="card3center-text">
+              <p>
+                <span className="c3L1">OCTOBER 29,2024 </span>
+                <br />
+                <span className="c3L2"> OLD TRAFFORD</span>
+              </p>
+            </div>
           </div>
-          {/* Repeat the long cards as needed */}
         </div>
+        {/*          CONTAINER 5                                   */}
+        <div className="hometestcontainer5">
+          <div className="corosel-bg">
+            <img className="newsposter" src={newsposter} />
+
+            <div className="newscards">
+              <div className="newscard1">
+                <img className="newsimage1" src={news1} />
+                <div className="insidenews-card1">
+                  <h1>EDEN HAZARD RETIRES!</h1>
+                  <p>
+                    Eden Hazard announced his retirement from football. The
+                    32-year-old has been a free agent since leaving Real Madrid
+                    in June.
+                  </p>
+                  <a
+                    href="https://onefootball.com/en/news/why-eden-hazard-failed-at-real-madrid-38370394"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="newscard1-button">CLICK TO GO</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/*          CONTAINER 5                                   */}
+        <div className="homefooter"></div>
       </div>
     </div>
   );
