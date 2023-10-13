@@ -1,103 +1,81 @@
-import React, { useState } from "react";
-import "../css/leauge.css"; // Main CSS file for the layout
-import card1Image from "../images/campnow.jpg"; 
-import card2Image from "../images/premireleauge.jpg"; 
-import card3Image from "../images/peakpx.jpg"; 
-import card4Image from "../images/germany.jpg"; 
-import card5Image from "../images/monaco.jpg"; 
-import laliga from "../images/laliga-logo.png"
-import prem from "../images/prem.png";
-import seriea from "../images/SERIEA.png";
-import bundesliga from "../images/bundesliga.png";
-import ligue1 from "../images/ligue1.png";
+import React from "react";
+import "../css/leauge.css";
+import son from "../images/leauge/son.png"
 
-
-const League = () => {
-  const [focusedCard, setFocusedCard] = useState(null);
-
-  const handleCardFocus = (cardNumber) => {
-    setFocusedCard(cardNumber);
-  };
-
-  const backgroundImageStyle = {
-    backgroundImage: `url(${
-      focusedCard === 1
-        ? card1Image
-        : focusedCard === 2
-        ? card2Image
-        : focusedCard === 3
-        ? card3Image
-        : focusedCard === 4
-        ? card4Image
-        : focusedCard === 5
-        ? card5Image
-        : "../images/liverpool.jpg"
-    })`, // Set background image dynamically
-  };
-
-
+function Leauge() {
   return (
-    <div className="league-container" style={backgroundImageStyle}>
-      <nav className="leaugenavbar">
-        <div className="leaugenavbar-content">MATCH PULSE</div>
-        <ul className="leaugenavbar-links">
+    <div className="leaugepage-Container">
+      <nav className="leauge-navbar">
+        <div className="leauge-left-logo">
+          <a href="/">MATCH PULSE</a>
+        </div>
+        <ul className="leauge-righthome-menu">
           <li>
-            <a href="#">HOME</a>
+            <a href="/">HOME</a>
           </li>
           <li>
-            <a href="#">PLAYERS</a>
+            <a href="">ABOUT</a>
           </li>
           <li>
-            <a href="#">ABOUT</a>
+            <a href="/leauge">PLAYERS</a>
           </li>
           <li>
-            <a href="#">CONTACT</a>
+            <a href="/contact">CONTACT</a>
+          </li>
+          <li>
+            <a href="/signout">SIGNOUT</a>
           </li>
         </ul>
       </nav>
-
-      <div className="leaguecontainer-1">
-        <div
-          className={`card card-1 ${focusedCard === 1 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(1)}
-        >
-          <img className="card1img" src={laliga} alt="Card 1" />
-          <button className="card1button">LA LIGA</button>
+      <div className="leauge-container-1">
+        <div className="leauge-container-1-left">
+          <h1>
+            I want to play <br />
+            <span class="red-text"> football</span> until my <br />
+            <span class="red-text"> body</span> says, " You can't run anymore
+            you're
+            <span class="red-text"> dead.</span>"
+          </h1>
         </div>
-        <div
-          className={`card card-2 ${focusedCard === 2 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(2)}
-        >
-          <img className="card2img" src={prem} alt="Card 2" />
-          <button className="card2button">PREMIRE LEAUGE</button>
-        </div>
-        <div
-          className={`card card-3 ${focusedCard === 3 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(3)}
-        >
-          <img className="card3img" src={seriea} alt="Card 3" />
-          <button className="card3button">SERIE A</button>
+        <div className="leauge-container-1-right">
+          <img className="leauge-art-image" src={son} />
         </div>
       </div>
 
-      <div className="leaguecontainer-2">
-        <div
-          className={`card card-4 ${focusedCard === 4 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(4)}
-        >
-          <img className="card4img" src={bundesliga} alt="Card 4" />
-          <button className="card4button">BUNDESLIGA</button>
+      {/* Leauge container 2 starts here-------------------- */}
+      <div className="leauge-container-2">
+        <div className="leauge-container-2-heading">
+          // <h1>SELECT YOUR LEAUGE!</h1>
         </div>
-        <div
-          className={`card card-5 ${focusedCard === 5 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(5)}
-        >
-          <img className="card5img" src={ligue1} alt="Card 5" />
-          <button className="card5button">LIGUE 1</button>
+        <div className="leauge-cards">
+          {/* Leauge card 1 starts here-------------------- */}
+          <div className="leauge-card-1">
+            <h1>CARD 1</h1>
+          </div>
+          {/* Leauge card 2 starts here-------------------- */}
+          <div className="leauge-card-2">
+            <h1>CARD 2</h1>
+          </div>
+
+          {/* Leauge card 3 starts here-------------------- */}
+          <div className="leauge-card-3">
+            <h1>CARD </h1>
+          </div>
+          {/* Leauge card 4 starts here-------------------- */}
+          <div className="leauge-card-4">
+            <h1>CARD </h1>
+          </div>
+          {/* Leauge card 5 starts here-------------------- */}
+          <div className="leauge-card-5">
+            <h1>CARD </h1>
+          </div>
         </div>
+      </div>
+      {/* footer-------------------- */}
+      <div className="leauge-footer">
       </div>
     </div>
   );
-};
+}
 
-export default League;
+export default Leauge

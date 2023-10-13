@@ -1,236 +1,191 @@
-/* League.css */
-.league-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #131313;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.leaugenavbar {
-    display: flex;
-    align-items: center;
-    background-color: black;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.leaugepage-Container {
+    background-color: #0e0e0e;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.leauge-navbar {
+    background-color: rgb(0, 0, 0);
     color: white;
-    padding: 10px 0;
     width: 100%;
+    display: flex;
+    text-decoration: none;
     justify-content: space-between;
-    padding-right:25px;
-}
-.leaugenavbar-content {
-    font-size: 25px;
-    font-weight: bolder;
-    padding-left: 30px;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    z-index: 999;
+    left: 0;
 }
 
-.leaugenavbar-links {
+.leauge-left-logo {
+    font-size: 24px;
+    padding-left: 20px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.leauge-righthome-menu {
     list-style: none;
     display: flex;
+    padding-right: 20px;
     gap: 20px;
-    /* Adjust the gap between links as needed */
 }
 
-.leaugenavbar-links li a {
+.leauge-navbar a {
     text-decoration: none;
     color: white;
-    /* Set your desired link text color */
+    transition: color 0.3s;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
-.leaugenavbar-links li a:hover {
-    color: #c60000;
-    /* Add underline on hover if desired */
+.leauge-navbar a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.leauge-righthome-menu li {
+    margin-right: 20px;
 }
 
 
 
-
-.leaguecontainer-1 {
+/* ------------------------------------------Container 1 starts here */
+.leauge-container-1{
+    margin-top: 57px;
     display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin-top: 20px;
+    justify-content: center;
+    height: 569px;
 }
 
-.leaguecontainer-2 {
+.leauge-container-1-left{
+    flex-basis: 50%;
+}
+
+.leauge-container-1-left h1{
+    position: relative;
+    left: 55px;
+    top:131px;
+    color: #ffffff;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 50px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 73px;
+}
+
+.red-text{
+    color: #bd0000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.leauge-container-1-right{
+    flex-basis: 50%;
+}
+
+.leauge-art-image{
+    position: relative;
+    top: 20px;
+    left: 209px;
+    width:410px;
+    height: 516px;
+}
+
+/* ------------------------------------------Container 2 starts here */
+
+.leauge-container-2{
+    height: 2500px;
+}
+
+.leauge-container-2-heading{
+    margin-top: 70px;
     display: flex;
-    justify-content: space-around;
-    width: 50%;
-    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 20p;
 }
+.leauge-container-2-heading h1{
+    color:#ffffff;
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 
-.card {
-    width: 200px;
-    height: 300px;
-    border-radius: 40px;
+}
+.leauge-cards{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.9s, transform 0.5s;
 }
 
-.card:hover{
-        transform: scale(1.05);
-}
-
-.card-1 {
-    background-color: rgba(48, 48, 48, 0.847);
-}
-
-.card1img {
-    width: 90%;
-    max-height: 100%;
-    position: relative;
-
-}
-
-.card1button {
-    background-color: #c60000;
-    color: white;
-    width: 90%;
-    position: relative;
-    top:45px;
+.leauge-card-1{
+    position: sticky;
+    display: inline-block;
+    background-color: #252525;
+    width: 1000px;
+    margin-bottom: 80px;
+    margin-top: 100px;
     border-radius: 40px;
-    height: 44px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+    height: 400px;
+    top:100px;
 }
 
-.card1button:hover {
-    background-color: #000000;
-}
-/* card 2................................................. */
-
-.card-2 {
-    background-color: rgba(48, 48, 48, 0.847);
-}
-
-.card2img {
-    width: 100%;
-    max-height: 100%;
-    position: relative;
-
-}
-
-.card2button {
-    background-color: #3D195B;
+.leauge-card-1 h1 {
     color: white;
-    width: 90%;
-    position: relative;
-    top: 42px;
+}
+
+.leauge-card-2 {
+    position: sticky;
+    background-color: #ffffff;
+    width: 1000px;
     border-radius: 40px;
-    height: 44px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+    height: 400px;
+    margin-bottom: 80px;
+    top:120px;
 }
 
-.card2button:hover {
-    background-color: #000000;
-}
-
-/* card 3................................................. */
-
-.card-3 {
-    background-color: rgba(48, 48, 48, 0.847);
-}
-
-.card3img {
-    width: 70%;
-    max-height: 100%;
-    position: relative;
-    bottom:-6px;
-
-}
-
-.card3button {
-    background-color: #008fd7;
-    color: white;
-    width: 90%;
-    position: relative;
-    top: 34px;
+.leauge-card-3 {
+    position: sticky;
+    background-color: #ff0000;
+    width: 1000px;
+    margin-bottom: 80px;
     border-radius: 40px;
-    height: 44px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+    height: 400px;
+    top:140px;
 }
 
-.card3button:hover {
-    background-color: #000000;
-}
-
-/* card 4................................................. */
-
-.card-4 {
-    background-color: rgba(48, 48, 48, 0.847);
-}
-
-.card4img {
-    width: 70%;
-    max-height: 100%;
-    position: relative;
-    bottom: -6px;
-
-}
-
-.card4button {
-    background-color: #c60000;
-    color: white;
-    width: 90%;
-    position: relative;
-    top: 34px;
+.leauge-card-4 {
+    position: sticky;
+    background-color: #00ff00;
+    width: 1000px;
+    margin-bottom: 80px;
     border-radius: 40px;
-    height: 44px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+    height: 400px;
+    top: 160px;
 }
-
-.card4button:hover {
-    background-color: #000000;
-}
-/* card 5................................................. */
-
-.card-5 {
-    background-color: rgba(48, 48, 48, 0.847);
-}
-
-.card5img {
-    width: 50%;
-    max-height: 100%;
+.leauge-card-5 {
     position: relative;
-    bottom: -6px;
-
-}
-
-.card5button {
-    background-color: #12233f;
-    color: white;
-    width: 90%;
-    position: relative;
-    top: 34px;
+    background-color: #ffd000;
+    width: 1000px;
     border-radius: 40px;
-    height: 44px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+    height: 400px;
+    bottom: 140px;    
 }
 
-.card5button:hover {
-    background-color: #000000;
+.leauge-footer{
+    height: 500px;
+    background-color: #bd0000;
+    
 }
-
-/* .card:hover {
-    background-color: #e0e0e0;
-}
-
-.focused {
-    background-color: #007bff;
-    color: white;
-} */
