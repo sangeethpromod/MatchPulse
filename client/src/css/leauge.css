@@ -90,6 +90,8 @@ body {
     color: #bd0000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
     letter-spacing: 3px;
+    font-size: 55px;
+    
 }
 
 
@@ -103,12 +105,14 @@ body {
     left: 209px;
     width:410px;
     height: 516px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
 /* ------------------------------------------Container 2 starts here */
 
 .leauge-container-2{
     height: 2500px;
+    
 }
 
 .leauge-container-2-heading{
@@ -132,7 +136,7 @@ body {
 
 .leauge-card-1{
     position: sticky;
-    display: inline-block;
+    display: flex;
     background-color: #252525;
     width: 1000px;
     margin-bottom: 80px;
@@ -140,54 +144,364 @@ body {
     border-radius: 40px;
     height: 400px;
     top:100px;
+    box-shadow: 10px 10px 15px #020202, -10px -10px 15px #161616;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
-.leauge-card-1 h1 {
-    color: white;
+.leauge-card-1:hover {
+    box-shadow: 5px 5px 10px #020202, -5px -5px 10px #161616;
+    transform: scale(0.98);
 }
+
+.leauge-card-1-logo{
+    position: relative;
+    width: 395px;
+    top: 30px;
+    right: 59px;
+    height: 305px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+}
+
+.leauge-card-1-logo:hover {
+    filter: drop-shadow(5px 5px 10px rgba(155, 0, 0, 0.4));
+}
+
+.leauge-card-1 h1{
+    position: relative;
+    font-size: 90px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    top: 100px;
+    left:225px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.leauge-card-1 h1:hover{
+    color:#ffffff
+}
+
+/* card 2 starts here--------------------------- */
 
 .leauge-card-2 {
     position: sticky;
-    background-color: #ffffff;
+    display: flex;
+    background-color: #252525;
     width: 1000px;
     border-radius: 40px;
     height: 400px;
     margin-bottom: 80px;
     top:120px;
+    box-shadow: 10px 10px 15px #020202, -10px -10px 15px #161616;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
 }
+
+.leauge-card-2:hover {
+    box-shadow: 5px 5px 10px #020202, -5px -5px 10px #161616;
+    transform: scale(0.98);
+}
+
+.leauge-card-2-logo {
+    position: relative;
+    width: 270px;
+    top: 88px;
+    left: 40px;
+    height: 206px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    transition: fitter 0.3s ease;
+}
+.leauge-card-2-logo:hover{
+    filter: drop-shadow(5px 5px 10px rgba(155, 0, 0, 0.4));
+}
+
+.leauge-card-2 h1 {
+    position: relative;
+    font-size: 90px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    text-align: right;
+    top: 100px;
+    left: 220px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.leauge-card-2 h1:hover {
+    color: #ffffff
+}
+
+
+/* card 3 starts here--------------------------- */
 
 .leauge-card-3 {
     position: sticky;
-    background-color: #ff0000;
+    display: flex;
+    background-color: #252525;
     width: 1000px;
     margin-bottom: 80px;
     border-radius: 40px;
     height: 400px;
     top:140px;
+    box-shadow: 10px 10px 15px #020202, -10px -10px 15px #161616;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
 }
+
+.leauge-card-3:hover {
+    box-shadow: 5px 5px 10px #020202, -5px -5px 10px #161616;
+    transform: scale(0.98);
+}
+
+.leauge-card-3-logo {
+    position: relative;
+    width: 270px;
+    top: 88px;
+    left: 40px;
+    height: 248px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    transition: fitter 0.3s ease;
+}
+
+.leauge-card-3-logo:hover {
+    filter: drop-shadow(5px 5px 10px rgba(155, 0, 0, 0.4));
+}
+
+.leauge-card-3 h1 {
+    position: relative;
+    font-size: 90px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    text-align: right;
+    top: 100px;
+    left: 368px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.leauge-card-3 h1:hover {
+    color: #ffffff
+}
+
+/* card 4 starts here-------------------------------- */
 
 .leauge-card-4 {
     position: sticky;
-    background-color: #00ff00;
+    display: flex;
+    background-color: #252525;
     width: 1000px;
     margin-bottom: 80px;
     border-radius: 40px;
     height: 400px;
     top: 160px;
-}
-.leauge-card-5 {
-    position: sticky;
-        background-color: #0011ff;
-        width: 1000px;
-        margin-bottom: 80px;
-        border-radius: 40px;
-        height: 400px;
-        top: 160px;
+    box-shadow: 10px 10px 15px #020202, -10px -10px 15px #161616;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
-.leauge-footer{
+.leauge-card-4:hover {
+    box-shadow: 5px 5px 10px #020202, -5px -5px 10px #161616;
+    transform: scale(0.98);
+}
+
+.leauge-card-4-logo {
+    position: relative;
+    width: 300px;
+    top: 88px;
+    left: 26px;
+    height: 236px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    transition: fitter 0.3s ease;
+}
+
+.leauge-card-4-logo:hover {
+    filter: drop-shadow(5px 5px 10px rgba(155, 0, 0, 0.4));
+}
+
+.leauge-card-4 h1 {
+    position: relative;
+    font-size: 90px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color:#bd0000;
+    text-align: right;
+    top: 150px;
+    left: 151px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.leauge-card-4 h1:hover {
+    color: #ffffff
+}
+
+
+/* card 5 starts here-------------------------------- */
+.leauge-card-5 {
+    position: sticky;
+    display: flex;
+    background-color: #252525;
+    width: 1000px;
+    margin-bottom: 80px;
+    border-radius: 40px;
+    height: 400px;
+    box-shadow: 10px 10px 15px #020202, -10px -10px 15px #161616;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+.leauge-card-5:hover {
+    box-shadow: 5px 5px 10px #020202, -5px -5px 10px #161616;
+    transform: scale(0.98);
+}
+
+.leauge-card-5-logo {
+    position: relative;
+    width: 406px;
+    top: 32px;
+    right: 40px;
+    height: 364px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    transition: fitter 0.3s ease;
+}
+
+.leauge-card-5-logo:hover {
+    filter: drop-shadow(5px 5px 10px rgba(188, 8, 8, 0.4));
+}
+
+.leauge-card-5 h1 {
+    position: relative;
+    font-size: 90px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    text-align: right;
+    top: 100px;
+    left: 88px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.leauge-card-5 h1:hover {
+    color: #ffffff
+}
+
+/* This is leauge container 3----------------------- */
+.leauge-container-3{
+    text-align: center;
     margin-top: 60px;
-    height: 1000px;
-    background-color: #bd0000;
+    height: 500px;
     
 }
+
+.big-image-leauge{
+    display: inline-block;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.leauge-container-3 h1{
+    position: relative;
+    bottom: 320px;
+    letter-spacing: 5px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 90px;
+    color:#ffffff
+}
+
+.leauge-text{
+    color: #bd0000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+/* ----------------------------------------------Footer */
+.leaugefooter {
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.leauge-footerTextclass {
+    top:50px;
+    display: flex;
+    color: #ffffff;
+    position: relative;
+    font-size: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.leauge-madeby  {
+    position: relative;
+    display: flex;
+    top:80px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5px;
+    z-index: 0;
+}
+
+.leauge-madeby p{
+    position: relative;
+    top:10px;
+    font-size: 10px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.leauge-faboutusclass h1 {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    letter-spacing: 3px;
+}
+
+.leauge-faboutusclass a {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.leauge-faboutusclass a:hover {
+    color: #bd0000;
+}
+
+
+.leauge-flegalclass h1 {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    letter-spacing: 3px;
+}
+
+.leauge-flegalclass a {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.leauge-flegalclass a:hover {
+    color: #bd0000;
+}
+
+
+.leauge-fsupportclass h1 {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    letter-spacing: 3px;
+}
+
+.leauge-fsupportclass a {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.leauge-fsupportclass a:hover {
+    color: #bd0000;
+}
+
