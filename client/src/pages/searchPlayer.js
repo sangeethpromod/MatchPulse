@@ -1,54 +1,105 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/searchplayer.css";
+import addidasad from "../images/leauge/1591331433.mp4"
+// import { useNavigate } from "react-router-dom";
 
 function SearchPlayer() {
-  // Define state to manage the input value
-  const [searchQuery, setSearchQuery] = useState("");
+  // const navigate = useNavigate();
 
-  // Handle input value changes
-  const handleInputChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
+   // const handleCard1Click = () => {
+  //   navigate("/searchplayer");
+  // };
 
-    const handleButtonClick = () => {
-      // Handle the button click event here
-      alert(`Search for: ${searchQuery}`);
-    };
 
   return (
-    <div className="main-container">
-      <nav className="navbarSearch">
-        <div className="navbar-brandSearch">MATCH PULSE</div>
-        <ul className="nav-linksSearch">
-          <li className="nav-linkSearch">HOME</li>
-          <li className="nav-linkSearch">ABOUT</li>
-          <li className="nav-linkSearch">CONTACT</li>
+    <div className="searchpage-Container">
+      <nav className="search-navbar">
+        <div className="search-left-logo">
+          <a href="/">MATCH PULSE</a>
+        </div>
+        <ul className="search-righthome-menu">
+          <li>
+            <a href="/">HOME</a>
+          </li>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+          <li>
+            <a href="/searchplayer">PLAYERS</a>
+          </li>
+          <li>
+            <a href="/contact">CONTACT</a>
+          </li>
+          <li>
+            <a href="/signout">SIGNOUT</a>
+          </li>
         </ul>
       </nav>
 
-      <div className="bg-image">
-        <img
-          srcSet="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e4efc5120213369.60ad4457e1a6d.png 600w,https://mir-s3-cdn-cf.behance.net/project_modules/fs/e4efc5120213369.60ad4457e1a6d.png 1920w,https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e4efc5120213369.60ad4457e1a6d.png 1200w,https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e4efc5120213369.60ad4457e1a6d.png 1400w,"
-          alt=""
-        />
+      {/* conainter 1--------------------------------------------------- */}
+      <div className="search-container-1">
+        <div className="search-card-1">
+          <div className="search-card-content">
+            <div className="search-card-left">
+            <h1>SEARCH YOUR  <br />FAVOURITE PLAYER</h1>
+              <form>
+                <input className="search-bar-searchpage" type="text" placeholder="ENTER PLAYER NAME" />
+                <button className="searchpage-button" type="submit">SEARCH</button>
+              </form>
+            </div>
+            <div className="center-line"></div>
+            <div className="search-card-right">
+              <video className="right-side-video" id="son" autoPlay loop muted>
+                <source src={addidasad} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Input field */}
-      <div className="search-input-container">
-        <input
-          type="text"
-          placeholder="ENTER PLAYER NAME"
-          value={searchQuery}
-          onChange={handleInputChange}
-          className="search-input"
-        />
-        <button
-          type="button"
-          className="search-button"
-          onClick={handleButtonClick}
-        >
-          Search
-        </button>
+      {/* footer-------------------- */}
+      <div className="leaugefooter">
+        <div className="leauge-footerTextclass">
+          <div className="leauge-faboutusclass">
+            <h1 className="leauge-faboutus"> ABOUT US</h1>
+            <p>
+              <a href="https://www.instagram.com">Instagram</a>
+              <br />
+              <a href="https://www.facebook.com">Facebook</a>
+              <br />
+              <a href="https://www.linkedin.com">LinkedIn</a>
+            </p>
+          </div>
+          <div className="leauge-flegalclass">
+            <h1 className="flegal"> LEGAL</h1>
+            <p>
+              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
+                TERMS OF SERVICE
+              </a>
+              <br />
+              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
+                TERMS OF USE
+              </a>
+              <br />
+              <a href="https://www.linkedin.com">POLICY</a>
+            </p>
+          </div>
+          <div className="leauge-fsupportclass">
+            <h1 className="flegal"> SUPPORT</h1>
+            <p>
+              <a href="https://www.instagram.com">FAQ</a>
+              <br />
+              <a href="https://www.facebook.com">Help Desk</a>
+            </p>
+          </div>
+        </div>
+        <div className="leauge-madeby">
+          <p>
+            &copy; {new Date().getFullYear()} Sangeeth Promod. All rights
+            reserved.
+          </p>
+        </div>
       </div>
     </div>
   );

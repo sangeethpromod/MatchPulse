@@ -1,103 +1,174 @@
-import React, { useState } from "react";
-import "../css/leauge.css"; // Main CSS file for the layout
-import card1Image from "../images/campnow.jpg"; 
-import card2Image from "../images/premireleauge.jpg"; 
-import card3Image from "../images/peakpx.jpg"; 
-import card4Image from "../images/germany.jpg"; 
-import card5Image from "../images/monaco.jpg"; 
-import laliga from "../images/laliga-logo.png"
-import prem from "../images/prem.png";
-import seriea from "../images/SERIEA.png";
-import bundesliga from "../images/bundesliga.png";
-import ligue1 from "../images/ligue1.png";
+import React from "react";
+import "../css/leauge.css";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import son from "../images/leauge/1669864315.mp4"
+import bigimage from "../images/leauge/leaugepo.png";
+import premireLeaugeLogo from "../images/leauge/premB-removebg-preview.png";
+import laLigaLogo from "../images/leauge/laligabw.png"
+import serieLogo from "../images/leauge/seire a.png"
+import bundesligaLogo from "../images/leauge/bundesbw-removebg-preview.png"
+import ligue1Logo from "../images/leauge/l-removebg-preview.png";
 
+function Leauge() {
 
-const League = () => {
-  const [focusedCard, setFocusedCard] = useState(null);
+    const navigate = useNavigate();
 
-  const handleCardFocus = (cardNumber) => {
-    setFocusedCard(cardNumber);
-  };
+    const handleCard1Click = () => {
+      navigate("/searchplayer");
+    };
 
-  const backgroundImageStyle = {
-    backgroundImage: `url(${
-      focusedCard === 1
-        ? card1Image
-        : focusedCard === 2
-        ? card2Image
-        : focusedCard === 3
-        ? card3Image
-        : focusedCard === 4
-        ? card4Image
-        : focusedCard === 5
-        ? card5Image
-        : "../images/liverpool.jpg"
-    })`, // Set background image dynamically
-  };
+    const handleCard2Click = () => {
+      navigate("/searchplayer");
+    };
+
+    const handleCard3Click = () => {
+      navigate("/searchplayer");
+    };
+    
+    const handleCard4Click = () => {
+      navigate("/searchplayer");
+    };
+
+    const handleCard5Click = () => {
+      navigate("/searchplayer");
+    };
 
 
   return (
-    <div className="league-container" style={backgroundImageStyle}>
-      <nav className="leaugenavbar">
-        <div className="leaugenavbar-content">MATCH PULSE</div>
-        <ul className="leaugenavbar-links">
+    <div className="leaugepage-Container">
+      <nav className="leauge-navbar">
+        <div className="leauge-left-logo">
+          <a href="/">MATCH PULSE</a>
+        </div>
+        <ul className="leauge-righthome-menu">
           <li>
-            <a href="#">HOME</a>
+            <a href="/">HOME</a>
           </li>
           <li>
-            <a href="#">PLAYERS</a>
+            <a href="">ABOUT</a>
           </li>
           <li>
-            <a href="#">ABOUT</a>
+            <a href="/searchplayer">PLAYERS</a>
           </li>
           <li>
-            <a href="#">CONTACT</a>
+            <a href="/contact">CONTACT</a>
+          </li>
+          <li>
+            <a href="/signout">SIGNOUT</a>
           </li>
         </ul>
       </nav>
-
-      <div className="leaguecontainer-1">
-        <div
-          className={`card card-1 ${focusedCard === 1 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(1)}
-        >
-          <img className="card1img" src={laliga} alt="Card 1" />
-          <button className="card1button">LA LIGA</button>
+      <div className="leauge-container-1">
+        <div className="leauge-container-1-left">
+          <h1>
+            I want to play <br />
+            <span class="red-text"> FOOTBALL</span> until my <br />
+            <span class="red-text"> BODY</span> says, " You can't run anymore
+            you're
+            <span class="red-text"> DEAD</span>."
+          </h1>
         </div>
-        <div
-          className={`card card-2 ${focusedCard === 2 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(2)}
-        >
-          <img className="card2img" src={prem} alt="Card 2" />
-          <button className="card2button">PREMIRE LEAUGE</button>
-        </div>
-        <div
-          className={`card card-3 ${focusedCard === 3 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(3)}
-        >
-          <img className="card3img" src={seriea} alt="Card 3" />
-          <button className="card3button">SERIE A</button>
+        <div className="leauge-container-1-right">
+          <video className="leauge-art-image" id="son" autoPlay loop muted>
+            <source src={son} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 
-      <div className="leaguecontainer-2">
-        <div
-          className={`card card-4 ${focusedCard === 4 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(4)}
-        >
-          <img className="card4img" src={bundesliga} alt="Card 4" />
-          <button className="card4button">BUNDESLIGA</button>
+      {/* Leauge container 2 starts here-------------------- */}
+      <div className="leauge-container-2">
+        <div className="leauge-container-2-heading">
+          // <h1>SELECT YOUR LEAUGE!</h1>
         </div>
-        <div
-          className={`card card-5 ${focusedCard === 5 ? "focused" : ""}`}
-          onClick={() => handleCardFocus(5)}
-        >
-          <img className="card5img" src={ligue1} alt="Card 5" />
-          <button className="card5button">LIGUE 1</button>
+        <div className="leauge-cards">
+          {/* Leauge card 1 starts here-------------------- */}
+          <div className="leauge-card-1" onClick={handleCard1Click}>
+            <img className="leauge-card-1-logo" src={premireLeaugeLogo} />
+            <h1>PREMIRE LEAUGE</h1>
+          </div>
+          {/* Leauge card 2 starts here-------------------- */}
+          <div className="leauge-card-2" onClick={handleCard2Click}>
+            <img className="leauge-card-2-logo" src={laLigaLogo} />
+            <h1>
+              LA LIGA <br /> EA SPORTS
+            </h1>
+          </div>
+
+          {/* Leauge card 3 starts here-------------------- */}
+          <div className="leauge-card-3" onClick={handleCard3Click}>
+            <img className="leauge-card-3-logo" src={serieLogo} />
+            <h1>
+              SERIE A <br /> TIM
+            </h1>
+          </div>
+          {/* Leauge card 4 starts here-------------------- */}
+          <div className="leauge-card-4" onClick={handleCard4Click}>
+            <img className="leauge-card-4-logo" src={bundesligaLogo} />
+            <h1>BUNDESLIGA</h1>
+          </div>
+          {/* Leauge card 5 starts here-------------------- */}
+          <div className="leauge-card-5" onClick={handleCard5Click}>
+            <img className="leauge-card-5-logo" src={ligue1Logo} />
+            <h1>
+              UBER EATS <br /> LIGUE 1
+            </h1>
+          </div>
+        </div>
+      </div>
+      {/* container3-------------------- */}
+      <div className="leauge-container-3">
+        <img className="big-image-leauge" src={bigimage} />
+        <h1>
+          MORE <span class="leauge-text">LEAUGES</span> COMING SOON!
+        </h1>
+      </div>
+      {/* footer-------------------- */}
+      <div className="leaugefooter">
+        <div className="leauge-footerTextclass">
+          <div className="leauge-faboutusclass">
+            <h1 className="leauge-faboutus"> ABOUT US</h1>
+            <p>
+              <a href="https://www.instagram.com">Instagram</a>
+              <br />
+              <a href="https://www.facebook.com">Facebook</a>
+              <br />
+              <a href="https://www.linkedin.com">LinkedIn</a>
+            </p>
+          </div>
+          <div className="leauge-flegalclass">
+            <h1 className="flegal"> LEGAL</h1>
+            <p>
+              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
+                TERMS OF SERVICE
+              </a>
+              <br />
+              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
+                TERMS OF USE
+              </a>
+              <br />
+              <a href="https://www.linkedin.com">POLICY</a>
+            </p>
+          </div>
+          <div className="leauge-fsupportclass">
+            <h1 className="flegal"> SUPPORT</h1>
+            <p>
+              <a href="https://www.instagram.com">FAQ</a>
+              <br />
+              <a href="https://www.facebook.com">Help Desk</a>
+            </p>
+          </div>
+        </div>
+        <div className="leauge-madeby">
+          <p>
+            &copy; {new Date().getFullYear()} Sangeeth Promod. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default League;
+export default Leauge

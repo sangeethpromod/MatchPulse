@@ -259,7 +259,7 @@ const HomePage = () => {
         </div>
 
         {/*          CONTAINER 5                                   */}
-        <div className="homefooter"></div>
+      <div className="homefooter"></div>
         <div className="footerTextclass">
           <div className="faboutusclass">
             <h1 className="faboutus"> ABOUT US</h1>

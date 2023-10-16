@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.searchpage-Container {
+    background-color: #0e0e0e;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.search-navbar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    z-index: 999;
+    left: 0;
+}
+
+.search-left-logo {
+    font-size: 24px;
+    padding-left: 20px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.search-righthome-menu {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    gap: 20px;
+}
+
+.search-navbar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.search-navbar a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.search-righthome-menu li {
+    margin-right: 20px;
+}
+
+/* ----------------------------------------------Card */
+.search-container-1 {
+    height: 740px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.search-card-1 {
+    display: inline-block;
+    position: relative;
+    top: 140px;
+    border-radius: 40px;
+    background-color: #000000;
+    width: 1000px;
+    height: 550px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.search-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------------------------------left */
+
+.search-card-left h1 {
+    color: #ffffff;
+    position: relative;
+    top: 80px;
+    right: 50px;
+    font-size: 42px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.search-bar-searchpage {
+    position: relative;
+    height: 40px;
+    border-radius: 40px;
+    border: 0;
+    top: 150px;
+    left: -38px;
+    width: 547px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.search-bar-searchpage:focus {
+    border: none;
+    outline: none;
+}
+
+.search-bar-searchpage::placeholder {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    top: 4px;
+    opacity: 0.9;
+    color: black;
+}
+
+.searchpage-button {
+    width: 90px;
+    height: 34px;
+    border-radius: 40px;
+    position: relative;
+    font-size: 15px;
+    top: 112px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    border: none;
+    left: 188px;
+    font-weight: bolder;
+    background-color: #bd0000;
+    color: #000000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s;
+}
+
+
+.searchpage-button:focus {
+    transform: scale(0.9);
+    border: none;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+
+/* ----------------------------------------------center */
+.center-line {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 19px;
+    top: 20px;
+    width: 3px;
+    height: 500px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glowing 1.5s infinite;
+}
+
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* ----------------------------------------------Right */
+.search-card-right {
+    position: relative;
+    left: 35px;
+}
+
+.right-side-video {
+    position: relative;
+    top: 20px;
+    width: 283px;
+    height: 502px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+}
+
+/* ----------------------------------------------Footer */
+.leaugefooter {
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.leauge-footerTextclass {
+    top: 50px;
+    display: flex;
+    color: #ffffff;
+    position: relative;
+    font-size: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.leauge-madeby {
+    position: relative;
+    display: flex;
+    top: 80px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5px;
+    z-index: 0;
+}
+
+.leauge-madeby p {
+    position: relative;
+    top: 10px;
+    font-size: 10px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.leauge-faboutusclass h1 {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    letter-spacing: 3px;
+}
+
+.leauge-faboutusclass a {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.leauge-faboutusclass a:hover {
+    color: #bd0000;
+}
+
+
+.leauge-flegalclass h1 {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    letter-spacing: 3px;
+}
+
+.leauge-flegalclass a {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.leauge-flegalclass a:hover {
+    color: #bd0000;
+}
+
+
+.leauge-fsupportclass h1 {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+    letter-spacing: 3px;
+}
+
+.leauge-fsupportclass a {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.leauge-fsupportclass a:hover {
+    color: #bd0000;
+}
