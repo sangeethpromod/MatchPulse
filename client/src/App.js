@@ -9,7 +9,7 @@ import ResetPassword from "./pages/resetpassword";
 import SelectLeauge from './pages/leauge';
 import SearchPlayer from './pages/searchPlayer';
 import PremireLeauge from './pages/teamselectprem';
-import CarouselComponent from "./pages/corseltest";
+import Contact from './pages/contactpage';
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +20,7 @@ function App() {
         <Route path="/homepage" element={<Homepage />}></Route>
         <Route path="/searchplayer" element={<SearchPlayer />}></Route>
         <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
-        <Route path="/testpage" element={<CarouselComponent />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
         <Route
           path="/resetpassword/:token" // Define the route parameter
           element={<ResetPassword />}

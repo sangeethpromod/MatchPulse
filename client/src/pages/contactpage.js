@@ -1,21 +1,20 @@
 import React from "react";
 import "../css/searchplayer.css";
-import addidasad from "../images/leauge/1591331433.mp4"
+import addidasad from "../images/leauge/1591331433.mp4";
 // import { useNavigate } from "react-router-dom";
 
-function SearchPlayer() {
+function Leauge() {
   // const navigate = useNavigate();
 
-   // const handleCard1Click = () => {
+  // const handleCard1Click = () => {
   //   navigate("/searchplayer");
   // };
-
 
   return (
     <div className="searchpage-Container">
       <nav className="search-navbar">
         <div className="search-left-logo">
-          <a href="/">MATCH PULSE</a>
+          <a href="/">MATCH P</a>
         </div>
         <ul className="search-righthome-menu">
           <li>
@@ -41,10 +40,19 @@ function SearchPlayer() {
         <div className="search-card-1">
           <div className="search-card-content">
             <div className="search-card-left">
-            <h1>SEARCH YOUR  <br />FAVOURITE PLAYER</h1>
+              <h1>
+                SEARCH YOUR <br />
+                FAVOURITE PLAYER
+              </h1>
               <form>
-                <input className="search-bar-searchpage" type="text" placeholder="ENTER PLAYER NAME" />
-                <button className="searchpage-button" type="submit">SEARCH</button>
+                <input
+                  className="search-bar-searchpage"
+                  type="text"
+                  placeholder="ENTER PLAYER NAME"
+                />
+                <button className="searchpage-button" type="submit">
+                  SEARCH
+                </button>
               </form>
             </div>
             <div className="center-line"></div>
@@ -105,4 +113,4 @@ function SearchPlayer() {
   );
 }
 
-export default SearchPlayer;
+export default Leauge;

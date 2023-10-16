@@ -60,39 +60,41 @@ body {
     margin-right: 20px;
 }
 
-/* ----------------------------------------------Card */ 
-.search-container-1{
+/* ----------------------------------------------Card */
+.search-container-1 {
     height: 740px;
     text-align: center;
     justify-content: center;
 }
 
 
-.search-card-1{
+.search-card-1 {
     display: inline-block;
     position: relative;
-    top:140px;
+    top: 140px;
     border-radius: 40px;
     background-color: #000000;
-    width:1000px;
-    height:550px;
+    width: 1000px;
+    height: 550px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(255, 255, 255, 0.1);
 }
 
-.search-card-content{
+.search-card-content {
     display: flex;
     justify-content: center;
 }
+
 /* ----------------------------------------------left */
 
-.search-card-left h1{
+.search-card-left h1 {
     color: #ffffff;
     position: relative;
-    top:80px;
+    top: 80px;
     right: 50px;
     font-size: 42px;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
+
 .search-bar-searchpage {
     position: relative;
     height: 40px;
@@ -114,21 +116,21 @@ body {
     text-align: center;
     position: relative;
     font-size: 25px;
-    top:4px;
+    top: 4px;
     opacity: 0.9;
     color: black;
 }
 
-.searchpage-button{
+.searchpage-button {
     width: 90px;
     height: 34px;
     border-radius: 40px;
     position: relative;
     font-size: 15px;
-    top:112px;
+    top: 112px;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
     border: none;
-    left:188px;
+    left: 188px;
     font-weight: bolder;
     background-color: #bd0000;
     color: #000000;
@@ -147,14 +149,14 @@ body {
 
 
 /* ----------------------------------------------center */
-.center-line{
+.center-line {
     position: relative;
     justify-content: center;
     align-items: center;
-    left:19px;
-    top:20px;
-    width:3px;
-    height:500px;
+    left: 19px;
+    top: 20px;
+    width: 3px;
+    height: 500px;
     background-color: white;
     z-index: 1;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -175,20 +177,22 @@ body {
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 }
+
 /* ----------------------------------------------Right */
-.search-card-right{
+.search-card-right {
     position: relative;
     left: 35px;
 }
 
-.right-side-video{
+.right-side-video {
     position: relative;
     top: 20px;
     width: 283px;
     height: 502px;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
-/* ----------------------------------------------Footer */ 
+
+/* ----------------------------------------------Footer */
 .leaugefooter {
     background-color: #000000;
     position: relative;
