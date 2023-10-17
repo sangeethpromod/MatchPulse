@@ -17,47 +17,6 @@ body {
     background-color: rgb(53, 53, 53);
 }
 
-.top-navbar {
-    background-color: black;
-    color: white;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: center;
-    position:fixed;
-    height: 50px;
-    top:0;
-    left:0;
-}
-
-.left-logo {
-    font-size: 24px;
-    padding-left: 20px;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-}
-
-.righthome-menu {
-    list-style: none;
-    display: flex;
-    padding-right: 20px;
-    gap:20px;
-}
-
-.top-navbar a{
-    text-decoration: none;
-    color:white;
-    transition: color 0.3s;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-}
-
-.top-navbar a:hover {
-    color: rgb(255, 0, 0);
-}
-
-.right-menu li {
-    margin-right: 20px;
-}
 
 
 .fixed-photo {
@@ -83,13 +42,14 @@ body {
     border:none;
     width:290px;
     height: 0px;
-    border-radius: 40px;
     height: 400px;
     background-color: #ffffff;
     position: relative;
     bottom:100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
     transition: transform 0.3s;
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
 }
 
 .homecard1 p {
@@ -120,7 +80,6 @@ body {
 .playerimageforhome{
 width:330px;
 height:440px;
-border-radius: 40px;
 position: relative;
 right:20px;
 bottom:20px;
@@ -131,27 +90,6 @@ transition: opacity 0.5s;
     opacity: 0.2;
 }
 
-.homecardbutton1{
-    position: relative;
-    left:41px;
-    bottom: 355px;
-    width:200px;
-    height:40px;
-    border-radius: 40px;
-    border: 0px;
-    color: rgb(0, 0, 0);
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    font-size: 25px;
-    background-color: #bd0000;
-    transition: background-color 0.3s, color 0.3s; 
-    z-index: -1;
-}
-
-.homecardbutton1:hover{
-    background-color: white;
-    color:#210000;
-    z-index: 1;
-}
 /* card2-------------------------------------------------- */
 .homecard2 {
     padding: 20px;
@@ -159,12 +97,13 @@ transition: opacity 0.5s;
     border: none;
     width: 290px;
     height: 0px;
-    border-radius: 40px;
     height: 400px;
     background-color: #ffffff;
     position: relative;
     bottom: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
 }
 
@@ -196,7 +135,6 @@ transition: opacity 0.5s;
 .fixtureimageforhome {
     width: 330px;
     height: 440px;
-    border-radius: 40px;
     position: relative;
     right: 20px;
     bottom: 20px;
@@ -208,26 +146,6 @@ transition: opacity 0.5s;
     /* Reduce opacity when hovered */
 }
 
-.homecardbutton2 {
-    position: relative;
-    left: 41px;
-    bottom: 355px;
-    width: 200px;
-    height: 40px;
-    border-radius: 40px;
-    border: 0px;
-    color: rgb(0, 0, 0);
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    font-size: 25px;
-    background-color: #bd0000;
-    transition: background-color 0.3s, color 0.3s;
-    z-index: -1;
-}
-
-.homecardbutton2:hover {
-    background-color: white;
-    color: #bd0000;
-}
 
 
 
@@ -236,14 +154,15 @@ transition: opacity 0.5s;
 .homecard3 {
     padding: 20px;
     border: 1px solid #ccc;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
     margin-right: 20px;
     width: 290px;
     border: none;
-    border-radius: 40px;
     height: 400px;
     position: relative;
     bottom: 100px;
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
 }
 
@@ -259,25 +178,6 @@ transition: opacity 0.5s;
     bottom: 20px;
 }
 
-.homecardbutton3 {
-    position: relative;
-    left: 58px;
-    bottom: 10px;
-    width: 200px;
-    height: 40px;
-    border-radius: 40px;
-    border: 0px;
-    color: rgb(0, 0, 0);
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    font-size: 25px;
-    background-color: #bd0000;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.homecardbutton3 :hover {
-    background-color: white;
-    color: #bd0000;
-}
 
 /* card 3--------------------------------------------------- */
 
@@ -287,12 +187,13 @@ transition: opacity 0.5s;
     border: none;
     width: 290px;
     height: 0px;
-    border-radius: 40px;
     height: 400px;
     background-color: #ffffff;
     position: relative;
     bottom: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
 }
 
@@ -321,40 +222,18 @@ transition: opacity 0.5s;
     transform: scale(1.05);
 }
 
-.teamimageforhome {
+.teamimageforhomex {
     width: 330px;
     height: 440px;
-    border-radius: 40px;
     position: relative;
     right: 20px;
     bottom: 20px;
     transition: opacity 0.5s;
 }
 
-.homecard3:hover .teamimageforhome {
+.homecard3:hover .teamimageforhomex {
     opacity: 0.2;
     /* Reduce opacity when hovered */
-}
-
-.homecardbutton3 {
-    position: relative;
-    left: 41px;
-    bottom: 355px;
-    width: 200px;
-    height: 40px;
-    border-radius: 40px;
-    border: 0px;
-    color: rgb(0, 0, 0);
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    font-size: 25px;
-    background-color: #bd0000;
-    transition: background-color 0.3s, color 0.3s;
-    z-index: -1;
-}
-
-.homecardbutton3:hover {
-    background-color: white;
-    color: #bd0000;
 }
 
 
@@ -384,12 +263,14 @@ transition: opacity 0.5s;
     margin: 30px auto;
     border: 10px;
     width: 1013px;
-    border-radius: 40px;
     height: 400px;
     background-color: #000000;
     position: relative;
     text-decoration: none;
     transition: transform 0.3s;
+    box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .fifFixtureCard:hover {
@@ -399,7 +280,6 @@ transition: opacity 0.5s;
 .worldcupimage{
     width: 1013px;
     height: 400px;
-    border-radius: 40px;
     position: relative;
     opacity: 0.3;
 }
@@ -504,7 +384,9 @@ transition: opacity 0.5s;
     margin: 30px auto;
     border: 10px;
     width: 1349px;
-    border-radius: 40px;
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     height: 100px;
     position: relative;
     background: rgb(16, 16, 16);
@@ -552,10 +434,12 @@ transition: opacity 0.5s;
     margin: 30px auto;
     border: 10px;
     width: 1349px;
-    border-radius: 40px;
     height: 100px;
     background-color: #000000;
     position: relative;
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
 }
 .long-card2:hover {
@@ -600,7 +484,9 @@ transition: opacity 0.5s;
     margin: 30px auto;
     border: 10px;
     width: 1349px;
-    border-radius: 40px;
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     height: 100px;
     background-color: #000000;
     position: relative;
@@ -686,12 +572,13 @@ transition: opacity 0.5s;
     border: none;
     width: 290px;
     height: 0px;
-    border-radius: 40px;
     height: 400px;
     background-color: #ffffff;
     position: relative;
     bottom: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
     overflow: hidden;
 }
@@ -774,12 +661,13 @@ transition: opacity 0.5s;
     border: none;
     width: 290px;
     height: 0px;
-    border-radius: 40px;
     height: 400px;
     background-color: #ffffff;
     position: relative;
     bottom: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
     overflow: hidden;
 }
@@ -862,12 +750,13 @@ transition: opacity 0.5s;
     border: none;
     width: 290px;
     height: 0px;
-    border-radius: 40px;
     height: 400px;
     background-color: #ffffff;
     position: relative;
     bottom: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
     overflow: hidden;
 }
@@ -950,12 +839,13 @@ transition: opacity 0.5s;
     border: none;
     width: 290px;
     height: 0px;
-    border-radius: 40px;
     height: 400px;
     background-color: #ffffff;
     position: relative;
     bottom: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.46);
+    box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(234, 0, 0, 1);
     transition: transform 0.3s;
     overflow: hidden;
 }

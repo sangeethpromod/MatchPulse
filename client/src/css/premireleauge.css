@@ -1,0 +1,115 @@
+       
+.prem-container{
+    background-color: #0e0e0e;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.prem-start-container{
+    height: 1000px;
+}
+
+.prem-carousel-card {
+    position: relative;
+    top:120px;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    box-shadow: 6px 7px 5px 0px rgba(255, 0, 0, 1);
+        -webkit-box-shadow: 6px 7px 5px 0px rgba(255, 0, 0, 1);
+        -moz-box-shadow: 6px 7px 5px 0px rgba(255, 0, 0, 1);
+}
+
+.premline {
+    position: relative;
+    width: 3px;
+    left:72px;
+    height: 569px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glowing 1.5s infinite;
+}
+
+.prem-carousel-content {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 580px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-content-left{
+    position: relative;
+    left:20px;
+    height: 580px;
+}
+
+.carousel-content-left h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    top:10px;
+    position: relative;
+}
+
+.carousel-content-left p {
+    color:white;
+}
+
+.prem-team-logos {
+    position: relative;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 70px;
+    width: 50%;
+    margin: 0 auto;
+    /* Center horizontally */
+}
+.team-prem-button{
+    width: 190px;
+    height: 44px;
+    position: relative;
+    font-size: 15px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    border: none;
+    top: 139px;
+    left:100px;
+    font-weight: bolder;
+    background-color: #bd0000;
+    color: #000000;
+    box-shadow: 6px 7px 5px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 6px 7px 5px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 6px 7px 5px 0px rgba(255, 255, 255, 1);
+    transition: transform 0.2s;
+}
+
+
+/* ///the right side starst ehere-------------------------------- */
+
+.prem-team-images{
+    width:70%;
+    position: relative;
+    left:104px;
+}
+
+.prem-carousel-button.prev {
+    margin-right: 20px;
+}
+
+.prem-carousel-button.next {
+    margin-left: 20px;
+}
+
+.prem-carousel-button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+

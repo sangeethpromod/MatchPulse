@@ -1,9 +1,12 @@
 import React from "react";
-import "../css/searchplayer.css";
-import addidasad from "../images/leauge/1591331433.mp4";
-// import { useNavigate } from "react-router-dom";
+import "../css/contact.css";
+import contactbg from "../images/leauge/6222618.jpg";
+import insta from "../images/leauge/instagram.png";
+import discord from "../images/leauge/discord.png";
+import slack from "../images/leauge/slcak.png";
+import Navbar from "../components/navbar"
 
-function Leauge() {
+function ContactPage() {
   // const navigate = useNavigate();
 
   // const handleCard1Click = () => {
@@ -11,106 +14,84 @@ function Leauge() {
   // };
 
   return (
-    <div className="searchpage-Container">
-      <nav className="search-navbar">
-        <div className="search-left-logo">
-          <a href="/">MATCH P</a>
-        </div>
-        <ul className="search-righthome-menu">
-          <li>
-            <a href="/">HOME</a>
-          </li>
-          <li>
-            <a href="">ABOUT</a>
-          </li>
-          <li>
-            <a href="/searchplayer">PLAYERS</a>
-          </li>
-          <li>
-            <a href="/contact">CONTACT</a>
-          </li>
-          <li>
-            <a href="/signout">SIGNOUT</a>
-          </li>
-        </ul>
-      </nav>
+    <div className="contactpage-Container">
+    <div><Navbar /></div>
 
       {/* conainter 1--------------------------------------------------- */}
-      <div className="search-container-1">
-        <div className="search-card-1">
-          <div className="search-card-content">
-            <div className="search-card-left">
-              <h1>
-                SEARCH YOUR <br />
-                FAVOURITE PLAYER
-              </h1>
-              <form>
-                <input
-                  className="search-bar-searchpage"
-                  type="text"
-                  placeholder="ENTER PLAYER NAME"
-                />
-                <button className="searchpage-button" type="submit">
-                  SEARCH
-                </button>
-              </form>
+      <div className="contact-container-1">
+        <img className="contact-bg" src={contactbg} />
+        <div className="contact-card">
+          <h1>
+            GET <br /> IN TOUCH
+          </h1>
+          <form>
+            <div className="contact-line1">
+              <input
+                className="contact-first-name"
+                type="text"
+                placeholder="ENTER FIRST NAME"
+              />
+              <input
+                className="contact-last-name"
+                type="text"
+                placeholder="ENTER LAST NAME"
+              />
             </div>
-            <div className="center-line"></div>
-            <div className="search-card-right">
-              <video className="right-side-video" id="son" autoPlay loop muted>
-                <source src={addidasad} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="contact-line2">
+              <input
+                className="contact-emailid"
+                type="text"
+                placeholder="ENTER EMAIL ID"
+              />
+              <input
+                className="contact-mobileNum"
+                type="text"
+                placeholder="ENTER MOBILE NUM"
+              />
             </div>
-          </div>
+            <div className="contact-line3">
+              <input
+                className="contact-message"
+                type="text"
+                placeholder="ENTER MESSAGE"
+              />
+            </div>
+            <div className="contact-button">
+              <button className="contactpage-button" type="submit">
+                SUBMIT
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 
       {/* footer-------------------- */}
-      <div className="leaugefooter">
-        <div className="leauge-footerTextclass">
-          <div className="leauge-faboutusclass">
-            <h1 className="leauge-faboutus"> ABOUT US</h1>
-            <p>
-              <a href="https://www.instagram.com">Instagram</a>
-              <br />
-              <a href="https://www.facebook.com">Facebook</a>
-              <br />
-              <a href="https://www.linkedin.com">LinkedIn</a>
-            </p>
+      <div className="contactfooter">
+        <div className="contact-details-footer">
+          <div className="contact-logo-footer">
+            <h1>
+              MATCH <span>PULSE </span>
+            </h1>
+            <p>Relive the way you see.</p>
           </div>
-          <div className="leauge-flegalclass">
-            <h1 className="flegal"> LEGAL</h1>
-            <p>
-              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
-                TERMS OF SERVICE
-              </a>
-              <br />
-              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
-                TERMS OF USE
-              </a>
-              <br />
-              <a href="https://www.linkedin.com">POLICY</a>
-            </p>
-          </div>
-          <div className="leauge-fsupportclass">
-            <h1 className="flegal"> SUPPORT</h1>
-            <p>
-              <a href="https://www.instagram.com">FAQ</a>
-              <br />
-              <a href="https://www.facebook.com">Help Desk</a>
-            </p>
+          <div className="contact-footer-logos">
+            <img className="insta-footer-contact" src={insta} />
+            <img className="discord-footer-contact" src={discord} />
+            <img className="slack-footer-contact" src={slack} />
           </div>
         </div>
-        <div className="leauge-madeby">
-          <p>
-            &copy; {new Date().getFullYear()} Sangeeth Promod. All rights
-            reserved.
-          </p>
+        <div className="lastLine">
+          <div className="contact-madeby">
+            <p>
+              &copy; {new Date().getFullYear()} Sangeeth Promod. All rights
+              reserved.
+            </p>
+            <div className="line"></div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default Leauge;
+export default ContactPage;

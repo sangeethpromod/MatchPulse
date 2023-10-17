@@ -1,5 +1,5 @@
 // src/components/HomePage.js
-import React, { useState }from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../css/home.css";
 import { useNavigate } from "react-router-dom";
@@ -21,6 +21,7 @@ import news2 from "../images/fixtures/leomessiinter.jpg";
 import news3 from "../images/fixtures/pep.jpg";
 import news4 from "../images/fixtures/haaland.jpg";
 import footerImage from "../images/fixtures/maps.png";
+import Navbar from "../components/navbar";
 
 
 const HomePage = () => {
@@ -42,28 +43,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="homepage-container">
-        <nav className="top-navbar">
-          <div className="left-logo">
-            <a href="/">MATCH PULSE</a>
-          </div>
-          <ul className="righthome-menu">
-            <li>
-              <a href="/">HOME</a>
-            </li>
-            <li>
-              <a href="">ABOUT</a>
-            </li>
-            <li>
-              <a href="/leauge">LEAUGE</a>
-            </li>
-            <li>
-              <a href="/contact">CONTACT</a>
-            </li>
-            <li>
-              <a href="/signout">SIGNOUT</a>
-            </li>
-          </ul>
-        </nav>
+      <div><Navbar /></div>
 
         <div className="fixed-photo" />
 
@@ -90,7 +70,7 @@ const HomePage = () => {
           {/*----------------card 2 ------------------------------------------- */}
 
           <div className="homecard3" onClick={handleCard3Click}>
-            <img className="teamimageforhome" src={hometeam} />
+            <img className="teamimageforhomex" src={hometeam} />
             <p>
               <span>SELECT TO KNOW MORE</span>
               <span>ABOUT YOUR FAVORITE</span>
