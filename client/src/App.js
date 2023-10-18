@@ -8,8 +8,8 @@ import ForgotPassword from "./pages/forgotpassword"
 import ResetPassword from "./pages/resetpassword";
 import SelectLeauge from './pages/leauge';
 import SearchPlayer from './pages/searchPlayer';
-import PremireLeauge from './pages/teamselectprem';
 import Contact from './pages/contactpage';
+import PremireLeauge from "./pages/premireLeauge";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/searchplayer" element={<SearchPlayer />}></Route>
         <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/premireleauge" element={<PremireLeauge />}></Route>
         <Route
           path="/resetpassword/:token" // Define the route parameter
           element={<ResetPassword />}

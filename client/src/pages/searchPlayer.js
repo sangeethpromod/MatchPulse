@@ -2,6 +2,7 @@ import React from "react";
 import "../css/searchplayer.css";
 import addidasad from "../images/leauge/1591331433.mp4"
 // import { useNavigate } from "react-router-dom";
+import Navbar from "../components/navbar";
 
 function SearchPlayer() {
   // const navigate = useNavigate();
@@ -13,28 +14,7 @@ function SearchPlayer() {
 
   return (
     <div className="searchpage-Container">
-      <nav className="search-navbar">
-        <div className="search-left-logo">
-          <a href="/">MATCH PULSE</a>
-        </div>
-        <ul className="search-righthome-menu">
-          <li>
-            <a href="/">HOME</a>
-          </li>
-          <li>
-            <a href="">ABOUT</a>
-          </li>
-          <li>
-            <a href="/searchplayer">PLAYERS</a>
-          </li>
-          <li>
-            <a href="/contact">CONTACT</a>
-          </li>
-          <li>
-            <a href="/signout">SIGNOUT</a>
-          </li>
-        </ul>
-      </nav>
+    <div><Navbar /></div>
 
       {/* conainter 1--------------------------------------------------- */}
       <div className="search-container-1">

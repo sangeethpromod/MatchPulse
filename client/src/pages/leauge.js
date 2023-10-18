@@ -9,13 +9,14 @@ import laLigaLogo from "../images/leauge/laligabw.png"
 import serieLogo from "../images/leauge/seire a.png"
 import bundesligaLogo from "../images/leauge/bundesbw-removebg-preview.png"
 import ligue1Logo from "../images/leauge/l-removebg-preview.png";
+import Navbar from "../components/navbar"
 
 function Leauge() {
 
     const navigate = useNavigate();
 
     const handleCard1Click = () => {
-      navigate("/searchplayer");
+      navigate("/premireleauge");
     };
 
     const handleCard2Click = () => {
@@ -37,28 +38,7 @@ function Leauge() {
 
   return (
     <div className="leaugepage-Container">
-      <nav className="leauge-navbar">
-        <div className="leauge-left-logo">
-          <a href="/">MATCH PULSE</a>
-        </div>
-        <ul className="leauge-righthome-menu">
-          <li>
-            <a href="/">HOME</a>
-          </li>
-          <li>
-            <a href="">ABOUT</a>
-          </li>
-          <li>
-            <a href="/searchplayer">PLAYERS</a>
-          </li>
-          <li>
-            <a href="/contact">CONTACT</a>
-          </li>
-          <li>
-            <a href="/signout">SIGNOUT</a>
-          </li>
-        </ul>
-      </nav>
+    <div><Navbar /></div>
       <div className="leauge-container-1">
         <div className="leauge-container-1-left">
           <h1>
