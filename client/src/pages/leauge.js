@@ -16,7 +16,7 @@ function Leauge() {
     const navigate = useNavigate();
 
     const handleCard1Click = () => {
-      navigate("/searchplayer");
+      navigate("/premireleauge");
     };
 
     const handleCard2Click = () => {

@@ -1,115 +1,931 @@
-       
-.prem-container{
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.imagebg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.PremireLeauge-maincontainer {
     background-color: #0e0e0e;
     max-height: 100vh;
     overflow-y: auto;
 }
 
-.prem-start-container{
-    height: 1000px;
+.pleauge-container-1{
+    height:1000px;
 }
-
-.prem-carousel-card {
-    position: relative;
-    top:120px;
-    width: 800px;
-    height: 600px;
-    margin: 0 auto;
-    display: flex;
-    border: 1px solid #ccc;
-    align-items: center;
-    box-shadow: 6px 7px 5px 0px rgba(255, 0, 0, 1);
-        -webkit-box-shadow: 6px 7px 5px 0px rgba(255, 0, 0, 1);
-        -moz-box-shadow: 6px 7px 5px 0px rgba(255, 0, 0, 1);
-}
-
-.premline {
-    position: relative;
-    width: 3px;
-    left:72px;
-    height: 569px;
-    background-color: white;
-    z-index: 1;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    animation: glowing 1.5s infinite;
-}
-
-.prem-carousel-content {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    height: 580px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.carousel-content-left{
-    position: relative;
-    left:20px;
-    height: 580px;
-}
-
-.carousel-content-left h1{
-    text-align: center;
+.pleauge-container-1 h1{
     color: white;
-    font-size: 50px;
-    top:10px;
     position: relative;
-}
-
-.carousel-content-left p {
-    color:white;
-}
-
-.prem-team-logos {
-    position: relative;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    top: 70px;
-    width: 50%;
-    margin: 0 auto;
-    /* Center horizontally */
-}
-.team-prem-button{
-    width: 190px;
-    height: 44px;
-    position: relative;
-    font-size: 15px;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    border: none;
-    top: 139px;
-    left:100px;
-    font-weight: bolder;
-    background-color: #bd0000;
-    color: #000000;
-    box-shadow: 6px 7px 5px 0px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 6px 7px 5px 0px rgba(255, 255, 255, 1);
-    -moz-box-shadow: 6px 7px 5px 0px rgba(255, 255, 255, 1);
-    transition: transform 0.2s;
+    top:80px;
+    z-index: 1;
+    text-align: center;
 }
 
+.premCard-row-1{
+    display: flex;
+    justify-content: space-around;
+}
 
-/* ///the right side starst ehere-------------------------------- */
-
-.prem-team-images{
-    width:70%;
+.premCard-1{
     position: relative;
-    left:104px;
+    top:100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width:235px;
+    height: 235px;
+    border:1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+        -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+        -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
 }
 
-.prem-carousel-button.prev {
-    margin-right: 20px;
+.premCard-1:hover{
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
 }
 
-.prem-carousel-button.next {
-    margin-left: 20px;
+.premCard-1 h1{
+   position: relative;
+   font-size: 40px;
+   left:35px;
+   color: #000000;
+   font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
-.prem-carousel-button:hover {
-    background-color: #555;
-    transform: scale(1.1);
+.arsenallogo{
+    width:100%;
+    position: relative;
+    right: 170px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+.arsenallogo:hover{
+    opacity: 0;
 }
 
+
+
+/* Row 1 card2 starts here--------------------------------------------- */
+.premCard-2 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-2:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-2 h1 {
+    position: relative;
+    font-size: 40px;
+    left: 55px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.villalogo {
+    width: 100%;
+    position: relative;
+    right: 120px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.villalogo:hover {
+    opacity: 0;
+}
+
+/* Row 1 card 3 starts here--------------------------------------------- */
+
+.premCard-3 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-3:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-3 h1 {
+    position: relative;
+    font-size: 33px;
+    text-align: center;
+    left:8px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.bourlogo {
+    width: 100%;
+    position: relative;
+    right: 225px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.bourlogo:hover {
+    opacity: 0;
+}
+
+/* Row 1 card 4 starts here--------------------------------------------- */
+
+.premCard-4 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-4:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-4 h1 {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    left: 10px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.brentlogo {
+    width: 100%;
+    position: relative;
+    right: 218px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.brentlogo:hover {
+    opacity: 0;
+}
+
+/* Row 1 card 5 starts here--------------------------------------------- */
+
+.premCard-5 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-5:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-5 h1 {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    left: 30px;
+    top:50px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.brightlogo {
+    width: 100%;
+    position: relative;
+    right: 182px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.brightlogo:hover {
+    opacity: 0;
+}
+
+/* Row 1 card 6 starts here--------------------------------------------- */
+
+.premCard-6 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-6:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-6 h1 {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    left: 40px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.burnlogo {
+    width: 100%;
+    position: relative;
+    right: 164px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.burnlogo:hover {
+    opacity: 0;
+}
+
+
+
+/* Row 2  starts here--------------------------------------------- */
+
+.premCard-row-2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.premCard-7 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-7:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-7 h1 {
+    position: relative;
+    font-size: 40px;
+    left: 35px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.chelogo {
+    width: 100%;
+    position: relative;
+    right: 170px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.chelogo:hover {
+    opacity: 0;
+}
+
+
+
+/* Row 1 card2 starts here--------------------------------------------- */
+.premCard-8 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-8:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-8 h1 {
+    position: relative;
+    font-size: 40px;
+    left: 55px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.crylogo {
+    width: 100%;
+    position: relative;
+    right: 135px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.crylogo:hover {
+    opacity: 0;
+}
+
+/* Row 2 card 9 starts here--------------------------------------------- */
+
+.premCard-9 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-9:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-9 h1 {
+    position: relative;
+    font-size: 33px;
+    text-align: center;
+    left: 48px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.everlogo {
+    width: 100%;
+    position: relative;
+    right: 135px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.everlogo:hover {
+    opacity: 0;
+}
+
+/* Row 2 card 10 starts here--------------------------------------------- */
+
+.premCard-10 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-10:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-10 h1 {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    left: 45px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.fullhamtlogo {
+    width: 100%;
+    position: relative;
+    right: 145px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.fullhamtlogo:hover {
+    opacity: 0;
+}
+
+/* Row 2 card 11 starts here--------------------------------------------- */
+
+.premCard-11 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-11:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-11 h1 {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    left: 30px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.liverpoollogo {
+    width: 100%;
+    position: relative;
+    right: 192px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.liverpoollogo:hover {
+    opacity: 0;
+}
+
+/* Row 2 card 12 starts here--------------------------------------------- */
+
+.premCard-12 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-12:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-12 h1 {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    left: 50px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.lutonlogo {
+    width: 100%;
+    position: relative;
+    right: 130px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.lutonlogo:hover {
+    opacity: 0;
+}
+
+
+/* Row 3  starts here--------------------------------------------- */
+
+.premCard-row-3 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.premCard-13 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-13:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-13 h1 {
+    position: relative;
+    font-size: 35px;
+    left: 10px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.mancitylogo {
+    width: 100%;
+    position: relative;
+    right: 210px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.mancitylogo:hover {
+    opacity: 0;
+}
+
+/* Row 3 card 14 starts here--------------------------------------------- */
+.premCard-14 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-14:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-14 h1 {
+    position: relative;
+    font-size: 35px;
+    left: 10px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.manutdlogo {
+    width: 100%;
+    position: relative;
+    right: 210px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.manutdlogo:hover {
+    opacity: 0;
+}
+
+
+/* Row 3 card 15 starts here--------------------------------------------- */
+.premCard-15 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-15:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-15 h1 {
+    position: relative;
+    font-size: 40px;
+    left: 10px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.newcastlogo {
+    width: 100%;
+    position: relative;
+    right: 215px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.newcastlogo:hover {
+    opacity: 0;
+}
+
+/* Row 3 card 16 starts here--------------------------------------------- */
+.premCard-16 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-16:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-16 h1 {
+    position: relative;
+    font-size: 35px;
+    left: 20px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.nottinghamlogo {
+    width: 100%;
+    position: relative;
+    right: 200px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.nottinghamlogo:hover {
+    opacity: 0;
+}
+
+/* Row 3 card 17 starts here--------------------------------------------- */
+.premCard-17 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-17:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-17 h1 {
+    position: relative;
+    font-size: 40px;
+    left: 20px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.shelogo {
+    width: 100%;
+    position: relative;
+    right: 190px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.shelogo:hover {
+    opacity: 0;
+}
+
+/* Row 3 card 18 starts here--------------------------------------------- */
+.premCard-18 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-18:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-18 h1 {
+    position: relative;
+    font-size: 35px;
+    left: 20px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.totlogo {
+    width: 100%;
+    position: relative;
+    right: 190px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.totlogo:hover {
+    opacity: 0;
+}
+
+
+/* Row 4  starts here--------------------------------------------- */
+
+.premCard-row-4 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+/* Row 4 card 19 starts here--------------------------------------------- */
+.premCard-19 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    background-color: black;
+    left:250px;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-19:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-19 h1 {
+    position: relative;
+    font-size: 35px;
+    left: 40px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.westhamlogo {
+    width: 100%;
+    position: relative;
+    right: 160px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.westhamlogo:hover {
+    opacity: 0;
+}
+/* Row 4 card 20 starts here--------------------------------------------- */
+.premCard-20 {
+    position: relative;
+    top: 100px;
+    right: 250px;
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    width: 235px;
+    height: 235px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+.premCard-20:hover {
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.premCard-20 h1 {
+    position: relative;
+    font-size: 28px;
+    left: 8px;
+    color: #000000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.wolveslogo {
+    width: 100%;
+    position: relative;
+    right: 225px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.wolveslogo:hover {
+    opacity: 0;
+}
