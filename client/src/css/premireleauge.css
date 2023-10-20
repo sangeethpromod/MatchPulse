@@ -29,6 +29,7 @@ body {
 
 .pleauge-container-1{
     height:1000px;
+    padding: 20px;
 }
 .pleauge-container-1 h1{
     color: white;
@@ -50,8 +51,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width:235px;
-    height: 235px;
+    width:200px;
+    height: 200px;
     border:1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
         -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -68,7 +69,7 @@ body {
 .premCard-1 h1{
    position: relative;
    font-size: 40px;
-   left:35px;
+   left:15px;
    color: #000000;
    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -93,8 +94,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height:200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -111,7 +112,8 @@ body {
 .premCard-2 h1 {
     position: relative;
     font-size: 40px;
-    left: 55px;
+    left: 40px;
+    top: 55px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -136,8 +138,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height:200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -153,9 +155,10 @@ body {
 
 .premCard-3 h1 {
     position: relative;
-    font-size: 33px;
+    font-size: 40px;
     text-align: center;
-    left:8px;
+    left:28px;
+    top:40px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -163,7 +166,7 @@ body {
 .bourlogo {
     width: 100%;
     position: relative;
-    right: 225px;
+    right: 145px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -180,8 +183,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -199,7 +202,8 @@ body {
     position: relative;
     font-size: 40px;
     text-align: center;
-    left: 10px;
+    left: 40px;
+    top:50px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -207,7 +211,7 @@ body {
 .brentlogo {
     width: 100%;
     position: relative;
-    right: 218px;
+    right: 120px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -224,8 +228,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -243,8 +247,8 @@ body {
     position: relative;
     font-size: 40px;
     text-align: center;
-    left: 30px;
-    top:50px;
+    left: 10px;
+    top:40px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -269,8 +273,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -288,7 +292,7 @@ body {
     position: relative;
     font-size: 40px;
     text-align: center;
-    left: 40px;
+    left: 20px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -321,8 +325,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -339,7 +343,7 @@ body {
 .premCard-7 h1 {
     position: relative;
     font-size: 40px;
-    left: 35px;
+    left: 20px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -347,7 +351,7 @@ body {
 .chelogo {
     width: 100%;
     position: relative;
-    right: 170px;
+    right: 160px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -365,8 +369,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -383,7 +387,8 @@ body {
 .premCard-8 h1 {
     position: relative;
     font-size: 40px;
-    left: 55px;
+    left: 25px;
+    top:60px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -408,8 +413,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -425,9 +430,9 @@ body {
 
 .premCard-9 h1 {
     position: relative;
-    font-size: 33px;
+    font-size: 40px;
     text-align: center;
-    left: 48px;
+    left: 20px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -435,7 +440,7 @@ body {
 .everlogo {
     width: 100%;
     position: relative;
-    right: 135px;
+    right: 165px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -452,8 +457,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -471,7 +476,7 @@ body {
     position: relative;
     font-size: 40px;
     text-align: center;
-    left: 45px;
+    left: 30px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -496,8 +501,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -513,9 +518,9 @@ body {
 
 .premCard-11 h1 {
     position: relative;
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
-    left: 30px;
+    left: 10px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -523,7 +528,7 @@ body {
 .liverpoollogo {
     width: 100%;
     position: relative;
-    right: 192px;
+    right: 182px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -540,8 +545,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -559,7 +564,8 @@ body {
     position: relative;
     font-size: 40px;
     text-align: center;
-    left: 50px;
+    left: 30px;
+    top:60px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -591,8 +597,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -633,8 +639,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -676,8 +682,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -718,8 +724,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -760,8 +766,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -802,8 +808,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -853,8 +859,8 @@ body {
     background-color: black;
     left:250px;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
@@ -895,8 +901,8 @@ body {
     display: flex;
     background-color: black;
     z-index: 1;
-    width: 235px;
-    height: 235px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ccc;
     box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 2px -1px rgba(255, 0, 0, 0.75);

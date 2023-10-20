@@ -41,11 +41,11 @@ function premireLeauge() {
             <img className="villalogo" src={avillalogo} />
           </div>
           <div className="premCard-3">
-            <h1>BOURNEMOUTH AFC</h1>
+            <h1>BOURNE<br />MOUTH AFC</h1>
             <img className="bourlogo" src={bour} />
           </div>
           <div className="premCard-4">
-            <h1>BRENTFORD</h1>
+            <h1>BRENT<br />FORD</h1>
             <img className="brentlogo" src={brentfordLogo} />
           </div>
           <div className="premCard-5">
