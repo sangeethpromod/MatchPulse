@@ -22,7 +22,7 @@
 .righthome-menu {
     list-style: none;
     display: flex;
-    padding-right: 20px;
+    padding-right: 50px;
     gap: 20px;
 }
 

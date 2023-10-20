@@ -15,13 +15,10 @@ function Navbar () {
             <a href="">ABOUT</a>
           </li>
           <li>
-            <a href="/searchplayer">PLAYERS</a>
-          </li>
-          <li>
             <a href="/contact">CONTACT</a>
           </li>
           <li>
-            <a href="/signout">SIGNOUT</a>
+            <a href="/signout">NEWSLETTER</a>
           </li>
         </ul>
       </nav>
