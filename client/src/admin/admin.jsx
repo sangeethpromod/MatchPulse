@@ -1,6 +1,7 @@
 import React from 'react'
 import "./admin.css"
 import Navbar from '../components/navbar';
+import Dashboard from './dashboard';
 
 function admin() {
   return (
@@ -19,7 +20,9 @@ function admin() {
             <button className="signout-admin-button">SIGNOUT</button>
           </div>
         </div>
-        <div className="change-content-admin"></div>
+        <div className="change-content-admin">
+        <div><Dashboard /></div>
+        </div>
       </div>
     </div>
   );

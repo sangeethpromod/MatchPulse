@@ -9,7 +9,7 @@ import SearchPlayer from './pages/searchPlayer';
 import Contact from './pages/contactpage';
 import PremireLeauge from "./pages/premireLeauge";
 import Admin from "./admin/admin.jsx"
-import dashboard from "./admin/dashboard.jsx";
+import Dashboard from "./admin/dashboard.jsx"
 function App() {
   return (
     <BrowserRouter>
@@ -23,7 +23,7 @@ function App() {
         <Route path="/leauge" element={<SelectLeauge />}></Route>
         <Route path="/premireleauge" element={<PremireLeauge />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
-        <Route path="/dashboard" element={<dashboard />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
       </Routes>
     </BrowserRouter>
   );
