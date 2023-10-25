@@ -18,7 +18,7 @@ body {
 }
 
 .dashboard-edit-container{
-    height: 1500px;
+    height: 1150px;
     width:100%;
 }
 
@@ -34,9 +34,8 @@ body {
 .cards-dashboard{
     display:flex;
     height:600px;
-    /* background-color: beige; */
     position: relative;
-    bottom:1400px;
+    bottom:1050px;
     margin: 20px;
     justify-content: space-around;
     gap:20px;
@@ -299,47 +298,37 @@ body {
 
 .edit-news-card{
     display: flex;
-    flex-direction: column;
-    height: 800px;
+    height: 400px;
     width: 90%;
     position: relative;
     left:44px;
     justify-content: space-around;
-    bottom:1490px;
+    bottom:1150px;
     margin:20px;
 }
-.edit-news-card-1 {
-    display: flex;
-    background-color: #000000;
-    height: 150px;
-    width: 100%;
+
+.lineGraph{
+    width:70%;
     box-shadow: 7px 7px 5px 0px rgba(255, 0, 0, 0.75);
         -webkit-box-shadow: 7px 7px 5px 0px rgba(255, 0, 0, 0.75);
         -moz-box-shadow: 7px 7px 5px 0px rgba(255, 0, 0, 0.75);
-}
-
-.edit-news-card-1 h1{
-    color: white;
-    position: relative;
-    text-align: right;
-}
-
-.news-card-1-gif{
-    display: flex;
-    position: relative;
-    width:40%;
-    border: 1px solid #ff0000;
-    background-color: #ffffff;
-    height: 100%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+        font-family: 'DAGGERSQUARE OBLIQUE', sans-serif; 
 }
 
 
-.news-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+.dashboard-footer{
+    width:100%;
+    height:50px;
+    background-color: #000000;
     position: relative;
+    bottom:1110px;
+}
+
+.piechart-cont{
+    width:29%;
+    position: relative;
+    left:20px;
+        box-shadow: 7px 7px 5px 0px rgba(255, 0, 0, 0.75);
+            -webkit-box-shadow: 7px 7px 5px 0px rgba(255, 0, 0, 0.75);
+            -moz-box-shadow: 7px 7px 5px 0px rgba(255, 0, 0, 0.75);
 }
