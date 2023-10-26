@@ -10,6 +10,7 @@ import Contact from './pages/contactpage';
 import PremireLeauge from "./pages/premireLeauge";
 import Admin from "./admin/admin.jsx"
 import Dashboard from "./admin/dashboard.jsx"
+import Teampage from "./pages/teampage.jsx"
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/premireleauge" element={<PremireLeauge />}></Route>
         <Route path="/admin" element={<Admin />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/teampage" element={<Teampage />}></Route>
       </Routes>
     </BrowserRouter>
   );
