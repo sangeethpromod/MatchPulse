@@ -8,8 +8,8 @@ import SelectLeauge from './pages/leauge';
 import SearchPlayer from './pages/searchPlayer';
 import Contact from './pages/contactpage';
 import PremireLeauge from "./pages/premireLeauge";
-import Admin from "./admin/admin.jsx"
-import dashboard from "./admin/dashboard.jsx";
+import Dashtest from "./admin//dashboardtest.jsx";
+import Teampage from "./pages/teampage.jsx"
 function App() {
   return (
     <BrowserRouter>
@@ -22,8 +22,8 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/leauge" element={<SelectLeauge />}></Route>
         <Route path="/premireleauge" element={<PremireLeauge />}></Route>
-        <Route path="/admin" element={<Admin />}></Route>
-        <Route path="/dashboard" element={<dashboard />}></Route>
+        <Route path="/maindash" element={<Dashtest />}></Route>
+        <Route path="/teampage" element={<Teampage />}></Route>
       </Routes>
     </BrowserRouter>
   );

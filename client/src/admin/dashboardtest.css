@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+.admin-main-container {
+    background-color: #ec0000;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.admin-navbar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    z-index: 999;
+    left: 0;
+}
+
+.admin-navbar h1 {
+    font-size: 25px;
+    margin-left: 20px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 2px;
+}
+
+.search-navbar-admin {
+    height: 35px;
+    width: 300px;
+    background-color: #000000;
+    position: relative;
+    right: 360px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    border: 1px solid #ffffff;
+    box-shadow: 4px 2px 5px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 4px 2px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.admin-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #ffffff;
+    margin-right: 150px;
+}
+
+.adminpic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    position: relative;
+}
+
+
+
+.dropdown-content button {
+    background-color: #000000;
+    width: 174px;
+    height: 39px;
+    color: #ffffff;
+    border-right: 1px solid #ffffff64;
+    border-bottom: 1px solid #ffffff64;
+    border-top: none;
+    border-left: none;
+    position: relative;
+    top: 44px;
+    right: 105px;
+    white-space: nowrap;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.admin-profile-picture h1 {
+    font-size: 15px;
+    top: 15px;
+    right: 25px;
+    position: absolute;
+    white-space: nowrap;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.search-navbar-admin:focus {
+    transform: scale(0.98);
+    border: 1px solid #ffffff;
+    outline: none;
+    box-shadow: 2px 1px 5px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(255, 0, 0, 0.75);
+}
+
+.heading-admin h1{
+    width:500px;
+    color: #ffffff;
+    position: relative;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    top:70px;
+    left:50px;
+    z-index: 1;
+}
+
+.subheading{
+    font-size: 20px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #bd0000;
+}
+
+
+
+.admin-1-row {
+    width: 100%;
+    height: 650px;
+    background-color:#0e0e0e;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.admin-1-row-left{
+    width: 70%;
+    position: relative;
+    top:150px;
+    padding-left: 50px;
+}
+
+.lineGraph {
+    width: 90%;
+        box-shadow: -10px -10px 15px #020202,
+                10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+
+.admin-1-row-right{
+    width:30%;
+    position: relative;
+    height: 650px;
+    top: 150px;
+    padding-right: 50px;
+}
+
+
+.piechart-cont {
+    width: 100%;
+    position: relative;
+    left: 20px;
+            box-shadow: -10px -10px 15px #020202,
+                    10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+}
+
+
+.admin-2-row {
+    width: 100%;
+    height: 400px;
+    background-color: #0e0e0e;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.create-player{
+    background-color: #252525;
+    width:45%;
+    height:300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+                 10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+                
+}
+
+.card-bg-admin{
+    opacity: 0.1;
+}
+
+
+.edit-player {
+    background-color: #252525;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+        10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+}

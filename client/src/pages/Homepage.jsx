@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/home.css";
+import Footer from "../components/footor"
 import { useNavigate } from "react-router-dom";
 import jude from "../images/jude.jpg"
 import fixture from "../images/napvsreal.jpg"
@@ -239,47 +240,7 @@ const HomePage = () => {
         </div>
 
         {/*          CONTAINER 5                                   */}
-      <div className="homefooter"></div>
-        <div className="footerTextclass">
-          <div className="faboutusclass">
-            <h1 className="faboutus"> ABOUT US</h1>
-            <p>
-              <a href="https://www.instagram.com">Instagram</a>
-              <br />
-              <a href="https://www.facebook.com">Facebook</a>
-              <br />
-              <a href="https://www.linkedin.com">LinkedIn</a>
-            </p>
-          </div>
-          <div className="flegalclass">
-            <h1 className="flegal"> LEGAL</h1>
-            <p>
-              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
-                TERMS OF SERVICE
-              </a>
-              <br />
-              <a href="https://www.termsandcondiitionssample.com/live.php?token=0Fa1H13os8yowAiMxyMQ4SM5f8J3Wsrc">
-                TERMS OF USE
-              </a>
-              <br />
-              <a href="https://www.linkedin.com">POLICY</a>
-            </p>
-          </div>
-          <div className="fsupportclass">
-            <h1 className="flegal"> SUPPORT</h1>
-            <p>
-              <a href="https://www.instagram.com">FAQ</a>
-              <br />
-              <a href="https://www.facebook.com">Help Desk</a>
-            </p>
-          </div>
-        </div>
-        <div className="imageforfotter">
-          <img className="footerImage" src={footerImage} />
-        </div>
-        <div className="madeby">
-          <h1>2023 | Sangeeth ©</h1>
-        </div>
+      <div className="homefooter"><Footer/></div>
       </div>
     </div>
   );

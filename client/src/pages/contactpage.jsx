@@ -1,9 +1,7 @@
 import React from "react";
 import "../css/contact.css";
 import contactbg from "../images/leauge/6222618.jpg";
-import insta from "../images/leauge/instagram.png";
-import discord from "../images/leauge/discord.png";
-import slack from "../images/leauge/slcak.png";
+import Footer from "../components/footor"
 import Navbar from "../components/navbar"
 
 function ContactPage() {
@@ -67,28 +65,8 @@ function ContactPage() {
 
       {/* footer-------------------- */}
       <div className="contactfooter">
-        <div className="contact-details-footer">
-          <div className="contact-logo-footer">
-            <h1>
-              MATCH <span>PULSE </span>
-            </h1>
-            <p>Relive the way you see.</p>
-          </div>
-          <div className="contact-footer-logos">
-            <img className="insta-footer-contact" src={insta} />
-            <img className="discord-footer-contact" src={discord} />
-            <img className="slack-footer-contact" src={slack} />
-          </div>
-        </div>
-        <div className="lastLine">
-          <div className="contact-madeby">
-            <p>
-              &copy; {new Date().getFullYear()} Sangeeth Promod. All rights
-              reserved.
-            </p>
-            <div className="line"></div>
-          </div>
-        </div>
+      <div><Footer/></div>
+      
       </div>
     </div>
   );
