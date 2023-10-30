@@ -167,7 +167,763 @@ return (
           />
         </div>
         <div className="player-details-form">
+          {/*PLAYER PHOTO ROW 1 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 1 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER PLAYER NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/*PLAYER PHOTO ROW 2 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 3 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 4 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/*PLAYER PHOTO ROW 3 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 5 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 6 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+          {/*PLAYER PHOTO ROW 4 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 7 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 8 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/*PLAYER PHOTO ROW 5 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 9 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 10 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+          {/*PLAYER PHOTO ROW 6 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 11 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 12 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/*PLAYER PHOTO ROW 7 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 13 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 14 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+          {/*PLAYER PHOTO ROW 8 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 15 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 16 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/*PLAYER PHOTO ROW 9 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 17 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 18 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+          {/*PLAYER PHOTO ROW 10 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 19 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 20 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/*PLAYER PHOTO ROW 11 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 21 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 22 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+          {/*PLAYER PHOTO ROW 12 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 23 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+            <div className="create-player-details-row-1-right">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 24 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/*PLAYER PHOTO ROW 13 STARTS HERE--------------------------------- */}
+          <div className="create-player-details-row-1">
+            <div className="create-player-details-row-1-left">
+              <div className="enter-playername-1">
+                <h1>ENTER PLAYER 25 NAME</h1>
+                <input
+                  className="enter-playername-1-input"
+                  type="text"
+                  placeholder="POGBA"
+                />
+              </div>
+              <label htmlFor="teamImage" className="x-upload">
+                Upload Photo
+              </label>
+              <input
+                type="file"
+                id="teamImage"
+                name="teamImage"
+                accept="image/*"
+              />
+              <div className="enter-player-num">
+                <h1>ENTER JERSY NUMBER</h1>
+                <input
+                  className="enter-player-num-input"
+                  type="text"
+                  placeholder="10"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+        {/*HERE IS THE MANAGER DESCPRITION */}
+        <div className="enter-managerName">
+          <h1>ENTER MANAGER NAME</h1>
+          <input
+            className="enter-manager-name-input"
+            type="text"
+            placeholder="Eg: Arsenal"
+          />
+        </div>
+
+        <div className="team-manager-div">
+          <h1>UPLOAD MANAGER PHOTO</h1>
+          <label htmlFor="teamImage" className="custom-file-input">
+            Choose File
+          </label>
+          <input
+            className="team-photo-div-upload"
+            type="file"
+            id="teamImage"
+            name="teamImage"
+            accept="image/*"
+          />
+        </div>
+        <div className="enter-managerDesc">
+          <h1>ENTER MANAGER DESCRIPTION</h1>
+          <textarea
+            className="enter-team-Desc-textarea"
+            placeholder="Eg: Arsenal is one of the English club giants."
+            rows="4"
+          ></textarea>
+          <p>Words: {wordCount}</p>
+        </div>
+          <button className="create-team-button" type="submit">
+            SUBMIT
+          </button>
       </form>
     </div>
   </div>
