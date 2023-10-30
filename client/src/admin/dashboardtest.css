@@ -17,130 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-.admin-navbar {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    height: 50px;
-    top: 0;
-    z-index: 999;
-    left: 0;
-}
-
-.admin-navbar h1 {
-    font-size: 25px;
-    margin-left: 20px;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    letter-spacing: 2px;
-}
-
-.search-navbar-admin {
-    height: 35px;
-    width: 300px;
-    background-color: #000000;
-    position: relative;
-    right: 360px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    border: 1px solid #ffffff;
-    box-shadow: 4px 2px 5px 0px rgba(255, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 2px 5px 0px rgba(255, 0, 0, 0.75);
-    -moz-box-shadow: 4px 2px 5px 0px rgba(255, 0, 0, 0.75);
-    transition: transform 0.3s ease;
-}
-
-.admin-profile-picture {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    background-color: #ffffff;
-    margin-right: 150px;
-}
-
-.adminpic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.dropdown-content {
-    position: relative;
-}
-
-
-
-.dropdown-content button {
-    background-color: #000000;
-    width: 174px;
-    height: 39px;
-    color: #ffffff;
-    border-right: 1px solid #ffffff64;
-    border-bottom: 1px solid #ffffff64;
-    border-top: none;
-    border-left: none;
-    position: relative;
-    top: 44px;
-    right: 105px;
-    white-space: nowrap;
-    animation: myAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes myAnim {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-.admin-profile-picture h1 {
-    font-size: 15px;
-    top: 15px;
-    right: 25px;
-    position: absolute;
-    white-space: nowrap;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-}
-
-.search-navbar-admin:focus {
-    transform: scale(0.98);
-    border: 1px solid #ffffff;
-    outline: none;
-    box-shadow: 2px 1px 5px 0px rgba(255, 0, 0, 0.75);
-    -webkit-box-shadow: 2px 1px 5px 0px rgba(255, 0, 0, 0.75);
-    -moz-box-shadow: 2px 1px 5px 0px rgba(255, 0, 0, 0.75);
-}
-
-.heading-admin h1{
-    width:500px;
-    color: #ffffff;
-    position: relative;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    top:70px;
-    left:50px;
-    z-index: 1;
-}
-
-.subheading{
-    font-size: 20px;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    color: #bd0000;
-}
-
-
 
 .admin-1-row {
     width: 100%;
@@ -200,12 +76,47 @@ body {
     overflow: hidden;
     box-shadow: -10px -10px 15px #020202,
                  10px 10px 5px 0px rgba(255, 0, 0, 0.75);
-                
+    transition: transform 0.3s ease;
+}
+
+.create-player:hover{
+    transform: scale(1.03);
+}
+
+.create-player-cover{
+    width:100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
 }
 
 .card-bg-admin{
     opacity: 0.1;
+    width:100%;
+    position: relative;
+    bottom:300px;
 }
+
+.create-player-cover h1{
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    left:20px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.createPlayer-img{
+transform: scale(0.9);
+z-index: 1;
+position: relative;
+right:10px;
+box-shadow: 0px 0px 15px 5px #020202;
+}
+
+
+/* edit player card-------------------------------------------- */
 
 
 .edit-player {
@@ -215,4 +126,309 @@ body {
     overflow: hidden;
     box-shadow: -10px -10px 15px #020202,
         10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+        transition: transform 0.3s ease;
+}
+
+.edit-player:hover {
+    transform: scale(1.03);
+}
+
+.edit-player-cover {
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-player-cover h1 {
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    left: 20px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.editPlayer-img {
+    transform: scale(0.9);
+    z-index: 1;
+    position: relative;
+    right: 10px;
+    box-shadow: 0px 0px 15px 5px #020202;
+}
+
+.card-bg-edit-admin {
+    opacity: 0.1;
+    width: 100%;
+    position: relative;
+    bottom: 300px;
+}
+
+
+
+/* ///// 2nd row starts here------------------------- */
+.admin-3-row {
+    width: 100%;
+    height: 400px;
+    background-color: #0e0e0e;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.create-team {
+    background-color: #252525;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+        10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.create-team:hover {
+    transform: scale(1.03);
+}
+
+.create-team-cover {
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.create-team-cover h1 {
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    left: 20px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.createTeam-img {
+    transform: scale(0.9);
+    z-index: 1;
+    position: relative;
+    right: 10px;
+    box-shadow: 0px 0px 15px 5px #020202;
+}
+
+.create-team-bg {
+    opacity: 0.1;
+    width: 100%;
+    position: relative;
+    bottom: 300px;
+}
+
+
+
+/* //////EDit team------------------------------------------- */
+.edit-team {
+    background-color: #252525;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+        10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.edit-team:hover {
+    transform: scale(1.03);
+}
+
+.edit-team-cover {
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-team-cover h1 {
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    left: 20px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.editTeam-img {
+    transform: scale(0.9);
+    z-index: 1;
+    position: relative;
+    right: 10px;
+    box-shadow: 0px 0px 15px 5px #020202;
+}
+
+.edit-team-bg {
+    opacity: 0.1;
+    width: 100%;
+    position: relative;
+    bottom: 300px;
+}
+
+/* ///// 3rd row starts here------------------------- */
+.admin-4-row {
+    width: 100%;
+    height: 400px;
+    background-color: #0e0e0e;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.newsletter-card {
+    background-color: #252525;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+        10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.newsletter-card:hover {
+    transform: scale(1.03);
+}
+
+.newsletter-cover {
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-cover h1 {
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    right: 85px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.newsletter-img {
+    transform: scale(0.9);
+    z-index: 1;
+    position: relative;
+    left: 100px;
+    box-shadow: 0px 0px 15px 5px #020202;
+}
+
+.create-team-bg {
+    opacity: 0.1;
+    width: 100%;
+    position: relative;
+    bottom: 300px;
+}
+
+
+
+/* //////EDit team------------------------------------------- */
+.contact-faq {
+    background-color: #252525;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+        10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.contact-faq:hover {
+    transform: scale(1.03);
+}
+
+.contact-faq-cover {
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-faq-cover h1 {
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    right: 5px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.contact-faq-img {
+    transform: scale(0.9);
+    z-index: 1;
+    position: relative;
+    left: 15px;
+    box-shadow: 0px 0px 15px 5px #020202;
+}
+
+.edit-team-bg {
+    opacity: 0.1;
+    width: 100%;
+    position: relative;
+    bottom: 300px;
+}
+
+/* ///// 4TH row starts here------------------------- */
+.admin-5-row {
+    width: 100%;
+    height: 400px;
+    background-color: #0e0e0e;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.account-card {
+    background-color: #252525;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+        10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.account-card:hover {
+    transform: scale(1.03);
+}
+
+.account-cover {
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.account-cover h1 {
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    right: 50px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.account-img {
+    transform: scale(0.9);
+    z-index: 1;
+    position: relative;
+    left: 60px;
+    box-shadow: 0px 0px 15px 5px #020202;
+}
+
+.create-team-bg {
+    opacity: 0.1;
+    width: 100%;
+    position: relative;
+    bottom: 300px;
 }

@@ -2,26 +2,19 @@ import React, { useState } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import "./dashboardtest.css";
+import AdminNavbar from "../components/adminNavbar"
 import adminpic from "./admin photos/bekham.jpeg";
 import cardbg from "../images/leauge/6222618.jpg"
+import createPlayer from "./admin photos/createplayer.png";
+import editplayer from "./admin photos/editplayer.png";
+import createTeam from "./admin photos/createteam.png";
+import editTeam from "./admin photos/editteam.png";
+import newsletter from "./admin photos/newsletter.png";
+import contacts from "./admin photos/FAQ and CONACTS.png";
+import Footer from "../components/footor"
 
 
 function Dashboardtest() {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-
-  const handleChangePicture = () => {
-    // Define the logic for changing the picture here
-  };
-
-  const handleEditName = () => {
-    // Define the logic for editing the name here
-  };
-
-
 
   //graph place
     const options = {
@@ -113,26 +106,7 @@ function Dashboardtest() {
 
   return (
     <div className="admin-main-container">
-      <div className="admin-navbar">
-        <h1>MATCH PULSE</h1>
-        <input
-          className="search-navbar-admin"
-          type="text"
-          placeholder="SEARCH"
-        />
-        <div className="admin-profile-picture">
-          <div className="profile-container" onClick={toggleDropdown}>
-            <img className="adminpic" src={adminpic} alt="User Profile" />
-          </div>
-          {isDropdownOpen && (
-            <div className="dropdown-content">
-              <button onClick={handleChangePicture}>Change Picture</button>
-              <button onClick={handleEditName}>Edit Name</button>
-            </div>
-          )}
-          <h1>HENRY KELIN</h1>
-        </div>
-      </div>
+    <div>< AdminNavbar/></div>
       <div className="heading-admin">
         <h1>
           ADMIN DASHBOARD .. <span class="subheading">OVERVIEW</span>
@@ -152,13 +126,89 @@ function Dashboardtest() {
       </div>
       <div className="admin-2-row">
         <div className="create-player">
+          <div className="create-player-cover">
+            <h1>
+              CREATE A NEW
+              <br /> PLAYER
+            </h1>
+            <img className="createPlayer-img" src={createPlayer}></img>
+          </div>
           <img className="card-bg-admin" src={cardbg}></img>
         </div>
-
         <div className="edit-player">
-          <img className="card-bg-admin" src={cardbg}></img>
+          <div className="edit-player-cover">
+            <h1>
+              CREATE A NEW
+              <br /> PLAYER
+            </h1>
+            <img className="editPlayer-img" src={editplayer}></img>
+          </div>
+          <img className="card-bg-edit-admin" src={cardbg}></img>
         </div>
       </div>
+
+      {/* The row 2 starts here--------------------------------*/}
+      <div className="admin-3-row">
+        <div className="create-team">
+          <div className="create-team-cover">
+            <h1>
+              CREATE A NEW
+              <br /> TEAM
+            </h1>
+            <img className="createTeam-img" src={createTeam}></img>
+          </div>
+          <img className="create-team-bg" src={cardbg}></img>
+        </div>
+        <div className="edit-team">
+          <div className="edit-team-cover">
+            <h1>
+              CREATE A NEW
+              <br /> PLAYER
+            </h1>
+            <img className="editTeam-img" src={editTeam}></img>
+          </div>
+          <img className="edit-team-bg" src={cardbg}></img>
+        </div>
+      </div>
+      {/* The row 3 starts here--------------------------------*/}
+      <div className="admin-4-row">
+        <div className="newsletter-card">
+          <div className="newsletter-cover">
+            <h1>
+              NEWS
+              <br />
+              LETTER
+            </h1>
+            <img className="newsletter-img" src={newsletter}></img>
+          </div>
+          <img className="create-team-bg" src={cardbg}></img>
+        </div>
+        <div className="contact-faq">
+          <div className="contact-faq-cover">
+            <h1>
+              CONTACTS &
+              <br /> FAQ
+            </h1>
+            <img className="contact-faq-img" src={contacts}></img>
+          </div>
+          <img className="edit-team-bg" src={cardbg}></img>
+        </div>
+      </div>
+      {/* The row 4 starts here--------------------------------*/}
+      <div className="admin-5-row">
+        <div className="account-card">
+          <div className="account-cover">
+            <h1>
+              ACCOUNT
+              <br />
+              SETTINGS
+            </h1>
+            <img className="account-img" src={adminpic}></img>
+          </div>
+          <img className="create-team-bg" src={cardbg}></img>
+        </div>
+      </div>
+      <div><Footer /></div>
     </div>
   );
 }

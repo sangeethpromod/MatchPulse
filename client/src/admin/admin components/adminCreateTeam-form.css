@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.create-player-basic-from {
+    background-color: #000000;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.form-statrs-here h1{
+    font-size: 40px;
+    color:#ffffff
+}
+
+
+.enter-teamName{
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.enter-teamName h1{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.enter-team-name-input{
+    width:350px;
+    height:30px;
+    position: relative;
+    margin-top: 10px;
+    left:85px;
+    background-color: #000000;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color:#ffffff
+}
+/* team photo div---------------------------------- */
+.team-photo-div {
+    margin-top: 50px;
+    position: relative;
+    right: 370px;
+}
+
+.team-photo-div h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.team-photo-div-upload {
+    width: 200px;
+    height: 30px;
+    background-color: #bd0000;
+    box-shadow: 3px 3px 2px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(255, 255, 255, 0.75);
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-file-input {
+    display: block;
+    margin-top: 10px;
+    background-color: #bd0000;
+    width: 350px;
+    position: relative;
+    left:70px;
+    height: 30px;
+    box-shadow: 3px 3px 2px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(255, 255, 255, 0.75);
+    text-align: center;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.custom-file-input:hover {
+    background-color: #bd3333;
+}
+
+input[type="file"] {
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/* TEAM DESC STARTS HERE-------------------------------------- */
+.enter-teamDesc {
+    margin-top: 50px;
+    position: relative;
+    right: 345px;
+}
+
+.enter-teamDesc h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    
+}
+
+.enter-team-Desc-textarea {
+    width: 800px;
+    padding: 10px;
+    position: relative;
+    left:280px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 1.5px;
+    resize: vertical;
+}
+
+.formation-dropdown select {
+    width: 200px;
+    position: relative;
+    right:375px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    box-shadow: 3px 3px 2px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(255, 0, 0, 0.75);
+}
+
+/* TEAM DESC STARTS HERE-------------------------------------- */
+.enter-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.enter-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left:70px;
+}
+
+.enter-trophy-name-input {
+    width: 350px;
+    height: 30px;
+    position: relative;
+    margin-top: 10px;
+    left: 85px;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+/* UCL STARTS HERE-------------------------------------- */
+.ucl-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.ucl-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 83px;
+}
+/* UEL STARTS HERE-------------------------------------- */
+.uel-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.uel-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 65px;
+}
+
+/* UECL STARTS HERE-------------------------------------- */
+.uecl-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.uecl-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 87px;
+}
+/* supercup STARTS HERE-------------------------------------- */
+.supercup-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.supercup-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 70px;
+}
+
+/* CARBAO STARTS HERE-------------------------------------- */
+.carbao-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.carbao-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 50px;
+}
+
+/* FA CUP STARTS HERE-------------------------------------- */
+.facup-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.facup-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 25px;
+}
+
+/* CLUB WC STARTS HERE-------------------------------------- */
+.clubwc-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.clubwc-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 70px;
+}
+
+/* ShIELD STARTS HERE-------------------------------------- */
+.Cshield-trophy-count{
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.Cshield-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 80px;
+}

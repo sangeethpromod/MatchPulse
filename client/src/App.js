@@ -10,6 +10,7 @@ import Contact from './pages/contactpage';
 import PremireLeauge from "./pages/premireLeauge";
 import Dashtest from "./admin//dashboardtest.jsx";
 import Teampage from "./pages/teampage.jsx"
+import CreateTeam from "./admin/admin pages/createTeam"
 function App() {
   return (
     <BrowserRouter>
@@ -22,8 +23,9 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/leauge" element={<SelectLeauge />}></Route>
         <Route path="/premireleauge" element={<PremireLeauge />}></Route>
-        <Route path="/maindash" element={<Dashtest />}></Route>
+        <Route path="/admin" element={<Dashtest />}></Route>
         <Route path="/teampage" element={<Teampage />}></Route>
+        <Route path="/createteam" element={<CreateTeam />}></Route>
       </Routes>
     </BrowserRouter>
   );
