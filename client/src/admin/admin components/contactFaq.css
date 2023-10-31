@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.admin-contacttable-main-container {
+    background-color: #000000;
+    max-height: 450px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.admin-contacttable-row {
+    width: 100%;
+    height: 700px;
+    background-color: #000000;
+}
+
+.data-table {
+    width: 1800px;
+    position: relative;
+    right:130px;
+    border-collapse: collapse;
+    table-layout: relative;
+    outline:1px solid #fff;
+    transform: scale(0.8);
+}
+
+.data-table td{
+    outline: 1px solid #fff;
+}
+.data-table th {
+    outline: 1px solid #fff;
+}
+
+
+.data-table th:nth-child(1){
+    color: #bd0000;
+    width: 50px;
+    height: 50px;
+}
+.data-table td:nth-child(1){
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.data-table th:nth-child(2) {
+    width: 300px;
+    color: #bd0000;
+}
+
+.data-table td:nth-child(2) {
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.data-table th:nth-child(3) {
+    width: 300px;
+    color: #bd0000;
+}
+
+.data-table td:nth-child(3) {
+    width: 400px;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+.data-table th:nth-child(4) {
+    width: 400px;
+    color: #bd0000;
+}
+
+.data-table td:nth-child(4) {
+    width: 600px;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.data-table th:nth-child(5) {
+    width: 500px;
+    color: #bd0000;
+}
+
+.data-table td:nth-child(5) {
+    width: 500px;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+.data-table th:nth-child(6) {
+    width: 500px;
+    color: #bd0000;
+}
+.data-table td:nth-child(6) {
+    width: 700px;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+.data-table th:nth-child(7) {
+    width: 300px;
+    color: #bd0000;
+}
+
+.data-table td:nth-child(7) {
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.pagination button {
+    position: relative;
+    margin: 0 4px;
+    padding: 8px 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

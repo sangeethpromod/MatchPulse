@@ -3,10 +3,10 @@ import "../admincss/createTeam.css";
 import AdminNavbar from "../../components/adminNavbar";
 import adminAdd from "../admin photos/admin-create-add.mp4";
 import FormForPremierLeague from "../admin components/adminCreateTeam-form"; 
-import FormForLaLiga from "../admin components/adminCreateTeam-form"; 
-import FormForSerieA from "../admin components/adminCreateTeam-form"; 
-import FormForBundesliga from "../admin components/adminCreateTeam-form"; 
-import FormForLigue1 from "../admin components/adminCreateTeam-form";
+import FormForLaLiga from "../admin components/adminLaliga"; 
+import FormForSerieA from "../admin components/adminSerieA"; 
+import FormForBundesliga from "../admin components/adminBundesliga"; 
+import FormForLigue1 from "../admin components/adminLigue1";
 import Footer from "../../components/footor"
 
 function CreateTeam() {

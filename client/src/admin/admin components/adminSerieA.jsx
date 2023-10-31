@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import "../admincss/editTeam.css";
+import "./adminCreateTeam-form.css";
 import FormForPremierLeague from "../admin components/adminCreateTeam-form";
 import FormForLaLiga from "../admin components/adminCreateTeam-form";
 import FormForSerieA from "../admin components/adminCreateTeam-form";
 import FormForBundesliga from "../admin components/adminCreateTeam-form";
 import FormForLigue1 from "../admin components/adminCreateTeam-form";
-import AdminNavbar from "../../components/adminNavbar";
 
-function EditTeam() {
+function CreateTeamForm() {
   const [wordCount, setWordCount] = useState(0);
 
   const handleDescriptionChange = (e) => {
@@ -46,25 +45,15 @@ function EditTeam() {
 
   return (
     <div className="create-player-basic-from">
-      <div>
-        <AdminNavbar />
-      </div>
-      <div className="edit-team-search">
-        <input
-          className="search-navbar-admin"
-          type="text"
-          placeholder="SEARCH"
-        />
-      </div>
       <div className="form-statrs-here">
-        <h1>LIGUE 1 LEAUGE FORM</h1>
+        <h1>SERIE A LEAUGE FORM</h1>
         <form>
           <div className="enter-teamName">
             <h1>ENTER TEAM NAME</h1>
             <input
               className="enter-team-name-input"
               type="text"
-              placeholder="Eg: Paris Saint German"
+              placeholder="Eg: AC MILAN"
             />
           </div>
 
@@ -85,7 +74,7 @@ function EditTeam() {
             <h1>ENTER Team Description</h1>
             <textarea
               className="enter-team-Desc-textarea"
-              placeholder="Eg: PSG is one of the French Leauge giants."
+              placeholder="Eg: AC Milan is one of the best clubs in Serie A."
               rows="4"
             ></textarea>
             <p>Words: {wordCount}</p>
@@ -105,7 +94,7 @@ function EditTeam() {
           </div>
 
           <div className="laliga-trophy-count">
-            <h1>LIGUE 1 TROPHIES WON</h1>
+            <h1>SERIE A TROPHIES WON</h1>
             <input
               className="enter-trophy-name-input"
               type="text"
@@ -144,16 +133,16 @@ function EditTeam() {
               placeholder="0"
             />
           </div>
-          <div className="cdfrance-trophy-count">
-            <h1>COUPE de FRANCE TROPHIES WON</h1>
+          <div className="copa-delrey-trophy-count">
+            <h1>COPPA ITALIA TROPHIES WON</h1>
             <input
               className="enter-trophy-name-input"
               type="text"
               placeholder="0"
             />
           </div>
-          <div className="frenchsuper-trophy-count">
-            <h1>TROPHEE DES CHAMPIONS WON</h1>
+          <div className="spanishSUper-trophy-count">
+            <h1>SUPER COPA ITALIA TROPHIES WON</h1>
             <input
               className="enter-trophy-name-input"
               type="text"
@@ -177,7 +166,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -204,7 +193,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -235,7 +224,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -262,7 +251,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -293,7 +282,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -320,7 +309,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -350,7 +339,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -377,7 +366,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -408,7 +397,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -435,7 +424,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -465,7 +454,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -492,7 +481,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -523,7 +512,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -550,7 +539,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -580,7 +569,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -607,7 +596,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -638,7 +627,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -665,7 +654,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -695,7 +684,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -722,7 +711,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -753,7 +742,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -780,7 +769,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -810,7 +799,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -837,7 +826,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -868,7 +857,7 @@ function EditTeam() {
                   <input
                     className="enter-playername-1-input"
                     type="text"
-                    placeholder="Zlatan Ibrahimović"
+                    placeholder="Francesco Totti"
                   />
                 </div>
                 <label htmlFor="teamImage" className="x-upload">
@@ -897,7 +886,7 @@ function EditTeam() {
             <input
               className="enter-manager-name-input"
               type="text"
-              placeholder="Eg: Arsène Wenger"
+              placeholder="Eg: Carlo Ancelotti"
             />
           </div>
 
@@ -918,7 +907,7 @@ function EditTeam() {
             <h1>ENTER MANAGER DESCRIPTION</h1>
             <textarea
               className="enter-team-Desc-textarea"
-              placeholder="Eg: Arsène Wenger is the only coach to go a season without loosing a game."
+              placeholder="Eg: Carlo Ancelotti is an italian Coach regarded as one of the best Coaches in the world."
               rows="4"
             ></textarea>
             <p>Words: {wordCount}</p>
@@ -932,4 +921,4 @@ function EditTeam() {
   );
 }
 
-export default EditTeam;
+export default CreateTeamForm;

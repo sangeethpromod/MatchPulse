@@ -171,6 +171,34 @@ input[type="file"] {
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
+/*LA LIGA form-------------------------------------- */
+.laliga-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.laliga-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 25px;
+}
+
+/*LA LIGA form-------------------------------------- */
+.bundesliga-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.bundesliga-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 45px;
+}
+
 /* UCL STARTS HERE-------------------------------------- */
 .ucl-trophy-count {
     margin-top: 20px;
@@ -239,6 +267,48 @@ input[type="file"] {
     left: 50px;
 }
 
+/* LA LIGA COPA DEL REY STARTS HERE-------------------------------------- */
+.copa-delrey-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.copa-delrey-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 55px;
+}
+
+/* BUNDESLIGA DFB POKAL STARTS HERE-------------------------------------- */
+.dfbpokal-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.dfbpokal-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 40px;
+}
+
+/* LIGUE 1 COUPE de FRANCE STARTS HERE-------------------------------------- */
+.cdfrance-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.cdfrance-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 75px;
+}
+
 /* FA CUP STARTS HERE-------------------------------------- */
 .facup-trophy-count {
     margin-top: 20px;
@@ -253,6 +323,48 @@ input[type="file"] {
     left: 25px;
 }
 
+/* LA LIGA FORM SPANISH SUPER CUP STARTS HERE-------------------------------------- */
+.spanishSUper-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.spanishSUper-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 85px;
+}
+
+/* Bundesliga FORM DFL-SUPERCUP STARTS HERE-------------------------------------- */
+.dflsuper-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.dflsuper-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 65px;
+}
+
+/* Ligue 1 FORM TROPHEE DES CHAMPIONS STARTS HERE-------------------------------------- */
+.frenchsuper-trophy-count {
+    margin-top: 20px;
+    position: relative;
+    right: 380px;
+}
+
+.frenchsuper-trophy-count h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    left: 60px;
+}
+
 /* CLUB WC STARTS HERE-------------------------------------- */
 .clubwc-trophy-count {
     margin-top: 20px;
@@ -264,7 +376,7 @@ input[type="file"] {
     font-size: 18px;
     letter-spacing: 2px;
     position: relative;
-    left: 70px;
+    left: 65px;
 }
 
 /* ShIELD STARTS HERE-------------------------------------- */

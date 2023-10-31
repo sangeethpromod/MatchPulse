@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import "../admincss/editTeam.css";
+import "./adminCreateTeam-form.css";
 import FormForPremierLeague from "../admin components/adminCreateTeam-form";
 import FormForLaLiga from "../admin components/adminCreateTeam-form";
 import FormForSerieA from "../admin components/adminCreateTeam-form";
 import FormForBundesliga from "../admin components/adminCreateTeam-form";
 import FormForLigue1 from "../admin components/adminCreateTeam-form";
-import AdminNavbar from "../../components/adminNavbar";
 
-function EditTeam() {
+function CreateTeamForm() {
   const [wordCount, setWordCount] = useState(0);
 
   const handleDescriptionChange = (e) => {
@@ -46,16 +45,6 @@ function EditTeam() {
 
   return (
     <div className="create-player-basic-from">
-      <div>
-        <AdminNavbar />
-      </div>
-      <div className="edit-team-search">
-        <input
-          className="search-navbar-admin"
-          type="text"
-          placeholder="SEARCH"
-        />
-      </div>
       <div className="form-statrs-here">
         <h1>LIGUE 1 LEAUGE FORM</h1>
         <form>
@@ -932,4 +921,4 @@ function EditTeam() {
   );
 }
 
-export default EditTeam;
+export default CreateTeamForm;

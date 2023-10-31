@@ -11,6 +11,8 @@ import PremireLeauge from "./pages/premireLeauge";
 import Dashtest from "./admin//dashboardtest.jsx";
 import Teampage from "./pages/teampage.jsx"
 import CreateTeam from "./admin/admin pages/createTeam"
+import EditTeam from "./admin/admin pages/editTeam";
+import AdminContact from "./admin/admin pages/admincontact"
 function App() {
   return (
     <BrowserRouter>
@@ -25,7 +27,9 @@ function App() {
         <Route path="/premireleauge" element={<PremireLeauge />}></Route>
         <Route path="/admin" element={<Dashtest />}></Route>
         <Route path="/teampage" element={<Teampage />}></Route>
-        <Route path="/createteam" element={<CreateTeam />}></Route>
+        <Route path="admin/createteam" element={<CreateTeam />}></Route>
+        <Route path="admin/editteam" element={<EditTeam />}></Route>
+        <Route path="/admin/contact" element={<AdminContact />}></Route>
       </Routes>
     </BrowserRouter>
   );
