@@ -125,6 +125,7 @@ body {
 .enter-subject-to-sent-input:focus {
     border: none;
     outline: none;
+    
 }
 
 .enter-content-to-sent {
@@ -137,6 +138,7 @@ body {
 }
 
 .enter-content-to-sent-input {
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 30px;
     width: 100%;

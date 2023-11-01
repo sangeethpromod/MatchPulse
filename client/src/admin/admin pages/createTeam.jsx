@@ -40,7 +40,7 @@ function CreateTeam() {
       <div className="create-team-subContainer">
         <div className="create-player-divison-left">
           <div className="create-admin-player-card">
-            <h1>ENTER DETAILS TO CREATE A PLAYER</h1>
+            <h1>ENTER DETAILS TO CREATE A TEAM</h1>
             <select onChange={handleLeagueChange} value={selectedLeague}>
               <option value="">Select a league</option>
               <option value="Premier League">Premier League</option>

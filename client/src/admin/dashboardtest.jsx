@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import "./dashboardtest.css";
+import { useNavigate } from "react-router-dom";
 import AdminNavbar from "../components/adminNavbar"
 import adminpic from "./admin photos/bekham.jpeg";
 import cardbg from "../images/leauge/6222618.jpg"
@@ -15,6 +16,32 @@ import Footer from "../components/footor"
 
 
 function Dashboardtest() {
+
+      const navigate = useNavigate();
+      
+      const handleoption1Click = () => {
+        navigate("/admin/createplayer");
+      };
+
+      const handleoption2Click = () => {
+        navigate("/admin/ediplayer");
+      };
+      const handleoption3Click = () => {
+        navigate("/admin/createteam");
+      };
+      const handleoption4Click = () => {
+        navigate("/admin/editteam");
+      };
+      const handleoption5Click = () => {
+        navigate("/admin/newsletter");
+      };
+      const handleoption6Click = () => {
+        navigate("/admin/contact");
+      };
+      const handleoption7Click = () => {
+        navigate("/admin/account");
+      };
+
 
   //graph place
     const options = {
@@ -106,7 +133,9 @@ function Dashboardtest() {
 
   return (
     <div className="admin-main-container">
-    <div>< AdminNavbar/></div>
+      <div>
+        <AdminNavbar />
+      </div>
       <div className="heading-admin">
         <h1>
           ADMIN DASHBOARD .. <span class="subheading">OVERVIEW</span>
@@ -125,7 +154,7 @@ function Dashboardtest() {
         </div>
       </div>
       <div className="admin-2-row">
-        <div className="create-player">
+        <div className="create-player" onClick={handleoption1Click}>
           <div className="create-player-cover">
             <h1>
               CREATE A NEW
@@ -135,10 +164,10 @@ function Dashboardtest() {
           </div>
           <img className="card-bg-admin" src={cardbg}></img>
         </div>
-        <div className="edit-player">
+        <div className="edit-player" onClick={handleoption2Click}>
           <div className="edit-player-cover">
             <h1>
-              CREATE A NEW
+              EDIT A
               <br /> PLAYER
             </h1>
             <img className="editPlayer-img" src={editplayer}></img>
@@ -149,7 +178,7 @@ function Dashboardtest() {
 
       {/* The row 2 starts here--------------------------------*/}
       <div className="admin-3-row">
-        <div className="create-team">
+        <div className="create-team" onClick={handleoption3Click}>
           <div className="create-team-cover">
             <h1>
               CREATE A NEW
@@ -159,11 +188,11 @@ function Dashboardtest() {
           </div>
           <img className="create-team-bg" src={cardbg}></img>
         </div>
-        <div className="edit-team">
+        <div className="edit-team" onClick={handleoption4Click}>
           <div className="edit-team-cover">
             <h1>
-              CREATE A NEW
-              <br /> PLAYER
+              EDIT A
+              <br /> TEAM
             </h1>
             <img className="editTeam-img" src={editTeam}></img>
           </div>
@@ -172,7 +201,7 @@ function Dashboardtest() {
       </div>
       {/* The row 3 starts here--------------------------------*/}
       <div className="admin-4-row">
-        <div className="newsletter-card">
+        <div className="newsletter-card" onClick={handleoption5Click}>
           <div className="newsletter-cover">
             <h1>
               NEWS
@@ -183,7 +212,7 @@ function Dashboardtest() {
           </div>
           <img className="create-team-bg" src={cardbg}></img>
         </div>
-        <div className="contact-faq">
+        <div className="contact-faq" onClick={handleoption6Click}>
           <div className="contact-faq-cover">
             <h1>
               CONTACTS &
@@ -196,7 +225,7 @@ function Dashboardtest() {
       </div>
       {/* The row 4 starts here--------------------------------*/}
       <div className="admin-5-row">
-        <div className="account-card">
+        <div className="account-card" onClick={handleoption7Click}>
           <div className="account-cover">
             <h1>
               ACCOUNT
@@ -208,7 +237,9 @@ function Dashboardtest() {
           <img className="create-team-bg" src={cardbg}></img>
         </div>
       </div>
-      <div><Footer /></div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

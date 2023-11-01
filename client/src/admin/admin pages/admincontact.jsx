@@ -28,7 +28,11 @@ function Admincontact() {
             <input className="enter-subject-to-sent-input" type="text" />
           </div>
           <div className="enter-content-to-sent">
-            <input className="enter-content-to-sent-input" type="text" />
+            <textarea
+              className="enter-content-to-sent-input"
+              placeholder="Write your Content Here"
+              rows="4"
+            ></textarea>
           </div>
         </div>
       </div>

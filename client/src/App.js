@@ -13,6 +13,8 @@ import Teampage from "./pages/teampage.jsx"
 import CreateTeam from "./admin/admin pages/createTeam"
 import EditTeam from "./admin/admin pages/editTeam";
 import AdminContact from "./admin/admin pages/admincontact"
+import Newsletter from "./admin/admin pages/adminewsletter";
+import AdminAccount from "./admin/admin pages/adminAccount";
 function App() {
   return (
     <BrowserRouter>
@@ -30,6 +32,8 @@ function App() {
         <Route path="admin/createteam" element={<CreateTeam />}></Route>
         <Route path="admin/editteam" element={<EditTeam />}></Route>
         <Route path="/admin/contact" element={<AdminContact />}></Route>
+        <Route path="/admin/newsletter" element={<Newsletter />}></Route>
+        <Route path="/admin/account" element={<AdminAccount />}></Route>
       </Routes>
     </BrowserRouter>
   );
