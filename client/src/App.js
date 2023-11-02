@@ -15,6 +15,7 @@ import EditTeam from "./admin/admin pages/editTeam";
 import AdminContact from "./admin/admin pages/admincontact"
 import Newsletter from "./admin/admin pages/adminewsletter";
 import AdminAccount from "./admin/admin pages/adminAccount";
+import Playerinfo from "./pages/playerinfo.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/premireleauge" element={<PremireLeauge />}></Route>
         <Route path="/admin" element={<Dashtest />}></Route>
         <Route path="/teampage" element={<Teampage />}></Route>
+        <Route path="/playerinfo" element={<Playerinfo />}></Route>
         <Route path="admin/createteam" element={<CreateTeam />}></Route>
         <Route path="admin/editteam" element={<EditTeam />}></Route>
         <Route path="/admin/contact" element={<AdminContact />}></Route>
