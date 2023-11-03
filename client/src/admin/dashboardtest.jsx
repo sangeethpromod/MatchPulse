@@ -2,25 +2,45 @@ import React, { useState } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import "./dashboardtest.css";
+import { useNavigate } from "react-router-dom";
+import AdminNavbar from "../components/adminNavbar"
 import adminpic from "./admin photos/bekham.jpeg";
 import cardbg from "../images/leauge/6222618.jpg"
+import createPlayer from "./admin photos/createplayer.png";
+import editplayer from "./admin photos/editplayer.png";
+import createTeam from "./admin photos/createteam.png";
+import editTeam from "./admin photos/editteam.png";
+import newsletter from "./admin photos/newsletter.png";
+import contacts from "./admin photos/FAQ and CONACTS.png";
+import Footer from "../components/footor"
 
 
 function Dashboardtest() {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
+      const navigate = useNavigate();
+      
+      const handleoption1Click = () => {
+        navigate("/admin/createplayer");
+      };
 
-  const handleChangePicture = () => {
-    // Define the logic for changing the picture here
-  };
-
-  const handleEditName = () => {
-    // Define the logic for editing the name here
-  };
-
+      const handleoption2Click = () => {
+        navigate("/admin/ediplayer");
+      };
+      const handleoption3Click = () => {
+        navigate("/admin/createteam");
+      };
+      const handleoption4Click = () => {
+        navigate("/admin/editteam");
+      };
+      const handleoption5Click = () => {
+        navigate("/admin/newsletter");
+      };
+      const handleoption6Click = () => {
+        navigate("/admin/contact");
+      };
+      const handleoption7Click = () => {
+        navigate("/admin/account");
+      };
 
 
   //graph place
@@ -113,25 +133,8 @@ function Dashboardtest() {
 
   return (
     <div className="admin-main-container">
-      <div className="admin-navbar">
-        <h1>MATCH PULSE</h1>
-        <input
-          className="search-navbar-admin"
-          type="text"
-          placeholder="SEARCH"
-        />
-        <div className="admin-profile-picture">
-          <div className="profile-container" onClick={toggleDropdown}>
-            <img className="adminpic" src={adminpic} alt="User Profile" />
-          </div>
-          {isDropdownOpen && (
-            <div className="dropdown-content">
-              <button onClick={handleChangePicture}>Change Picture</button>
-              <button onClick={handleEditName}>Edit Name</button>
-            </div>
-          )}
-          <h1>HENRY KELIN</h1>
-        </div>
+      <div>
+        <AdminNavbar />
       </div>
       <div className="heading-admin">
         <h1>
@@ -151,13 +154,91 @@ function Dashboardtest() {
         </div>
       </div>
       <div className="admin-2-row">
-        <div className="create-player">
+        <div className="create-player" onClick={handleoption1Click}>
+          <div className="create-player-cover">
+            <h1>
+              CREATE A NEW
+              <br /> PLAYER
+            </h1>
+            <img className="createPlayer-img" src={createPlayer}></img>
+          </div>
           <img className="card-bg-admin" src={cardbg}></img>
         </div>
+        <div className="edit-player" onClick={handleoption2Click}>
+          <div className="edit-player-cover">
+            <h1>
+              EDIT A
+              <br /> PLAYER
+            </h1>
+            <img className="editPlayer-img" src={editplayer}></img>
+          </div>
+          <img className="card-bg-edit-admin" src={cardbg}></img>
+        </div>
+      </div>
 
-        <div className="edit-player">
-          <img className="card-bg-admin" src={cardbg}></img>
+      {/* The row 2 starts here--------------------------------*/}
+      <div className="admin-3-row">
+        <div className="create-team" onClick={handleoption3Click}>
+          <div className="create-team-cover">
+            <h1>
+              CREATE A NEW
+              <br /> TEAM
+            </h1>
+            <img className="createTeam-img" src={createTeam}></img>
+          </div>
+          <img className="create-team-bg" src={cardbg}></img>
         </div>
+        <div className="edit-team" onClick={handleoption4Click}>
+          <div className="edit-team-cover">
+            <h1>
+              EDIT A
+              <br /> TEAM
+            </h1>
+            <img className="editTeam-img" src={editTeam}></img>
+          </div>
+          <img className="edit-team-bg" src={cardbg}></img>
+        </div>
+      </div>
+      {/* The row 3 starts here--------------------------------*/}
+      <div className="admin-4-row">
+        <div className="newsletter-card" onClick={handleoption5Click}>
+          <div className="newsletter-cover">
+            <h1>
+              NEWS
+              <br />
+              LETTER
+            </h1>
+            <img className="newsletter-img" src={newsletter}></img>
+          </div>
+          <img className="create-team-bg" src={cardbg}></img>
+        </div>
+        <div className="contact-faq" onClick={handleoption6Click}>
+          <div className="contact-faq-cover">
+            <h1>
+              CONTACTS &
+              <br /> FAQ
+            </h1>
+            <img className="contact-faq-img" src={contacts}></img>
+          </div>
+          <img className="edit-team-bg" src={cardbg}></img>
+        </div>
+      </div>
+      {/* The row 4 starts here--------------------------------*/}
+      <div className="admin-5-row">
+        <div className="account-card" onClick={handleoption7Click}>
+          <div className="account-cover">
+            <h1>
+              ACCOUNT
+              <br />
+              SETTINGS
+            </h1>
+            <img className="account-img" src={adminpic}></img>
+          </div>
+          <img className="create-team-bg" src={cardbg}></img>
+        </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+
+.player-info-main-container {
+    background-color: #000000;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.player-photo-info-page{
+    width:100%;
+    height:500px;
+    position: relative7
+}
+
+.messiwalp {
+    opacity: 0.7;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    z-index: 0;
+}
+
+
+.first-row-player-info{
+    width: 100%;
+        height: 700px;
+        background-color: #0e0e0e;
+        position: relative;
+        z-index: 1;
+        display: flex;
+}
+
+.first-row-player-info-left {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+    height: 700px;
+}
+
+.first-row-player-info-left h1{
+    font-size: 70px;
+    color: #bd0000;
+    text-transform: uppercase;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    animation: Leftlog 1s ease 0s 1 normal forwards;
+}
+
+@keyframes Leftlog {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.first-row-player-info-left h2 {
+    font-size: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    animation: Leftlog 1s ease 0s 1 normal forwards;
+}
+@keyframes Leftlog {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.first-row-player-info-left p {
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
+    padding-right: 10px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    animation: Leftlog 1s ease 0s 1 normal forwards;
+}
+@keyframes Leftlog {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.first-row-player-info-right {
+    width:50%;
+    height:700px;
+}
+
+.outline{
+    width:100%;
+    border: 1px solid #ff0000;
+    transform: scale(0.7);
+    position: relative;
+    bottom: 130px;
+    left:60px;
+}
+.player-img-mes {
+    width: 100%;
+     transform: scale(0.97);
+    position: relative;
+    animation: myAnim 4s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.second-row-player-info{
+    width: 100%;
+    height:400px;
+    background-color: #0e0e0e;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-row-player-info h1{
+text-align: left;
+font-size: 50px;
+color: #bd0000;
+margin-top: 20px;
+margin-bottom: 40px;
+letter-spacing: 3px;
+position: relative;
+right: 480px;
+font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.player-info-table{
+    width:1400px;
+    outline: 1px solid #ffffff;
+    position: relative;
+    right: 25px;
+    color: #ffffff;
+    height:200px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.player-info-table td{
+    outline: 1px solid #ffffff;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    width:100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.player-info-table td:nth-child(5) {
+    color: #fff700;
+}
+.player-info-table td:nth-child(6) {
+    color: #ff0000;
+}
+
+.clubs-played-for{
+    width:100%;
+    height:400px;
+}
+
+.clubs-played-for h1{
+    width:600px;
+    font-size: 50px;
+    color: #bd0000;
+    margin-left: 30px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+
+.club-images-for-players{
+    width:100%;
+    position: relative;
+    height: 200px;
+    display: flex;
+}
+
+
+.cluabplay{
+    width:450px;
+    height: 450px;
+    position: relative;
+    right:120px;
+    bottom: 120px;
+    transform: scale(0.2);
+}
+
+.trophy-player-history{
+    height:auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ffffff;
+}
+
+.trophy-player-history h1{
+    color: #bd0000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+
+.player-trophy-table{
+    color:#ffffff;
+    font-size: 30px;
+    width:80%;
+}
+
+.player-trophy-table td{
+    width:100px;
+}
