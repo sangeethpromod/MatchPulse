@@ -115,7 +115,7 @@ function premireLeauge() {
             <img className="westhamlogo" src={westHamLogo} />
           </div>
           <div className="premCard-20">
-            <h1>WOLVERHAMPTON WANDERERS</h1>
+            <h1>WOLVER<br />HAMPTON WANDERERS</h1>
             <img className="wolveslogo" src={wolvesLogo} />
           </div>
         </div>

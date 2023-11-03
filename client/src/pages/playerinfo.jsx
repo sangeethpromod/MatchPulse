@@ -90,7 +90,36 @@ function Playerinfo() {
           <img className="cluabplay" src={arg} />
         </div>
       </div>
-      <div>< Footer/></div>
+      <div className="trophy-player-history">
+      <h1>TROPHIES WON AND INDIVIDUAL AWARDS</h1>
+        <table className="player-trophy-table">
+          <tbody>
+            <tr>
+              {/* First row - images */}
+              <td>FIFA WORLD CUP</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              {/* Second row - numbers */}
+              <td>UEFA CHAMPIONS LEAUGE</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              {/* First row - images */}
+              <td>BALLON D'ORE</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              {/* Second row - numbers */}
+              <td>GOLDEN BOOT</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,115 +1,93 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-import "sweetalert2/dist/sweetalert2.css";
+import { useState } from "react";
 import "../css/login.css";
-import bgimage from "../images/signin.png";
 
-const Login = () => {
-  const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+function App() {
+  const [isSignedUp, setIsSignedUp] = useState(false);
 
-  const handleForgot = async () => {
-    navigate("/forgotpassword")
-  }
-
-  const handleLogin = async () => {
-    try {
-      // Send a POST request to your backend login route
-      const response = await axios.post("http://localhost:3000/auth/tokens", {
-        username,
-        password,
-      });
-
-      // Check if the response has a token
-      if (response.data && response.data.token) {
-        // JWT token on successful login
-        const token = response.data.token;
-        const username = response.data.username;
-        const userId = response.data.userId;
-
-        localStorage.setItem("token", token);
-        localStorage.setItem("username", username);
-        localStorage.setItem("userId", userId);
-
-
-        Swal.fire({
-          icon: "success",
-          title: "Login successful",
-        });
-        navigate("/homepage");
-      } else {
-
-        
-      }
-    } catch (error) {
-      console.error("Login error:", error);
-
-      Swal.fire({
-        icon: "error",
-        title: "Login failed",
-        text: "Please check your credentials",
-      });
-    }
+  const handleSignUp = () => {
+    setIsSignedUp(true);
   };
+
+  const handleSignIn = () => {
+    setIsSignedUp(false);
+  };
+
   return (
-    <div className="main-container">
-      <div className="bg-image">
-        <img src={bgimage} alt="" />
-      </div>
-      <div className="loginCard">
-        <form>
-          <h2 style={{ color: "white" }}>SIGN IN</h2>
-          <div className="username">
-            <label htmlFor="username">USERNAME</label>
-          </div>
-          <div>
-            <input
-              type="text"
-              className="enterusername"
-              onChange={(e) => setUsername(e.target.value)}
-            />
-          </div>
-          <div className="logpassword">
-            <label htmlFor="password">PASSWORD</label>
-          </div>
-          <div>
-            <input
-              type="password"
-              className="logenterpassword"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-
-          <div className="button-row">
-            <div>
-              <button
-                className="signinButton"
-                type="button"
-                onClick={handleLogin}
-              >
-                SIGN IN
+    <div className="login-parent">
+      <div className={`container ${isSignedUp ? "right-panel-active" : ""}`}>
+        <div className="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div className="social-container">
+              <a href="#" className="social">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+        <div className="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div className="social-container">
+              <a href="#" className="social">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#" className="social">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
+        <div className="overlay-container">
+          <div className="overlay">
+            <div
+              className={`overlay-panel overlay-left ${
+                isSignedUp ? "" : "right-panel-active"
+              }`}
+            >
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start the journey with us</p>
+              <button className="ghost" onClick={handleSignIn} id="signIn">
+                Sign In
+              </button>
+            </div>
+            <div
+              className={`overlay-panel overlay-right ${
+                isSignedUp ? "right-panel-active" : ""
+              }`}
+            >
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button className="ghost" onClick={handleSignUp} id="signUp">
+                Sign Up
               </button>
             </div>
           </div>
-
-          <div className="button-row2">
-            <div>
-              <button
-                className="forgotpassButton"
-                type="button"
-                 onClick={handleForgot}
-              >
-                FORGOT PASSWORD
-              </button>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   );
-};
+}
 
-export default Login;
+export default App;

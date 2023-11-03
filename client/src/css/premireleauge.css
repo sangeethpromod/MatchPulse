@@ -614,7 +614,7 @@ body {
 
 .premCard-13 h1 {
     position: relative;
-    font-size: 35px;
+    font-size: 30px;
     left: 10px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
@@ -623,7 +623,7 @@ body {
 .mancitylogo {
     width: 100%;
     position: relative;
-    right: 210px;
+    right: 185px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -656,7 +656,7 @@ body {
 
 .premCard-14 h1 {
     position: relative;
-    font-size: 35px;
+    font-size: 30px;
     left: 10px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
@@ -665,7 +665,7 @@ body {
 .manutdlogo {
     width: 100%;
     position: relative;
-    right: 210px;
+    right: 180px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -699,8 +699,8 @@ body {
 
 .premCard-15 h1 {
     position: relative;
-    font-size: 40px;
-    left: 10px;
+    font-size: 30px;
+    left: 18px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -708,7 +708,7 @@ body {
 .newcastlogo {
     width: 100%;
     position: relative;
-    right: 215px;
+    right: 160px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -741,8 +741,8 @@ body {
 
 .premCard-16 h1 {
     position: relative;
-    font-size: 35px;
-    left: 20px;
+    font-size: 30px;
+    left: 15px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -750,7 +750,7 @@ body {
 .nottinghamlogo {
     width: 100%;
     position: relative;
-    right: 200px;
+    right: 175px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -783,8 +783,8 @@ body {
 
 .premCard-17 h1 {
     position: relative;
-    font-size: 40px;
-    left: 20px;
+    font-size: 30px;
+    left: 30px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -792,7 +792,7 @@ body {
 .shelogo {
     width: 100%;
     position: relative;
-    right: 190px;
+    right: 140px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -825,7 +825,7 @@ body {
 
 .premCard-18 h1 {
     position: relative;
-    font-size: 35px;
+    font-size: 30px;
     left: 20px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
@@ -834,7 +834,7 @@ body {
 .totlogo {
     width: 100%;
     position: relative;
-    right: 190px;
+    right: 160px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -876,8 +876,8 @@ body {
 
 .premCard-19 h1 {
     position: relative;
-    font-size: 35px;
-    left: 40px;
+    font-size: 30px;
+    left: 30px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -885,7 +885,7 @@ body {
 .westhamlogo {
     width: 100%;
     position: relative;
-    right: 160px;
+    right: 135px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }
@@ -918,8 +918,9 @@ body {
 
 .premCard-20 h1 {
     position: relative;
-    font-size: 28px;
-    left: 8px;
+    font-size: 30px;
+    left: 15px;
+    top:50px;
     color: #000000;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
@@ -927,7 +928,7 @@ body {
 .wolveslogo {
     width: 100%;
     position: relative;
-    right: 225px;
+    right: 175px;
     z-index: 1;
     transition: opacity 0.3s ease;
 }

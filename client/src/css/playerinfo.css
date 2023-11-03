@@ -235,3 +235,31 @@ animation: myAnim 2s ease 0s 1 normal forwards;
     bottom: 120px;
     transform: scale(0.2);
 }
+
+.trophy-player-history{
+    height:auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ffffff;
+}
+
+.trophy-player-history h1{
+    color: #bd0000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+
+.player-trophy-table{
+    color:#ffffff;
+    font-size: 30px;
+    width:80%;
+}
+
+.player-trophy-table td{
+    width:100px;
+}
