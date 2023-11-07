@@ -10,6 +10,7 @@ import createPlayer from "./admin photos/createplayer.png";
 import editplayer from "./admin photos/editplayer.png";
 import createTeam from "./admin photos/createteam.png";
 import editTeam from "./admin photos/editteam.png";
+import editnews from "./admin photos/balon.png";
 import newsletter from "./admin photos/newsletter.png";
 import contacts from "./admin photos/FAQ and CONACTS.png";
 import Footer from "../components/footor"
@@ -40,6 +41,9 @@ function Dashboardtest() {
       };
       const handleoption7Click = () => {
         navigate("/admin/account");
+      };
+      const handleoption8Click = () => {
+        navigate("/admin/newsedit");
       };
 
 
@@ -170,7 +174,7 @@ function Dashboardtest() {
               EDIT A
               <br /> PLAYER
             </h1>
-            <img className="editPlayer-img" src={editplayer}></img>
+            <img className="editPlayer-img" src={editnews}></img>
           </div>
           <img className="card-bg-edit-admin" src={cardbg}></img>
         </div>
@@ -235,6 +239,16 @@ function Dashboardtest() {
             <img className="account-img" src={adminpic}></img>
           </div>
           <img className="create-team-bg" src={cardbg}></img>
+        </div>
+        <div className="edit-team" onClick={handleoption8Click}>
+          <div className="edit-team-cover">
+            <h1>
+              EDIT 
+              <br /> NEWS
+            </h1>
+            <img className="editTeam-img" src={editplayer}></img>
+          </div>
+          <img className="edit-team-bg" src={cardbg}></img>
         </div>
       </div>
       <div>

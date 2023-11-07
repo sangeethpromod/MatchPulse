@@ -3,14 +3,7 @@
     src: url('../../fonts/DAGGERSQUARE.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-}
-
+} 
 
 .admin-player-info-main-container {
     background-color: #000000;
@@ -155,6 +148,9 @@ body {
     font-size: 50px;
     text-align: center;
 }
+.admin-player-crop-photo-upload h1{
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
 
 .admin-player-crop-photo-upload.uploaded {
     background-color: #00FF00;
@@ -233,21 +229,34 @@ body {
 }
 
 .club-images-for-players {
-    width: 100%;
-    position: relative;
-    height: 200px;
     display: flex;
+        width: 100px;
+        background-color: #fbfbfb;
+        height: 100px;
+        position: relative;
+        bottom: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
+        -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
+        -moz-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
 }
 
 
 
-.admin-player-clubs-photo-upload{
+.club-images-for-players{
+    display: none;
+}
+/* .admin-player-clubs-crest{
     display: flex;
     width: 100px;
     background-color: #fbfbfb;
     height: 100px;
     position: relative;
-    top:50px;
+    bottom: 20px;
     margin-top:10px;
     margin-left: 20px;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
@@ -256,7 +265,7 @@ body {
     box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
         -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
         -moz-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
-}
+} */
 
 .add-more-player-club{
         width: 100px;

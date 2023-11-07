@@ -9,8 +9,6 @@ function AdminPlayerCreate() {
   const [photoUploaded, setPhotoUploaded] = useState(false);
 
  const handleFileUpload = (fileId) => {
-   // Handle the file upload logic here
-   // After a successful upload, apply the 'uploaded' class
    if (fileId === 1) {
      setFileUploaded(true);
    } else if (fileId === 2) {
@@ -100,22 +98,16 @@ function AdminPlayerCreate() {
           <div className="admin-first-row-player-info-right">
             <div className="admin-player-form-outline">
               <label
-                htmlFor="teamImage2"
-                className={`admin-player-crop-photo-upload ${
-                  photoUploaded ? "uploaded" : ""
-                }`}
+                htmlFor="admin-player-crop-photo"
+                className="admin-player-crop-photo-upload"
               >
-                {photoUploaded
-                  ? "UPLOADED FILE SUCCESSFULLY"
-                  : "CLICK HERE TO UPLOAD PLAYER PHOTO (1080*1350)"}
+                UPLOAD <br /> NEWS 1<br /> IMAGE
               </label>
               <input
-                className="admin-player-photo-upload"
                 type="file"
-                id="teamImage2"
-                name="teamImage"
+                id="admin-player-crop-photo"
+                className="news-admin-hidden-file-input"
                 accept="image/*"
-                onChange={() => handleFileUpload(2)}
               />
             </div>
           </div>
@@ -243,16 +235,15 @@ function AdminPlayerCreate() {
             {fileInputs.map((input, index) => (
               <div key={input.id}>
                 <label
-                  htmlFor={`teamImage${input.id}`}
-                  className="admin-player-clubs-photo-upload"
+                  htmlFor="admin-club-photo"
+                  className="club-images-for-players"
                 >
-                  CLICK HERE TO UPLOAD PLAYER CLUB PHOTO
+                  UPLOAD <br /> NEWS 1<br /> IMAGE
                 </label>
                 <input
-                  className="admin-player-photo-upload"
                   type="file"
-                  id={`teamImage${input.id}`}
-                  name={`teamImage${input.id}`}
+                  id="admin-club-photo"
+                  className="admin-player-clubs-crest"
                   accept="image/*"
                 />
               </div>

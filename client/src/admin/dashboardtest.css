@@ -11,7 +11,7 @@ body {
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 .admin-main-container {
-    background-color: #ec0000;
+    background-color: #000000;
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -427,6 +427,53 @@ box-shadow: 0px 0px 15px 5px #020202;
 }
 
 .create-team-bg {
+    opacity: 0.1;
+    width: 100%;
+    position: relative;
+    bottom: 300px;
+}
+
+/* edit news......;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+.edit-team {
+    background-color: #252525;
+    width: 45%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #020202,
+        10px 10px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.edit-team:hover {
+    transform: scale(1.03);
+}
+
+.edit-team-cover {
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-team-cover h1 {
+    font-size: 70px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    position: relative;
+    right: 95px;
+    text-shadow: 2px 3px 2px rgba(255, 0, 0, 0.6);
+}
+
+.editTeam-img {
+    transform: scale(0.9);
+    z-index: 1;
+    position: relative;
+    left: 115px;
+    box-shadow: 0px 0px 15px 5px #020202;
+}
+
+.edit-team-bg {
     opacity: 0.1;
     width: 100%;
     position: relative;
