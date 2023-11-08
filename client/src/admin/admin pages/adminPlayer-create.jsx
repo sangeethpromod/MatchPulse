@@ -235,15 +235,15 @@ function AdminPlayerCreate() {
             {fileInputs.map((input, index) => (
               <div key={input.id}>
                 <label
-                  htmlFor="admin-club-photo"
-                  className="club-images-for-players"
+                  htmlFor="admin-player-crop-photo"
+                  className="admin-player-crop-club-upload"
                 >
-                  UPLOAD <br /> NEWS 1<br /> IMAGE
+                  UPLOAD <br /> CLUB LOGO
                 </label>
                 <input
                   type="file"
-                  id="admin-club-photo"
-                  className="admin-player-clubs-crest"
+                  id="admin-player-crop-photo"
+                  className="club-logo-hidden-upload"
                   accept="image/*"
                 />
               </div>

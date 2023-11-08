@@ -227,45 +227,34 @@
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
     letter-spacing: 3px;
 }
-
-.club-images-for-players {
-    display: flex;
-        width: 100px;
-        background-color: #fbfbfb;
-        height: 100px;
-        position: relative;
-        bottom: 20px;
-        margin-top: 10px;
-        margin-left: 20px;
-        font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-        font-size: 15px;
-        text-align: center;
-        box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
-        -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
-        -moz-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
-}
-
-
-
-.club-images-for-players{
-    display: none;
-}
-/* .admin-player-clubs-crest{
+/* /////////test------------------------------------------------ */
+.admin-player-crop-club-upload {
+    justify-content: center;
+    align-items: center;
     display: flex;
     width: 100px;
-    background-color: #fbfbfb;
+    top: 62px;
+    margin-right: 30px;
+    left: 15px;
     height: 100px;
     position: relative;
-    bottom: 20px;
-    margin-top:10px;
-    margin-left: 20px;
+    background-color: #eeeeee;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
-        -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
-        -moz-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
-} */
+         -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
+         -moz-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
+}
+
+.club-logo-hidden-upload{
+    display: none;
+}
+
+
+
+/* ////saaaaaaaaaaaaaaaaaaaaaaaaaaaaatets */
+
 
 .add-more-player-club{
         width: 100px;
@@ -321,6 +310,7 @@
     margin-right: 10px;
     padding: 5px;
     border: 1px solid #ffffff;
+    color: #bd0000;
     width: 350px;
     background-color:#0e0e0e ;
 }

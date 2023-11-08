@@ -1,0 +1,431 @@
+@font-face {
+    font-family: 'DAGGERSQUARE OBLIQUE';
+    src: url('../../fonts/DAGGERSQUARE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.admin-create-team-main-container {
+    background-color: #000000;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.admin-create-team-main-poster-container {
+    width: 100%;
+    height: 140px;
+    background-color: #0e0e0e;
+}
+
+.create-team-poster-upload-admin{
+    display: flex;
+    width: 100%;
+    height: 140px;
+    background-color: #bd0000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    top:25px;
+    justify-content: center;
+    color: #000000;
+    align-items: center;
+}
+
+
+.create-team-poster-upload-admin-hidden{
+    display: none;
+}
+
+.admin-create-team-info-container {
+    width: 100%;
+    height: 680px;
+    background-color: #0e0e0e;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+.admin-create-team-left-desc-content {
+    background-color: rgb(0, 0, 0);
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 60%;
+    height: 680px;
+}
+
+.admin-create-team-name{
+    display: flex;
+    width: 200px;
+    height:35px;
+    position: relative;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    top:60px;
+    white-space: nowrap;
+    letter-spacing: 3px;
+}
+
+.admin-create-team-name-input{
+    width:700px;
+    height: 35px;
+    position: relative;
+    top:70px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #bd0000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 30px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.admin-create-team-description-heading{
+    color: #ffffff;
+    font-size: 30px;
+    position: relative;
+    white-space: nowrap;
+    top:90px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+.admin-create-team-description {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    width:720px;
+    height: 390px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    letter-spacing: 3px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+
+/* right side formation setuip------------------------------------ */
+
+.admin-create-team-right-formation-content {
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    height: 680px;
+}
+
+.admin-create-team-right-formation-content h1 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 193px;
+    top: 40px;
+    width: 215px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 2px;
+}
+
+.admin-create-team-formation-photo{
+    display: flex;
+    width: 550px;
+    height: 600px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    top:50px;
+    font-size: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 5px 0px rgba(255, 0, 0, 0.75);
+        -webkit-box-shadow: 6px 6px 5px 0px rgba(255, 0, 0, 0.75);
+        -moz-box-shadow: 6px 6px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.admin-create-team-formation-photo:active{
+    transform: scale(0.9);
+}
+
+.admin-create-team-formation-photo-hidden{
+    display: none;
+}
+
+
+
+
+/* torphy class ------------------------------------------- */
+.admin-create-team-trophy-heading {
+    font-size: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    word-spacing: 5px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 2px;
+}
+
+.admin-create-team-trophy-class {
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-create-team-custom-table {
+    position: relative;
+    top: 50px;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 500px;
+}
+
+.admin-create-team-custom-table td {
+    border: 1px solid #fff;
+    text-align: center;
+    background-color: #000000;
+    color: #bd0000;
+}
+
+.admin-create-team-leauge-upload{
+    display: flex;
+    width:100px;
+    height:100px;
+    align-items: center;
+    background-color: #bd0000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    justify-content: center;
+    color: #000000;
+    position: relative;
+    left:100px;
+    transform: scale(1.6);
+}
+.admin-create-team-leauge-upload-hidden{
+    display: none;
+}
+.create-team-enter-trophy-num{
+    display: flex;
+    width: 150px;
+    height: 35px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #bd0000;
+    left:70px;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    text-align: center;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 20px;
+}
+
+.ucl {
+    height: 100px;
+}
+
+.uel {
+    height: 100px;
+    transform: scale(1.0);
+}
+
+.fa {
+    height: 100px;
+    transform: scale(1.3);
+}
+
+.sh {
+    height: 100px;
+    width: 120px;
+    transform: scale(1.1);
+}
+
+.player-list-teampage-1 {
+    width: 100%;
+    height: 275px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.goalkeeper-card1 {
+    width: 330px;
+    height: 400px;
+    background-color: #121212;
+    border: 1px solid #ffffff;
+    box-shadow: 4px 4px 5px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+    transform: scale(0.6);
+}
+
+.goalkeeper-card1:hover {
+    transform: scale(0.7);
+}
+
+.goalkeeper-image-1 {
+    width: 289px;
+    height: 300px;
+    background-color: #1b1b1b;
+    position: relative;
+    left: 2.5%;
+    top: 10px;
+    overflow: hidden;
+}
+
+.player-pics {
+    width: 100%;
+    transform: scale(1.7);
+    position: relative;
+    top: 50px;
+    /* filter: grayscale(100%); */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.player-pics:hover {
+    transform: scale(1.8);
+    filter: grayscale(0%);
+}
+
+.below-grid {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 20px;
+}
+
+.below-grid-left {
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.below-grid-left h1 {
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.below-grid-right {
+    width: 50%;
+    padding-right: 10px;
+    font-size: 30px;
+    color: #bd0000;
+    text-align: right;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+
+
+/* manager css starts here----------------------------------------- */
+.admin-create-team-info-manager-teampage {
+    width: 100%;
+    height: 680px;
+    margin-top: 70px;
+    background-color: #0e0e0e;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+.left-manager-content {
+    background-color: rgb(0, 0, 0);
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 60%;
+    height: 680px;
+}
+.admin-create-manager-name {
+    display: flex;
+    width: 200px;
+    height: 35px;
+    position: relative;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    top: 60px;
+    white-space: nowrap;
+    letter-spacing: 3px;
+}
+
+.admin-create-manager-name-input {
+    width: 700px;
+    height: 35px;
+    position: relative;
+    top: 70px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #bd0000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 30px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.admin-create-manager-description-heading {
+    color: #ffffff;
+    font-size: 30px;
+    position: relative;
+    white-space: nowrap;
+    top: 90px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+}
+
+.admin-create-manager-description {
+    color: #bd0000;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    top: 100px;
+    width: 720px;
+    height: 350px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    letter-spacing: 2px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+}
+
+.admin-create-team-right-manager-content {
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    height: 680px;
+}
+
+
+.admin-create-team-manager-upload {
+    display: flex;
+    width: 550px;
+    height: 500px;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    top: 70px;
+    font-size: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 5px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(255, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.admin-create-team-manager-upload:active {
+    transform: scale(0.9);
+}
+
+.admin-create-team-manager-upload-hidden {
+    display: none;
+}

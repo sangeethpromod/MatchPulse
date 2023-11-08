@@ -11,6 +11,7 @@ import PremireLeauge from "./pages/premireLeauge";
 import Dashtest from "./admin//dashboardtest.jsx";
 import Teampage from "./pages/teampage.jsx"
 import AdminPlayerCreate from "./admin/admin pages/adminPlayer-create.jsx";
+import AdminCreateTeam from "./admin/admin pages/createTeam.jsx";
 import AdminContact from "./admin/admin pages/admincontact"
 import Newsletter from "./admin/admin pages/adminewsletter";
 import AdminAccount from "./admin/admin pages/adminAccount";
@@ -35,6 +36,7 @@ function App() {
           path="admin/createplayer"
           element={<AdminPlayerCreate />}
         ></Route>
+        <Route path="/admin/createteam" element={<AdminCreateTeam/>}></Route>
         <Route path="/admin/contact" element={<AdminContact />}></Route>
         <Route path="/admin/newsletter" element={<Newsletter />}></Route>
         <Route path="/admin/newsedit" element={<AdminNews />}></Route>
