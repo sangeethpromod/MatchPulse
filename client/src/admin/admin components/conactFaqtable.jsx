@@ -1,12 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./contactFaq.css";
 
 function Admincontact() {
+  const statuses = ["PENDING", "DONE", "ONGOING"];
   const dataPerPage = 6;
-  const totalData = 42; // 7 columns x 6 rows
-  const totalPages = Math.ceil(totalData / dataPerPage);
+  const totalPages = 7;
 
-  const [currentPage, setCurrentPage] = React.useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [tableData, setTableData] = useState([]);
+  const [statusStorage, setStatusStorage] = useState({});
+
+  useEffect(() => {
+    // Fetch contact data
+    async function fetchData() {
+      try {
+        const response = await fetch("http://localhost:3000/auth/getcontacts");
+        if (response.ok) {
+          const data = await response.json();
+          console.log("Fetched data:", data);
+          setTableData(data);
+        } else {
+          console.error(
+            "API request failed:",
+            response.status,
+            response.statusText
+          );
+        }
+      } catch (error) {
+        console.error("API request error:", error);
+      }
+    }
+
+    fetchData();
+  }, []);
+
+useEffect(() => {
+  // Save status to storage whenever it changes
+  localStorage.setItem("statusStorage", JSON.stringify(statusStorage));
+
+  // Save the status of all contacts to local storage, not just the status of the contacts on the current page
+  for (let i = 0; i < tableData.length; i++) {
+    const contact = tableData[i];
+    const storedStatus = statusStorage[i] || contact.status;
+    localStorage.setItem(`contactStatus-${i}`, storedStatus);
+  }
+}, [statusStorage]);
 
   const handleNext = () => {
     if (currentPage < totalPages) {
@@ -20,29 +58,50 @@ function Admincontact() {
     }
   };
 
+  const handleStatusChange = (rowIndex, newStatus) => {
+    const updatedTableData = [...tableData];
+    updatedTableData[rowIndex].status = newStatus;
+    setTableData(updatedTableData);
+    setStatusStorage({ ...statusStorage, [rowIndex]: newStatus });
+  };
+
   const renderTableData = () => {
     const start = (currentPage - 1) * dataPerPage;
     const end = start + dataPerPage;
-    const tableData = [];
-    const statuses = ["done", "ongoing", "unopened"];
+    const tableRows = [];
 
     for (let i = start; i < end; i++) {
-      const randomStatus =
-        statuses[Math.floor(Math.random() * statuses.length)];
-      tableData.push(
-        <tr key={i}>
-          <td>{i + 1}</td>
-          <td>First Name {i + 1}</td>
-          <td>Last Name {i + 1}</td>
-          <td>email@example.com</td>
-          <td>+1 555-555-555{i % 10}</td>
-          <td>Comment {i + 1}</td>
-          <td>{randomStatus}</td>
-        </tr>
-      );
+      const contact = tableData[i];
+      if (contact) {
+        const storedStatus = statusStorage[i] || contact.status;
+        const statusClassName = storedStatus ? storedStatus.toLowerCase() : "";
+        tableRows.push(
+          <tr key={i}>
+            <td>{i + 1}</td>
+            <td>{contact.firstName || ""}</td>
+            <td>{contact.lastName || ""}</td>
+            <td>{contact.email || ""}</td>
+            <td>{contact.mobileNum || ""}</td>
+            <td>{contact.message || ""}</td>
+            <td>
+              <select
+                className={`inside-select ${statusClassName}`}
+                value={storedStatus}
+                onChange={(e) => handleStatusChange(i, e.target.value)}
+              >
+                {statuses.map((status, index) => (
+                  <option key={index} value={status}>
+                    {status}
+                  </option>
+                ))}
+              </select>
+            </td>
+          </tr>
+        );
+      }
     }
 
-    return tableData;
+    return tableRows;
   };
 
   return (

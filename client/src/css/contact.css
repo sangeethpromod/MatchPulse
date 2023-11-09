@@ -103,7 +103,7 @@ body {
 .contact-last-name{
     text-align: center;
     position: relative;
-    color: #ffffff;
+    color: #000000;
     width: 400px;
     left: 50px;
     height: 40px;
@@ -142,7 +142,6 @@ body {
 .contact-emailid {
     text-align: center;
     position: relative;
-    color: #ffffff;
     width: 400px;
     right: 50px;
     height: 40px;

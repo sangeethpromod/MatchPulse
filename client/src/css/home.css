@@ -314,19 +314,23 @@ transition: opacity 0.5s;
     color: rgb(255, 255, 255);
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
     opacity: 0.5;
-    text-decoration: none !important;
-
+    
 }
-
+.finalheading a{
+    text-decoration: none !important;
+}
 .arScore{
     font-size: 65px;
     position: relative;
-
     z-index: 1;
     color: rgb(255, 255, 255);
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
     right:60px
 }
+a{
+    text-decoration: none;
+}
+
 .vs {
     font-size: 33px;
     position: relative;

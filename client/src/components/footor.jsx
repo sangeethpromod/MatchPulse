@@ -86,7 +86,9 @@ function Footor() {
             SUBMIT
           </button>
           <div className="complaints">
-            <h1>FAQ/ HELP DESK</h1>
+            <a href="/contact">
+              <h1>FAQ/HELP DESK</h1>
+            </a>
           </div>
         </div>
       </div>

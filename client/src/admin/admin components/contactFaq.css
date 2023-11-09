@@ -126,7 +126,42 @@ body {
     height: 50px;
     color: #fff;
     text-align: left;
+    display: flex;
     padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Initial style for the <select> element */
+.inside-select {
+    width: 250px;
+    height: 35px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #bd0000;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+.inside-select option {
+    background-color: #000000;
+    color: #bd0000;
+}
+
+/* Style the <select> element based on the selected status */
+.done {
+    background-color: rgb(0, 169, 0);
+    color: #000000;
+}
+
+.pending {
+    background-color: red;
+    color: #000000;
+}
+
+.ongoing {
+    background-color: rgb(255, 255, 0);
+    color: #000000;
 }
 
 .pagination {

@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="login-parent">
-    <img className="bg-login-image" src={bgm}></img>
+      <img className="bg-login-image" src={bgm}></img>
       <div>
         <Header />
       </div>
@@ -24,17 +24,9 @@ function App() {
         <div className={`container ${isSignedUp ? "right-panel-active" : ""}`}>
           <div className="form-container sign-up-container">
             <form action="#">
-              <h1>Create Account</h1>
+              <h1>MATCH PULSE</h1>
               <div className="social-container">
-                <a href="#" className="social">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" className="social">
-                  <i className="fab fa-google-plus-g"></i>
-                </a>
-                <a href="#" className="social">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
+                <h1>Create Account</h1>
               </div>
               <span>or use your email for registration</span>
               <input type="text" placeholder="Name" />

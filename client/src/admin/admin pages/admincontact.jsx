@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import "../admincss/admincontact.css";
 import AdminNavbar from "../../components/adminNavbar";
-import ContactFAQTable from "../admin components/conactFaqtable"
-import Footer from "../../components/footor"
+import ContactFAQTable from "../admin components/conactFaqtable";
+import Footer from "../../components/footor";
+import axios from "axios";
 
 function Admincontact() {
+  const [emailData, setEmailData] = useState({
+    recipient: "",
+    subject: "",
+    content: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setEmailData({
+      ...emailData,
+      [name]: value,
+    })
+  };
+const sendEmail = async () => {
+  try {
+    const response = await axios.post(
+      "http://localhost:3000/auth/sendemail", // Update the route to sendcontactEmail
+      emailData
+    );
+    console.log("Email sent successfully", response.data);
+    // You can add a success message or reset the input fields here
+  } catch (error) {
+    console.error("Error sending email", error);
+    // Handle error and show a message if needed
+  }
+};
+
   return (
     <div className="admin-contactFaq-main-container">
       <div>
@@ -21,19 +49,37 @@ function Admincontact() {
         <div className="response-card">
           <div className="enter-email-to-sent">
             <h1>Enter Email ID:</h1>
-            <input className="enter-email-to-sent-input" type="text" />
+            <input
+              className="enter-email-to-sent-input"
+              type="text"
+              name="recipient"
+              value={emailData.recipient}
+              onChange={handleInputChange}
+            />
           </div>
           <div className="enter-subject-to-sent">
             <h1>Enter Subject:</h1>
-            <input className="enter-subject-to-sent-input" type="text" />
+            <input
+              className="enter-subject-to-sent-input"
+              type="text"
+              name="subject"
+              value={emailData.subject}
+              onChange={handleInputChange}
+            />
           </div>
           <div className="enter-content-to-sent">
             <textarea
               className="enter-content-to-sent-input"
+              name="content"
               placeholder="Write your Content Here"
               rows="4"
+              value={emailData.content}
+              onChange={handleInputChange}
             ></textarea>
           </div>
+          <button className="send-the-mail-admin" onClick={sendEmail}>
+            SEND EMAIL
+          </button>
         </div>
       </div>
       <div>

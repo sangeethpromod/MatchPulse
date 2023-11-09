@@ -140,6 +140,10 @@
             -moz-box-shadow: 2px 2px 1px 0px rgba(255, 255, 255, 0.75);
 }
 
+.complaints a{
+    text-decoration: none;
+}
+
 .complaints h1{
     font-size: 15px;
     position: relative;

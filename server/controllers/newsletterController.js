@@ -36,8 +36,8 @@ function sendConfirmationEmail(email, res) {
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: process.env.EMAIL_USER, // Your Gmail email address
-      pass: process.env.EMAIL_PASS, // Your Gmail password or an app-specific password if you have 2FA enabled
+      user: process.env.EMAIL_USER, 
+      pass: process.env.EMAIL_PASS,
     },
   });
 
