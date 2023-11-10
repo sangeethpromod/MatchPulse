@@ -24,7 +24,15 @@ function App() {
         <div className={`container ${isSignedUp ? "right-panel-active" : ""}`}>
           <div className="form-container sign-up-container">
             <form action="#">
-              <h1>MATCH PULSE</h1>
+              <h1 className="logo-headinghh1">
+                <span style={{ color: "red", fontSize: "34px" }}>MATCH </span>
+                <span
+                  className="logo-headingh1"
+                  style={{ color: "white", fontSize: "34px" }}
+                >
+                  PULSE
+                </span>
+              </h1>
               <div className="social-container">
                 <h1>Create Account</h1>
               </div>
@@ -37,17 +45,17 @@ function App() {
           </div>
           <div className="form-container sign-in-container">
             <form action="#">
-              <h1>Sign in</h1>
+              <h1 className="logo-headinghh1">
+                <span style={{ color: "red", fontSize: "34px" }}>MATCH </span>
+                <span
+                  className="logo-headingh1"
+                  style={{ color: "white", fontSize: "34px" }}
+                >
+                  PULSE
+                </span>
+              </h1>
               <div className="social-container">
-                <a href="#" className="social">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" className="social">
-                  <i className="fab fa-google-plus-g"></i>
-                </a>
-                <a href="#" className="social">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
+                <h1>Sign in</h1>
               </div>
               <span>or use your account</span>
               <input type="email" placeholder="Email" />
@@ -62,8 +70,18 @@ function App() {
                   isSignedUp ? "" : "right-panel-active"
                 }`}
               >
-                <h1>Hey Admin!</h1>
-                <p>Enter your admin details and start the journey with us</p>
+                <h1
+                  style={{
+                    color: "white",
+                    fontSize: "34px",
+                    textShadow: "3px 3px 0px rgba(0,0,0,0.6)",
+                  }}
+                >
+                  Hey Admin!
+                </h1>
+                <p>
+                  Enter your admin details and <br /> start the journey with us
+                </p>
                 <button className="ghost" onClick={handleSignIn} id="signIn">
                   Sign In
                 </button>
@@ -73,9 +91,18 @@ function App() {
                   isSignedUp ? "right-panel-active" : ""
                 }`}
               >
-                <h1>Welcome Back!</h1>
+                <h1
+                  style={{
+                    color: "white",
+                    fontSize: "34px",
+                    textShadow: "3px 3px 0px rgba(0,0,0,0.6)",
+                  }}
+                >
+                  Welcome Back!
+                </h1>
                 <p>
-                  To keep connected with us please login with your personal info
+                  To keep connected with us please
+                  <br /> login with your personal info
                 </p>
                 <button className="ghost" onClick={handleSignUp} id="signUp">
                   Sign Up

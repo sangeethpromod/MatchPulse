@@ -1,5 +1,6 @@
 import React from 'react'
 import "../css/premireleauge.css"
+import { Link } from "react-router-dom";
 import Navbar from "../components/navbar"
 import teambg from "../images/premire Leauge/background prem.jpg"
 import arsenallogo from "../images/premire Leauge/arsenal.png"
@@ -32,20 +33,34 @@ function premireLeauge() {
       <div className="pleauge-container-1">
         <h1>SELECT YOUR PREMIRE LEAUGE TEAM !</h1>
         <div className="premCard-row-1">
-          <div className="premCard-1">
-            <h1>ARSENAL</h1>
-            <img className="arsenallogo" src={arsenallogo} />
-          </div>
+          <Link to="/teampage">
+            <div className="premCard-1">
+              <h1>ARSENAL</h1>
+              <img
+                className="arsenallogo"
+                src={arsenallogo}
+                alt="Arsenal Logo"
+              />
+            </div>
+          </Link>
           <div className="premCard-2">
             <h1>ASTON VILLA</h1>
             <img className="villalogo" src={avillalogo} />
           </div>
           <div className="premCard-3">
-            <h1>BOURNE<br />MOUTH AFC</h1>
+            <h1>
+              BOURNE
+              <br />
+              MOUTH AFC
+            </h1>
             <img className="bourlogo" src={bour} />
           </div>
           <div className="premCard-4">
-            <h1>BRENT<br />FORD</h1>
+            <h1>
+              BRENT
+              <br />
+              FORD
+            </h1>
             <img className="brentlogo" src={brentfordLogo} />
           </div>
           <div className="premCard-5">
@@ -115,7 +130,11 @@ function premireLeauge() {
             <img className="westhamlogo" src={westHamLogo} />
           </div>
           <div className="premCard-20">
-            <h1>WOLVER<br />HAMPTON WANDERERS</h1>
+            <h1>
+              WOLVER
+              <br />
+              HAMPTON WANDERERS
+            </h1>
             <img className="wolveslogo" src={wolvesLogo} />
           </div>
         </div>

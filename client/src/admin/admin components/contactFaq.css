@@ -36,9 +36,11 @@ body {
 
 .data-table td{
     outline: 1px solid #fff;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 .data-table th {
     outline: 1px solid #fff;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
 

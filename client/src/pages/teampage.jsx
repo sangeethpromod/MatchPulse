@@ -394,7 +394,7 @@ function Teampage() {
           <div className="below-grid">
             <div className="below-grid-left">
               <h1>
-                EMILE <br /> SMITH ROWE
+                EMILE <br /> SMITH 
               </h1>
             </div>
             <div className="below-grid-right">
