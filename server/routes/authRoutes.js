@@ -23,6 +23,6 @@ router.get("/subscriptions", getSubscriptions);
 router.delete("/subscriptions/:id", deleteEmail);
 router.post("/contacts", createContact);
 router.get("/getcontacts", getContact);
-router.post("/sendemail", sendcontactEmail);
+router.post("/sendcontactEmail", sendcontactEmail);
 
 module.exports = router;

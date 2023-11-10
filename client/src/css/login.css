@@ -69,6 +69,22 @@
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
 }
 
+.forgot-button{
+    border: none!important;
+    background-color: #ffffff !important;
+    color: #000000!important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    padding: 12px 45px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    transition: transform 80ms ease-in !important;
+    box-shadow: 4px 4px 5px 0px rgba(255, 0, 0, 0.75) !important;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(255, 0, 0, 0.75) !important;
+    -moz-box-shadow: 4px 4px 5px 0px rgba(255, 0, 0, 0.75) !important;
+}
+
 .form-container button {
     border: none;
     background-color: #bd0000;
@@ -123,6 +139,9 @@
         -webkit-box-shadow: 2px 2px 5px 0px rgba(255, 255, 255, 0.75);
         -moz-box-shadow: 2px 2px 5px 0px rgba(255, 255, 255, 0.75);
 }
+/* .form-container input::placeholder{
+    color: #bd0000;
+} */
 
 .container {
     background-color: #000000;

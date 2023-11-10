@@ -161,4 +161,9 @@ body {
             box-shadow: 3px 3px 5px 0px rgba(255, 255, 255, 0.75);
             -webkit-box-shadow: 3px 3px 5px 0px rgba(255, 255, 255, 0.75);
             -moz-box-shadow: 3px 3px 5px 0px rgba(255, 255, 255, 0.75);
+    transition:transform 0.3s ease;
+}
+
+.send-the-mail-admin:active{
+    transform: scale(0.9);
 }

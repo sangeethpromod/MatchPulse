@@ -47,7 +47,7 @@ const sendcontactEmail = async (req, res) => {
   });
 
   const mailOptions = {
-    from: "your_email@example.com",
+    from: "sangeethpromodkainikkara@gmail.com",
     to,
     subject,
     text,
