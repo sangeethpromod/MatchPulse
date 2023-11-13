@@ -4,6 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const authRoutes = require("./routes/authRoutes");
+const multer = require("multer");
 
 dotenv.config();
 
@@ -14,6 +15,9 @@ const port = process.env.PORT; // ||3000
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
+
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
