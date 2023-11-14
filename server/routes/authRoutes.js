@@ -21,7 +21,6 @@ const { uploadImage } = require("../controllers/addplayerController");
 
 // Routes
 router.post("/register", authController.register);
-router.post("/register", authController.register);
 router.post("/tokens", authController.login);
 router.post("/forgot-password", authController.forgotPassword);
 router.post("/reset-password", authController.resetPassword);
@@ -34,5 +33,9 @@ router.get("/getcontacts", getContact);
 router.post("/sendcontactEmail", sendcontactEmail);
 router.post("/createPlayer", playerController.createPlayer);
 router.post("/images", upload.array("file"),uploadImage);
+router.get(
+  "/search/:firstName",
+  playerController.getPlayersByFirstName
+);
 
 module.exports = router;

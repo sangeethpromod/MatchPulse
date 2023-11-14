@@ -1,6 +1,7 @@
 // controllers/playerController.js
 const Player = require("../models/testingp");
 
+// Create a new player
 exports.createPlayer = async (req, res) => {
   try {
     // Extract data from the request body
@@ -35,6 +36,24 @@ exports.createPlayer = async (req, res) => {
       .json({ success: true, message: "Player created successfully" });
   } catch (error) {
     console.error("Error creating player:", error);
+    res.status(500).json({ success: false, message: "Internal Server Error" });
+  }
+};
+
+// Get players by first name
+exports.getPlayersByFirstName = async (req, res) => {
+  try {
+    // Extract the first name from the request parameters
+    const { firstName } = req.params;
+
+    // Find players with the specified first name
+    const players = await Player.find({
+      firstName: new RegExp(firstName, "i"), // Case-insensitive search
+    });
+
+    res.status(200).json({ success: true, data: players });
+  } catch (error) {
+    console.error("Error getting players by first name:", error);
     res.status(500).json({ success: false, message: "Internal Server Error" });
   }
 };
