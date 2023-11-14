@@ -17,9 +17,7 @@ import Footer from "../components/footor"
 
 
 function Dashboardtest() {
-
       const navigate = useNavigate();
-      
       const handleoption1Click = () => {
         navigate("/admin/createplayer");
       };

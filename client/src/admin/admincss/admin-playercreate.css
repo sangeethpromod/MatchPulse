@@ -285,6 +285,7 @@
     height: auto;
     width: 100%;
     display: flex;
+    height: auto;
     flex-direction: column;
     padding-left: 30px;
     margin-bottom: 20px;
@@ -319,6 +320,7 @@
     width: 300px;
     background-color: #bd0000;
     border: none;
+    margin-bottom: 50px;
     height: 35px;
     position: relative;
     font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
@@ -337,4 +339,30 @@
     box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
             -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
             -moz-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
+}
+
+.submit-player-create-details{
+    width: 600px;
+    height: 35px;
+    margin-bottom: 25px;
+    position: relative;
+    left:400px;
+    background-color: #bd0000;
+    border: none;
+    font-family: 'DAGGERSQUARE OBLIQUE', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 3px 5px 5px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.submit-player-create-details:hover {
+    transform: scale(0.9);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(255, 0, 0, 0.75);
 }

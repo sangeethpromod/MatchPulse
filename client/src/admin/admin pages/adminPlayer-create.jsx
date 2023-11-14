@@ -279,6 +279,9 @@ function AdminPlayerCreate() {
               Add More
             </button>
           </div>
+          <button className="submit-player-create-details">
+            SUBMIT DETAILS
+          </button>
         </div>
       </form>
       <Footer />
