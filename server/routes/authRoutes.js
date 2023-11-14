@@ -21,6 +21,7 @@ const { uploadImage } = require("../controllers/addplayerController");
 
 // Routes
 router.post("/register", authController.register);
+router.post("/register", authController.register);
 router.post("/tokens", authController.login);
 router.post("/forgot-password", authController.forgotPassword);
 router.post("/reset-password", authController.resetPassword);
