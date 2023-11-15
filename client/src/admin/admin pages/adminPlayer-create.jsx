@@ -45,61 +45,65 @@ function AdminPlayerCreate() {
     );
     setInputPairs(updatedInputPairs);
   };
+const handleFormSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
+  const formData = new FormData();
 
-    const formData = new FormData();
+  // Add file inputs to formData
+  console.log("fileInputs:", fileInputs);
+  fileInputs.forEach((input) => {
+    console.log("input:", input);
+    formData.append("files", input.files[0]);
+  });
 
-    // Add file inputs to formData
-    fileInputs.forEach((input) => {
-      formData.append("files", input.files[0]);
-    });
+  // Add other form data to formData
+  console.log("playerData:", playerData);
+  Object.entries(playerData).forEach(([key, value]) => {
+    console.log("key:", key, "value:", value);
 
-    // Add other form data to formData
-    Object.entries(playerData).forEach(([key, value]) => {
-      if (Array.isArray(value)) {
-        value.forEach((item, index) => {
-          Object.entries(item).forEach(([itemKey, itemValue]) => {
-            formData.append(`${key}[${index}].${itemKey}`, itemValue);
-          });
+    if (Array.isArray(value)) {
+      value.forEach((item, index) => {
+        Object.entries(item).forEach(([itemKey, itemValue]) => {
+          formData.append(`${key}[${index}].${itemKey}`, itemValue);
         });
-      } else if (typeof value === "object") {
-        Object.entries(value).forEach(([itemKey, itemValue]) => {
-          formData.append(`${key}.${itemKey}`, itemValue);
-        });
-      } else {
-        formData.append(key, value);
-      }
-    });
-
-    try {
-      const response = await axios.post(
-        "http://localhost:3000/auth/createPlayer",
-        formData
-      );
-      console.log(response.data);
-
-      // Show success message using SweetAlert
-      Swal.fire({
-        icon: "success",
-        title: "Player created successfully!",
-        showConfirmButton: false,
-        timer: 1500,
       });
-
-      // Optionally, redirect or perform other actions after success
-    } catch (error) {
-      console.error("Error creating player:", error);
-
-      // Show error message using SweetAlert
-      Swal.fire({
-        icon: "error",
-        title: "Oops... Something went wrong!",
-        text: "Please try again later.",
+    } else if (typeof value === "object") {
+      Object.entries(value).forEach(([itemKey, itemValue]) => {
+        formData.append(`${key}.${itemKey}`, itemValue);
       });
+    } else {
+      formData.append(key, value);
     }
-  };
+  });
+
+  try {
+    const response = await axios.post(
+      "http://localhost:3000/auth/createPlayer",
+      formData
+    );
+    console.log(response.data);
+
+    // Show success message using SweetAlert
+    Swal.fire({
+      icon: "success",
+      title: "Player created successfully!",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+
+    // Optionally, redirect or perform other actions after success
+  } catch (error) {
+    console.error("Error creating player:", error);
+
+    // Show error message using SweetAlert
+    Swal.fire({
+      icon: "error",
+      title: "Oops... Something went wrong!",
+      text: "Please try again later.",
+    });
+  }
+};
 
   return (
     <div className="admin-player-info-main-container">
