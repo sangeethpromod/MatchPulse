@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Homepage from "./pages/Homepage";
 import ForgotPassword from "./pages/forgotpassword";
@@ -45,7 +44,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/searchplayer" element={<SearchPlayer />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
