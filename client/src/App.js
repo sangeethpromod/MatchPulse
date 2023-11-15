@@ -20,25 +20,31 @@ import Playerinfo from "./pages/playerinfo.jsx";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    // Your login logic here, set isLoggedIn to true if user is logged in
-    const checkLoginStatus = () => {
-      const token = localStorage.getItem("token");
-      return Boolean(token); // For simplicity, consider the user logged in if there's a token
-    };
-
-    const userIsLoggedIn = checkLoginStatus();
-    setIsLoggedIn(userIsLoggedIn);
-  }, []);
-
-  const PrivateRoute = ({ element, path }) => {
-    if (isLoggedIn) {
-      return element;
-    } else {
-      // Redirect to the login page if the user is not logged in
-      return <Navigate to="/login" state={{ from: path }} />;
-    }
+useEffect(() => {
+  //  isLoggedIn to true if the user is logged in
+  const checkLoginStatus = () => {
+    const token = localStorage.getItem("token");
+    return Boolean(token); 
   };
+
+  const userIsLoggedIn = checkLoginStatus();
+
+  if (userIsLoggedIn) {
+    setIsLoggedIn(true);
+  }
+}, []);
+
+const PrivateRoute = ({ element, path }) => {
+  const userIsLoggedIn = Boolean(localStorage.getItem("token"));
+
+  if (userIsLoggedIn) {
+    return element;
+  } else {
+    // Redirect to the login page if the user is not logged in
+    return <Navigate to="/login" state={{ from: path }} />;
+  }
+};
+  
 
   return (
     <BrowserRouter>

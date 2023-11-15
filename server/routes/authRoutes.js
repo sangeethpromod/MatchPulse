@@ -42,3 +42,27 @@ router.post("/createPlayer", upload.array("file"), createPlayerWithImage);
 router.get("/getPlayers/:firstName", getPlayersByFirstName);
 
 module.exports = router;
+
+
+
+          <div className="trophy-number-enter">
+            {inputPairs.map((pair, index) => (
+              <div key={pair.id} className="trophy-pair">
+                <input
+                  type="text"
+                  placeholder="ENTER TROPHY NAME"
+                  value={pair.label}
+                  onChange={(e) => handleInputChange(e, pair.id, "label")}
+                />
+                <input
+                  type="text"
+                  placeholder="ENTER NUMBER OF TROPHIES"
+                  value={pair.value}
+                  onChange={(e) => handleInputChange(e, pair.id, "value")}
+                />
+              </div>
+            ))}
+            <button className="add-more-trophy" onClick={handleAddMoreTrophies}>
+              Add More
+            </button>
+          </div>;
